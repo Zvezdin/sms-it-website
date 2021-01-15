@@ -5,6 +5,7 @@ import Button from "../components/button"
 import headerImage from "../images/header.png"
 import MockupContent from "./image"
 import mockupFrame from "../images/mockup-frame.png"
+import smmsItIllustration from "../images/sms-it-illustration.png"
 
 const Header = ({ siteTitle }) => (
   <div
@@ -30,9 +31,9 @@ const Header = ({ siteTitle }) => (
     <p style={{ textAlign: "center", maxWidth: 440 }}>
       Smart Bots For Everyone
     </p>
-    <div style={{ margin: 60, width: `250px`, position: "relative" }}>
+    <div style={{ margin: 60, width: `80%`, position: "relative" }}>
       <div style={{ clipPath: "inset(2% 5% round 2% 5%)" }}>
-        <MockupContent />
+        <img src={smmsItIllustration}></img>
       </div>
       <div
         style={{
@@ -41,10 +42,6 @@ const Header = ({ siteTitle }) => (
           top: 0,
         }}
       >
-        <img
-          src={mockupFrame}
-          alt="outlines of shapes and confetti in the background "
-        />
       </div>
     </div>
     <a href="mailto:team@sms-it.io">

@@ -7,10 +7,17 @@ import engage from "../images/bullet-icons/engage.png"
 import automatic from "../images/bullet-icons/automatic.png"
 import management from "../images/bullet-icons/management.png"
 import analytics from "../images/bullet-icons/analytics.png"
+
+import zvezdin from "../images/teammates/zvezdin.jpg"
+import thowhid from "../images/teammates/thowhid.jpg"
+import mike from "../images/teammates/mike.jpg"
+
 import SectionHeader from "./section-header"
 import { COLORS } from "../styles/constants"
 
 import styles from "./content.module.css";
+
+import Teammate from "./teammate"
 
 const Content = () => (
   <div style={{ padding: "4rem 1rem", textAlign: "center" }}>
@@ -61,10 +68,10 @@ const Content = () => (
       </div>
     </content>
 
-    <div style={{height: "6vh"}}></div>
+    <div style={{height: "3em"}}></div>
 
     <SectionHeader
-      title="How We Deliver That"
+      title="How We Deliver"
       description="We provide you with the infrastructure to convert any voice and chat bot into an SMS bot. "
     />
     <content
@@ -107,6 +114,35 @@ const Content = () => (
       <div>
         <img className={styles.bulletImage} src={analytics} alt="a blank card floating over colorful graphics" />
       </div>
+    </content>
+
+    <div style={{height: "3em"}}></div>
+
+    <SectionHeader
+      title="Who Makes Things Happen"
+      description=""
+    />
+
+    <content
+      className={styles.bullet}
+    >
+      <Teammate
+        name="Zvezdin"
+        img={zvezdin}
+        description="Has a big mouth"
+      />
+
+      <Teammate
+        name="Thowhid"
+        img={thowhid}
+        description="Does all the work, gets 33% of the credit"
+      />
+
+      <Teammate
+        name="Michael"
+        img={mike}
+        description="Doesn't like web; Is our web dev"
+      />
     </content>
   </div>
 )
