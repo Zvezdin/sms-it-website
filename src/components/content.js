@@ -1,6 +1,5 @@
 import React from "react"
 
-import feature from "../images/feature.png"
 import reach from "../images/bullet-icons/reach.png"
 import reliable from "../images/bullet-icons/reliable.png"
 import engage from "../images/bullet-icons/engage.png"
@@ -21,6 +20,13 @@ import Teammate from "./teammate"
 
 const Content = () => (
   <div style={{ padding: "4rem 1rem", textAlign: "center" }}>
+    <SectionHeader
+      title="Free Demo"
+      description="Try out one of our bots live, now!"
+    />
+
+    <p style={{paddingBottom: "2em"}}><b>Text: +44 7411 878468</b></p>
+    
     <SectionHeader
       title="What We Offer"
       description="We help you to expand the reach of your bots and to nearly any person on this planet"

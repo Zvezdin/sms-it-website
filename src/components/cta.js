@@ -18,7 +18,7 @@ const CallToAction = () => (
       description="Reach us at team@sms-it.io or at the button below"
     />
     <a href="mailto:team@sms-it.io">
-      <Button >Contract Us</Button>
+      <Button >Contact Us</Button>
     </a>
   </div>
 )
