@@ -1,0 +1,12 @@
+.bullet {
+	display: grid;
+	align-items: center;
+	justify-content: center;
+	grid-template-columns: repeat(auto-fit, minmax(240px, 340px));
+}
+
+.bullet-image {
+	width: 50%;
+	height: auto;
+	color: yellow;
+}
