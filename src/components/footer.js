@@ -22,10 +22,16 @@ const Footer = ({ siteTitle }) => (
     >
       <div style={{ color: COLORS.blue, fontWeight: 700 }}>
         <a
-          style={{ textDecoration: "none" }}
+          style={{ textDecoration: "none", marginRight: "2em" }}
           href="mailto:team@sms-it.io"
         >
           Contact Us
+        </a>
+        <a
+          style={{ textDecoration: "none" }}
+          href="/project"
+        >
+          Main Website
         </a>
       </div>
       <div style={{ color: COLORS.gray }}>

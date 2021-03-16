@@ -44,8 +44,8 @@ const Header = ({ siteTitle }) => (
       >
       </div>
     </div>
-    <a href="mailto:team@sms-it.io">
-      <Button>Get Early Access</Button>
+    <a href="/project" style={{marginBottom: "0em"}}>
+      <Button>Open Main Website</Button>
     </a>
   </div>
 )
