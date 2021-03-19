@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[SMS It]]></title><description><![CDATA[Smart Bots for Everyone]]></description><link>https://sms-it.io/project</link><generator>GatsbyJS</generator><lastBuildDate>Fri, 19 Mar 2021 09:48:43 GMT</lastBuildDate><item><title><![CDATA[Project Overview]]></title><description><![CDATA[SMS It Abstract Admist the pandemic, NHS doctors are being overwhelmed by queries from patients with generic problems which can be resolved…]]></description><link>https://sms-it.io/project/overview/</link><guid isPermaLink="false">https://sms-it.io/project/overview/</guid><pubDate>Wed, 20 Aug 2014 15:11:55 GMT</pubDate><content:encoded>&lt;h1&gt;&lt;p style=&quot;text-align: center;&quot;&gt;SMS It&lt;/p&gt;&lt;/h1&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[SMS It]]></title><description><![CDATA[Smart Bots for Everyone]]></description><link>https://sms-it.io/project</link><generator>GatsbyJS</generator><lastBuildDate>Fri, 19 Mar 2021 09:54:49 GMT</lastBuildDate><item><title><![CDATA[Project Overview]]></title><description><![CDATA[SMS It Abstract Admist the pandemic, NHS doctors are being overwhelmed by queries from patients with generic problems which can be resolved…]]></description><link>https://sms-it.io/project/overview/</link><guid isPermaLink="false">https://sms-it.io/project/overview/</guid><pubDate>Wed, 20 Aug 2014 15:11:55 GMT</pubDate><content:encoded>&lt;h1&gt;&lt;p style=&quot;text-align: center;&quot;&gt;SMS It&lt;/p&gt;&lt;/h1&gt;
 &lt;h1&gt;Abstract&lt;/h1&gt;
 &lt;p&gt;Admist the pandemic, NHS doctors are being overwhelmed by queries from patients with generic problems which can be resolved with generic advice. This is not efficient use of NHS resources.&lt;/p&gt;
 &lt;p&gt;To solve that, the NHS want to design automated medical advice bots. These bots should be accessible over SMS in order to reach as many patients as possible. Many bot design platforms exist, with VoiceFlow being the NHS’s preferred choice. However none of these platforms support exporting bot designs over SMS. &lt;/p&gt;
@@ -18,7 +18,7 @@
     &gt;
       &lt;a
     class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/static/4097860a66f61a634f5303ea7bd575af/47dc7/zvezdin.jpg&quot;
+    href=&quot;/project/static/4097860a66f61a634f5303ea7bd575af/47dc7/zvezdin.jpg&quot;
     style=&quot;display: block&quot;
     target=&quot;_blank&quot;
     rel=&quot;noopener&quot;
@@ -31,11 +31,11 @@
         class=&quot;gatsby-resp-image-image&quot;
         alt=&quot;zvezdin&quot;
         title=&quot;zvezdin&quot;
-        src=&quot;/static/4097860a66f61a634f5303ea7bd575af/451a4/zvezdin.jpg&quot;
-        srcset=&quot;/static/4097860a66f61a634f5303ea7bd575af/953fe/zvezdin.jpg 500w,
-/static/4097860a66f61a634f5303ea7bd575af/0a251/zvezdin.jpg 1000w,
-/static/4097860a66f61a634f5303ea7bd575af/451a4/zvezdin.jpg 2000w,
-/static/4097860a66f61a634f5303ea7bd575af/47dc7/zvezdin.jpg 2004w&quot;
+        src=&quot;/project/static/4097860a66f61a634f5303ea7bd575af/451a4/zvezdin.jpg&quot;
+        srcset=&quot;/project/static/4097860a66f61a634f5303ea7bd575af/953fe/zvezdin.jpg 500w,
+/project/static/4097860a66f61a634f5303ea7bd575af/0a251/zvezdin.jpg 1000w,
+/project/static/4097860a66f61a634f5303ea7bd575af/451a4/zvezdin.jpg 2000w,
+/project/static/4097860a66f61a634f5303ea7bd575af/47dc7/zvezdin.jpg 2004w&quot;
         sizes=&quot;(max-width: 2000px) 100vw, 2000px&quot;
         style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
         loading=&quot;lazy&quot;
@@ -50,7 +50,7 @@
     &gt;
       &lt;a
     class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/static/8bb2bc4a6c8946ac9c6d2ba147cf5016/dbac8/thowhid.jpg&quot;
+    href=&quot;/project/static/8bb2bc4a6c8946ac9c6d2ba147cf5016/dbac8/thowhid.jpg&quot;
     style=&quot;display: block&quot;
     target=&quot;_blank&quot;
     rel=&quot;noopener&quot;
@@ -63,10 +63,10 @@
         class=&quot;gatsby-resp-image-image&quot;
         alt=&quot;thowhid&quot;
         title=&quot;thowhid&quot;
-        src=&quot;/static/8bb2bc4a6c8946ac9c6d2ba147cf5016/dbac8/thowhid.jpg&quot;
-        srcset=&quot;/static/8bb2bc4a6c8946ac9c6d2ba147cf5016/953fe/thowhid.jpg 500w,
-/static/8bb2bc4a6c8946ac9c6d2ba147cf5016/0a251/thowhid.jpg 1000w,
-/static/8bb2bc4a6c8946ac9c6d2ba147cf5016/dbac8/thowhid.jpg 1023w&quot;
+        src=&quot;/project/static/8bb2bc4a6c8946ac9c6d2ba147cf5016/dbac8/thowhid.jpg&quot;
+        srcset=&quot;/project/static/8bb2bc4a6c8946ac9c6d2ba147cf5016/953fe/thowhid.jpg 500w,
+/project/static/8bb2bc4a6c8946ac9c6d2ba147cf5016/0a251/thowhid.jpg 1000w,
+/project/static/8bb2bc4a6c8946ac9c6d2ba147cf5016/dbac8/thowhid.jpg 1023w&quot;
         sizes=&quot;(max-width: 1023px) 100vw, 1023px&quot;
         style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
         loading=&quot;lazy&quot;
@@ -81,7 +81,7 @@
     &gt;
       &lt;a
     class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/static/3238cabd03bd4391627bbce018365323/03ffe/michael.jpg&quot;
+    href=&quot;/project/static/3238cabd03bd4391627bbce018365323/03ffe/michael.jpg&quot;
     style=&quot;display: block&quot;
     target=&quot;_blank&quot;
     rel=&quot;noopener&quot;
@@ -94,10 +94,10 @@
         class=&quot;gatsby-resp-image-image&quot;
         alt=&quot;michael&quot;
         title=&quot;michael&quot;
-        src=&quot;/static/3238cabd03bd4391627bbce018365323/03ffe/michael.jpg&quot;
-        srcset=&quot;/static/3238cabd03bd4391627bbce018365323/953fe/michael.jpg 500w,
-/static/3238cabd03bd4391627bbce018365323/0a251/michael.jpg 1000w,
-/static/3238cabd03bd4391627bbce018365323/03ffe/michael.jpg 1200w&quot;
+        src=&quot;/project/static/3238cabd03bd4391627bbce018365323/03ffe/michael.jpg&quot;
+        srcset=&quot;/project/static/3238cabd03bd4391627bbce018365323/953fe/michael.jpg 500w,
+/project/static/3238cabd03bd4391627bbce018365323/0a251/michael.jpg 1000w,
+/project/static/3238cabd03bd4391627bbce018365323/03ffe/michael.jpg 1200w&quot;
         sizes=&quot;(max-width: 1200px) 100vw, 1200px&quot;
         style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
         loading=&quot;lazy&quot;
@@ -118,7 +118,7 @@
     &gt;
       &lt;a
     class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/static/2d788efe9d1ec90d4d54d2341339d65e/775e3/gantt.png&quot;
+    href=&quot;/project/static/2d788efe9d1ec90d4d54d2341339d65e/775e3/gantt.png&quot;
     style=&quot;display: block&quot;
     target=&quot;_blank&quot;
     rel=&quot;noopener&quot;
@@ -131,10 +131,10 @@
         class=&quot;gatsby-resp-image-image&quot;
         alt=&quot;gantt&quot;
         title=&quot;gantt&quot;
-        src=&quot;/static/2d788efe9d1ec90d4d54d2341339d65e/775e3/gantt.png&quot;
-        srcset=&quot;/static/2d788efe9d1ec90d4d54d2341339d65e/0eb09/gantt.png 500w,
-/static/2d788efe9d1ec90d4d54d2341339d65e/1263b/gantt.png 1000w,
-/static/2d788efe9d1ec90d4d54d2341339d65e/775e3/gantt.png 1189w&quot;
+        src=&quot;/project/static/2d788efe9d1ec90d4d54d2341339d65e/775e3/gantt.png&quot;
+        srcset=&quot;/project/static/2d788efe9d1ec90d4d54d2341339d65e/0eb09/gantt.png 500w,
+/project/static/2d788efe9d1ec90d4d54d2341339d65e/1263b/gantt.png 1000w,
+/project/static/2d788efe9d1ec90d4d54d2341339d65e/775e3/gantt.png 1189w&quot;
         sizes=&quot;(max-width: 1189px) 100vw, 1189px&quot;
         style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
         loading=&quot;lazy&quot;
@@ -149,7 +149,7 @@
     &gt;
       &lt;a
     class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/static/e0f7f81efaf9a839f4a93bc9b3ead869/4907d/bot.png&quot;
+    href=&quot;/project/static/e0f7f81efaf9a839f4a93bc9b3ead869/4907d/bot.png&quot;
     style=&quot;display: block&quot;
     target=&quot;_blank&quot;
     rel=&quot;noopener&quot;
@@ -162,9 +162,9 @@
         class=&quot;gatsby-resp-image-image&quot;
         alt=&quot;bot&quot;
         title=&quot;bot&quot;
-        src=&quot;/static/e0f7f81efaf9a839f4a93bc9b3ead869/4907d/bot.png&quot;
-        srcset=&quot;/static/e0f7f81efaf9a839f4a93bc9b3ead869/0eb09/bot.png 500w,
-/static/e0f7f81efaf9a839f4a93bc9b3ead869/4907d/bot.png 533w&quot;
+        src=&quot;/project/static/e0f7f81efaf9a839f4a93bc9b3ead869/4907d/bot.png&quot;
+        srcset=&quot;/project/static/e0f7f81efaf9a839f4a93bc9b3ead869/0eb09/bot.png 500w,
+/project/static/e0f7f81efaf9a839f4a93bc9b3ead869/4907d/bot.png 533w&quot;
         sizes=&quot;(max-width: 533px) 100vw, 533px&quot;
         style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
         loading=&quot;lazy&quot;
@@ -187,7 +187,7 @@
     &gt;
       &lt;a
     class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/static/21719eb6110129c2d83e88dfd954f787/ac7a9/SMSITPAGE2.png&quot;
+    href=&quot;/project/static/21719eb6110129c2d83e88dfd954f787/ac7a9/SMSITPAGE2.png&quot;
     style=&quot;display: block&quot;
     target=&quot;_blank&quot;
     rel=&quot;noopener&quot;
@@ -200,10 +200,10 @@
         class=&quot;gatsby-resp-image-image&quot;
         alt=&quot;SMSITPAGE2&quot;
         title=&quot;SMSITPAGE2&quot;
-        src=&quot;/static/21719eb6110129c2d83e88dfd954f787/ac7a9/SMSITPAGE2.png&quot;
-        srcset=&quot;/static/21719eb6110129c2d83e88dfd954f787/0eb09/SMSITPAGE2.png 500w,
-/static/21719eb6110129c2d83e88dfd954f787/1263b/SMSITPAGE2.png 1000w,
-/static/21719eb6110129c2d83e88dfd954f787/ac7a9/SMSITPAGE2.png 1920w&quot;
+        src=&quot;/project/static/21719eb6110129c2d83e88dfd954f787/ac7a9/SMSITPAGE2.png&quot;
+        srcset=&quot;/project/static/21719eb6110129c2d83e88dfd954f787/0eb09/SMSITPAGE2.png 500w,
+/project/static/21719eb6110129c2d83e88dfd954f787/1263b/SMSITPAGE2.png 1000w,
+/project/static/21719eb6110129c2d83e88dfd954f787/ac7a9/SMSITPAGE2.png 1920w&quot;
         sizes=&quot;(max-width: 1920px) 100vw, 1920px&quot;
         style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
         loading=&quot;lazy&quot;
@@ -221,7 +221,7 @@
     &gt;
       &lt;a
     class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/static/3b9f94ea03e5d17820113df0ef95c7ad/a6407/joe.jpg&quot;
+    href=&quot;/project/static/3b9f94ea03e5d17820113df0ef95c7ad/a6407/joe.jpg&quot;
     style=&quot;display: block&quot;
     target=&quot;_blank&quot;
     rel=&quot;noopener&quot;
@@ -234,8 +234,8 @@
         class=&quot;gatsby-resp-image-image&quot;
         alt=&quot;joe&quot;
         title=&quot;joe&quot;
-        src=&quot;/static/3b9f94ea03e5d17820113df0ef95c7ad/a6407/joe.jpg&quot;
-        srcset=&quot;/static/3b9f94ea03e5d17820113df0ef95c7ad/a6407/joe.jpg 400w&quot;
+        src=&quot;/project/static/3b9f94ea03e5d17820113df0ef95c7ad/a6407/joe.jpg&quot;
+        srcset=&quot;/project/static/3b9f94ea03e5d17820113df0ef95c7ad/a6407/joe.jpg 400w&quot;
         sizes=&quot;(max-width: 400px) 100vw, 400px&quot;
         style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
         loading=&quot;lazy&quot;
@@ -254,7 +254,7 @@
     &gt;
       &lt;a
     class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/static/f5a8e314ccf1201ea49dc80c573820d4/64756/manage.png&quot;
+    href=&quot;/project/static/f5a8e314ccf1201ea49dc80c573820d4/64756/manage.png&quot;
     style=&quot;display: block&quot;
     target=&quot;_blank&quot;
     rel=&quot;noopener&quot;
@@ -267,10 +267,10 @@
         class=&quot;gatsby-resp-image-image&quot;
         alt=&quot;manage&quot;
         title=&quot;manage&quot;
-        src=&quot;/static/f5a8e314ccf1201ea49dc80c573820d4/64756/manage.png&quot;
-        srcset=&quot;/static/f5a8e314ccf1201ea49dc80c573820d4/0eb09/manage.png 500w,
-/static/f5a8e314ccf1201ea49dc80c573820d4/1263b/manage.png 1000w,
-/static/f5a8e314ccf1201ea49dc80c573820d4/64756/manage.png 1200w&quot;
+        src=&quot;/project/static/f5a8e314ccf1201ea49dc80c573820d4/64756/manage.png&quot;
+        srcset=&quot;/project/static/f5a8e314ccf1201ea49dc80c573820d4/0eb09/manage.png 500w,
+/project/static/f5a8e314ccf1201ea49dc80c573820d4/1263b/manage.png 1000w,
+/project/static/f5a8e314ccf1201ea49dc80c573820d4/64756/manage.png 1200w&quot;
         sizes=&quot;(max-width: 1200px) 100vw, 1200px&quot;
         style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
         loading=&quot;lazy&quot;
@@ -285,7 +285,7 @@
     &gt;
       &lt;a
     class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/static/8fe49fad27d75aadba9becb9d8469a42/a6711/undeployed.png&quot;
+    href=&quot;/project/static/8fe49fad27d75aadba9becb9d8469a42/a6711/undeployed.png&quot;
     style=&quot;display: block&quot;
     target=&quot;_blank&quot;
     rel=&quot;noopener&quot;
@@ -298,9 +298,9 @@
         class=&quot;gatsby-resp-image-image&quot;
         alt=&quot;undeployed&quot;
         title=&quot;undeployed&quot;
-        src=&quot;/static/8fe49fad27d75aadba9becb9d8469a42/a6711/undeployed.png&quot;
-        srcset=&quot;/static/8fe49fad27d75aadba9becb9d8469a42/0eb09/undeployed.png 500w,
-/static/8fe49fad27d75aadba9becb9d8469a42/a6711/undeployed.png 943w&quot;
+        src=&quot;/project/static/8fe49fad27d75aadba9becb9d8469a42/a6711/undeployed.png&quot;
+        srcset=&quot;/project/static/8fe49fad27d75aadba9becb9d8469a42/0eb09/undeployed.png 500w,
+/project/static/8fe49fad27d75aadba9becb9d8469a42/a6711/undeployed.png 943w&quot;
         sizes=&quot;(max-width: 943px) 100vw, 943px&quot;
         style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
         loading=&quot;lazy&quot;
@@ -315,7 +315,7 @@ These bots have the respective options to be linked to a phone number, tested, o
     &gt;
       &lt;a
     class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/static/54b5b58b69057f801ac72aee7a6d6cc0/9187f/deployed.png&quot;
+    href=&quot;/project/static/54b5b58b69057f801ac72aee7a6d6cc0/9187f/deployed.png&quot;
     style=&quot;display: block&quot;
     target=&quot;_blank&quot;
     rel=&quot;noopener&quot;
@@ -328,9 +328,9 @@ These bots have the respective options to be linked to a phone number, tested, o
         class=&quot;gatsby-resp-image-image&quot;
         alt=&quot;deployed&quot;
         title=&quot;deployed&quot;
-        src=&quot;/static/54b5b58b69057f801ac72aee7a6d6cc0/9187f/deployed.png&quot;
-        srcset=&quot;/static/54b5b58b69057f801ac72aee7a6d6cc0/0eb09/deployed.png 500w,
-/static/54b5b58b69057f801ac72aee7a6d6cc0/9187f/deployed.png 953w&quot;
+        src=&quot;/project/static/54b5b58b69057f801ac72aee7a6d6cc0/9187f/deployed.png&quot;
+        srcset=&quot;/project/static/54b5b58b69057f801ac72aee7a6d6cc0/0eb09/deployed.png 500w,
+/project/static/54b5b58b69057f801ac72aee7a6d6cc0/9187f/deployed.png 953w&quot;
         sizes=&quot;(max-width: 953px) 100vw, 953px&quot;
         style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
         loading=&quot;lazy&quot;
@@ -347,7 +347,7 @@ These bots have the respective options to be linked to a phone number, tested, o
     &gt;
       &lt;a
     class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/static/049eebed612e1e4df18ea1694248d908/64756/login.png&quot;
+    href=&quot;/project/static/049eebed612e1e4df18ea1694248d908/64756/login.png&quot;
     style=&quot;display: block&quot;
     target=&quot;_blank&quot;
     rel=&quot;noopener&quot;
@@ -360,10 +360,10 @@ These bots have the respective options to be linked to a phone number, tested, o
         class=&quot;gatsby-resp-image-image&quot;
         alt=&quot;login&quot;
         title=&quot;login&quot;
-        src=&quot;/static/049eebed612e1e4df18ea1694248d908/64756/login.png&quot;
-        srcset=&quot;/static/049eebed612e1e4df18ea1694248d908/0eb09/login.png 500w,
-/static/049eebed612e1e4df18ea1694248d908/1263b/login.png 1000w,
-/static/049eebed612e1e4df18ea1694248d908/64756/login.png 1200w&quot;
+        src=&quot;/project/static/049eebed612e1e4df18ea1694248d908/64756/login.png&quot;
+        srcset=&quot;/project/static/049eebed612e1e4df18ea1694248d908/0eb09/login.png 500w,
+/project/static/049eebed612e1e4df18ea1694248d908/1263b/login.png 1000w,
+/project/static/049eebed612e1e4df18ea1694248d908/64756/login.png 1200w&quot;
         sizes=&quot;(max-width: 1200px) 100vw, 1200px&quot;
         style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
         loading=&quot;lazy&quot;
@@ -376,7 +376,7 @@ These bots have the respective options to be linked to a phone number, tested, o
     &gt;
       &lt;a
     class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/static/8fe49fad27d75aadba9becb9d8469a42/a6711/undeployed.png&quot;
+    href=&quot;/project/static/8fe49fad27d75aadba9becb9d8469a42/a6711/undeployed.png&quot;
     style=&quot;display: block&quot;
     target=&quot;_blank&quot;
     rel=&quot;noopener&quot;
@@ -389,9 +389,9 @@ These bots have the respective options to be linked to a phone number, tested, o
         class=&quot;gatsby-resp-image-image&quot;
         alt=&quot;undeployed&quot;
         title=&quot;undeployed&quot;
-        src=&quot;/static/8fe49fad27d75aadba9becb9d8469a42/a6711/undeployed.png&quot;
-        srcset=&quot;/static/8fe49fad27d75aadba9becb9d8469a42/0eb09/undeployed.png 500w,
-/static/8fe49fad27d75aadba9becb9d8469a42/a6711/undeployed.png 943w&quot;
+        src=&quot;/project/static/8fe49fad27d75aadba9becb9d8469a42/a6711/undeployed.png&quot;
+        srcset=&quot;/project/static/8fe49fad27d75aadba9becb9d8469a42/0eb09/undeployed.png 500w,
+/project/static/8fe49fad27d75aadba9becb9d8469a42/a6711/undeployed.png 943w&quot;
         sizes=&quot;(max-width: 943px) 100vw, 943px&quot;
         style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
         loading=&quot;lazy&quot;
@@ -405,7 +405,7 @@ These bots have the respective options to be linked to a phone number, tested, o
     &gt;
       &lt;a
     class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/static/62b3c3741b94d9fde502b668476030a0/64756/deploy-test.png&quot;
+    href=&quot;/project/static/62b3c3741b94d9fde502b668476030a0/64756/deploy-test.png&quot;
     style=&quot;display: block&quot;
     target=&quot;_blank&quot;
     rel=&quot;noopener&quot;
@@ -418,10 +418,10 @@ These bots have the respective options to be linked to a phone number, tested, o
         class=&quot;gatsby-resp-image-image&quot;
         alt=&quot;deploy test&quot;
         title=&quot;deploy test&quot;
-        src=&quot;/static/62b3c3741b94d9fde502b668476030a0/64756/deploy-test.png&quot;
-        srcset=&quot;/static/62b3c3741b94d9fde502b668476030a0/0eb09/deploy-test.png 500w,
-/static/62b3c3741b94d9fde502b668476030a0/1263b/deploy-test.png 1000w,
-/static/62b3c3741b94d9fde502b668476030a0/64756/deploy-test.png 1200w&quot;
+        src=&quot;/project/static/62b3c3741b94d9fde502b668476030a0/64756/deploy-test.png&quot;
+        srcset=&quot;/project/static/62b3c3741b94d9fde502b668476030a0/0eb09/deploy-test.png 500w,
+/project/static/62b3c3741b94d9fde502b668476030a0/1263b/deploy-test.png 1000w,
+/project/static/62b3c3741b94d9fde502b668476030a0/64756/deploy-test.png 1200w&quot;
         sizes=&quot;(max-width: 1200px) 100vw, 1200px&quot;
         style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
         loading=&quot;lazy&quot;
@@ -435,7 +435,7 @@ These bots have the respective options to be linked to a phone number, tested, o
     &gt;
       &lt;a
     class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/static/62b69c451515c2c143e8d52d012b3634/64756/deploy-number.png&quot;
+    href=&quot;/project/static/62b69c451515c2c143e8d52d012b3634/64756/deploy-number.png&quot;
     style=&quot;display: block&quot;
     target=&quot;_blank&quot;
     rel=&quot;noopener&quot;
@@ -448,10 +448,10 @@ These bots have the respective options to be linked to a phone number, tested, o
         class=&quot;gatsby-resp-image-image&quot;
         alt=&quot;deploy number&quot;
         title=&quot;deploy number&quot;
-        src=&quot;/static/62b69c451515c2c143e8d52d012b3634/64756/deploy-number.png&quot;
-        srcset=&quot;/static/62b69c451515c2c143e8d52d012b3634/0eb09/deploy-number.png 500w,
-/static/62b69c451515c2c143e8d52d012b3634/1263b/deploy-number.png 1000w,
-/static/62b69c451515c2c143e8d52d012b3634/64756/deploy-number.png 1200w&quot;
+        src=&quot;/project/static/62b69c451515c2c143e8d52d012b3634/64756/deploy-number.png&quot;
+        srcset=&quot;/project/static/62b69c451515c2c143e8d52d012b3634/0eb09/deploy-number.png 500w,
+/project/static/62b69c451515c2c143e8d52d012b3634/1263b/deploy-number.png 1000w,
+/project/static/62b69c451515c2c143e8d52d012b3634/64756/deploy-number.png 1200w&quot;
         sizes=&quot;(max-width: 1200px) 100vw, 1200px&quot;
         style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
         loading=&quot;lazy&quot;
@@ -465,7 +465,7 @@ These bots have the respective options to be linked to a phone number, tested, o
     &gt;
       &lt;a
     class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/static/50c9df1a30068e9ce8b3ee8493459966/78ab2/deploy-error.png&quot;
+    href=&quot;/project/static/50c9df1a30068e9ce8b3ee8493459966/78ab2/deploy-error.png&quot;
     style=&quot;display: block&quot;
     target=&quot;_blank&quot;
     rel=&quot;noopener&quot;
@@ -478,10 +478,10 @@ These bots have the respective options to be linked to a phone number, tested, o
         class=&quot;gatsby-resp-image-image&quot;
         alt=&quot;deploy error&quot;
         title=&quot;deploy error&quot;
-        src=&quot;/static/50c9df1a30068e9ce8b3ee8493459966/78ab2/deploy-error.png&quot;
-        srcset=&quot;/static/50c9df1a30068e9ce8b3ee8493459966/0eb09/deploy-error.png 500w,
-/static/50c9df1a30068e9ce8b3ee8493459966/1263b/deploy-error.png 1000w,
-/static/50c9df1a30068e9ce8b3ee8493459966/78ab2/deploy-error.png 1201w&quot;
+        src=&quot;/project/static/50c9df1a30068e9ce8b3ee8493459966/78ab2/deploy-error.png&quot;
+        srcset=&quot;/project/static/50c9df1a30068e9ce8b3ee8493459966/0eb09/deploy-error.png 500w,
+/project/static/50c9df1a30068e9ce8b3ee8493459966/1263b/deploy-error.png 1000w,
+/project/static/50c9df1a30068e9ce8b3ee8493459966/78ab2/deploy-error.png 1201w&quot;
         sizes=&quot;(max-width: 1201px) 100vw, 1201px&quot;
         style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
         loading=&quot;lazy&quot;
@@ -495,7 +495,7 @@ These bots have the respective options to be linked to a phone number, tested, o
     &gt;
       &lt;a
     class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/static/8b5dd7f34f51df8c145909ccd32da1ff/3fa5a/unlink-tooltip.png&quot;
+    href=&quot;/project/static/8b5dd7f34f51df8c145909ccd32da1ff/3fa5a/unlink-tooltip.png&quot;
     style=&quot;display: block&quot;
     target=&quot;_blank&quot;
     rel=&quot;noopener&quot;
@@ -508,10 +508,10 @@ These bots have the respective options to be linked to a phone number, tested, o
         class=&quot;gatsby-resp-image-image&quot;
         alt=&quot;unlink tooltip&quot;
         title=&quot;unlink tooltip&quot;
-        src=&quot;/static/8b5dd7f34f51df8c145909ccd32da1ff/3fa5a/unlink-tooltip.png&quot;
-        srcset=&quot;/static/8b5dd7f34f51df8c145909ccd32da1ff/0eb09/unlink-tooltip.png 500w,
-/static/8b5dd7f34f51df8c145909ccd32da1ff/1263b/unlink-tooltip.png 1000w,
-/static/8b5dd7f34f51df8c145909ccd32da1ff/3fa5a/unlink-tooltip.png 1107w&quot;
+        src=&quot;/project/static/8b5dd7f34f51df8c145909ccd32da1ff/3fa5a/unlink-tooltip.png&quot;
+        srcset=&quot;/project/static/8b5dd7f34f51df8c145909ccd32da1ff/0eb09/unlink-tooltip.png 500w,
+/project/static/8b5dd7f34f51df8c145909ccd32da1ff/1263b/unlink-tooltip.png 1000w,
+/project/static/8b5dd7f34f51df8c145909ccd32da1ff/3fa5a/unlink-tooltip.png 1107w&quot;
         sizes=&quot;(max-width: 1107px) 100vw, 1107px&quot;
         style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
         loading=&quot;lazy&quot;
@@ -525,7 +525,7 @@ These bots have the respective options to be linked to a phone number, tested, o
     &gt;
       &lt;a
     class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/static/2b9a31edd9096fafcced586bac32a9c1/c53f8/unlink-confirm.png&quot;
+    href=&quot;/project/static/2b9a31edd9096fafcced586bac32a9c1/c53f8/unlink-confirm.png&quot;
     style=&quot;display: block&quot;
     target=&quot;_blank&quot;
     rel=&quot;noopener&quot;
@@ -538,9 +538,9 @@ These bots have the respective options to be linked to a phone number, tested, o
         class=&quot;gatsby-resp-image-image&quot;
         alt=&quot;unlink confirm&quot;
         title=&quot;unlink confirm&quot;
-        src=&quot;/static/2b9a31edd9096fafcced586bac32a9c1/c53f8/unlink-confirm.png&quot;
-        srcset=&quot;/static/2b9a31edd9096fafcced586bac32a9c1/0eb09/unlink-confirm.png 500w,
-/static/2b9a31edd9096fafcced586bac32a9c1/c53f8/unlink-confirm.png 523w&quot;
+        src=&quot;/project/static/2b9a31edd9096fafcced586bac32a9c1/c53f8/unlink-confirm.png&quot;
+        srcset=&quot;/project/static/2b9a31edd9096fafcced586bac32a9c1/0eb09/unlink-confirm.png 500w,
+/project/static/2b9a31edd9096fafcced586bac32a9c1/c53f8/unlink-confirm.png 523w&quot;
         sizes=&quot;(max-width: 523px) 100vw, 523px&quot;
         style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
         loading=&quot;lazy&quot;
@@ -979,7 +979,7 @@ TODO: show github issues and summarise problems.&lt;/p&gt;
     &gt;
       &lt;a
     class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/static/d99b1d6cbed2da3d627ca5c25400f7d5/998db/sketch-1.jpg&quot;
+    href=&quot;/project/static/d99b1d6cbed2da3d627ca5c25400f7d5/998db/sketch-1.jpg&quot;
     style=&quot;display: block&quot;
     target=&quot;_blank&quot;
     rel=&quot;noopener&quot;
@@ -992,12 +992,12 @@ TODO: show github issues and summarise problems.&lt;/p&gt;
         class=&quot;gatsby-resp-image-image&quot;
         alt=&quot;sketch 1&quot;
         title=&quot;sketch 1&quot;
-        src=&quot;/static/d99b1d6cbed2da3d627ca5c25400f7d5/451a4/sketch-1.jpg&quot;
-        srcset=&quot;/static/d99b1d6cbed2da3d627ca5c25400f7d5/953fe/sketch-1.jpg 500w,
-/static/d99b1d6cbed2da3d627ca5c25400f7d5/0a251/sketch-1.jpg 1000w,
-/static/d99b1d6cbed2da3d627ca5c25400f7d5/451a4/sketch-1.jpg 2000w,
-/static/d99b1d6cbed2da3d627ca5c25400f7d5/c7e40/sketch-1.jpg 3000w,
-/static/d99b1d6cbed2da3d627ca5c25400f7d5/998db/sketch-1.jpg 3072w&quot;
+        src=&quot;/project/static/d99b1d6cbed2da3d627ca5c25400f7d5/451a4/sketch-1.jpg&quot;
+        srcset=&quot;/project/static/d99b1d6cbed2da3d627ca5c25400f7d5/953fe/sketch-1.jpg 500w,
+/project/static/d99b1d6cbed2da3d627ca5c25400f7d5/0a251/sketch-1.jpg 1000w,
+/project/static/d99b1d6cbed2da3d627ca5c25400f7d5/451a4/sketch-1.jpg 2000w,
+/project/static/d99b1d6cbed2da3d627ca5c25400f7d5/c7e40/sketch-1.jpg 3000w,
+/project/static/d99b1d6cbed2da3d627ca5c25400f7d5/998db/sketch-1.jpg 3072w&quot;
         sizes=&quot;(max-width: 2000px) 100vw, 2000px&quot;
         style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
         loading=&quot;lazy&quot;
@@ -1010,7 +1010,7 @@ TODO: show github issues and summarise problems.&lt;/p&gt;
     &gt;
       &lt;a
     class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/static/4b4b6bd50e3efc3645ec3be171d67a89/998db/sketch-2.jpg&quot;
+    href=&quot;/project/static/4b4b6bd50e3efc3645ec3be171d67a89/998db/sketch-2.jpg&quot;
     style=&quot;display: block&quot;
     target=&quot;_blank&quot;
     rel=&quot;noopener&quot;
@@ -1023,12 +1023,12 @@ TODO: show github issues and summarise problems.&lt;/p&gt;
         class=&quot;gatsby-resp-image-image&quot;
         alt=&quot;sketch 2&quot;
         title=&quot;sketch 2&quot;
-        src=&quot;/static/4b4b6bd50e3efc3645ec3be171d67a89/451a4/sketch-2.jpg&quot;
-        srcset=&quot;/static/4b4b6bd50e3efc3645ec3be171d67a89/953fe/sketch-2.jpg 500w,
-/static/4b4b6bd50e3efc3645ec3be171d67a89/0a251/sketch-2.jpg 1000w,
-/static/4b4b6bd50e3efc3645ec3be171d67a89/451a4/sketch-2.jpg 2000w,
-/static/4b4b6bd50e3efc3645ec3be171d67a89/c7e40/sketch-2.jpg 3000w,
-/static/4b4b6bd50e3efc3645ec3be171d67a89/998db/sketch-2.jpg 3072w&quot;
+        src=&quot;/project/static/4b4b6bd50e3efc3645ec3be171d67a89/451a4/sketch-2.jpg&quot;
+        srcset=&quot;/project/static/4b4b6bd50e3efc3645ec3be171d67a89/953fe/sketch-2.jpg 500w,
+/project/static/4b4b6bd50e3efc3645ec3be171d67a89/0a251/sketch-2.jpg 1000w,
+/project/static/4b4b6bd50e3efc3645ec3be171d67a89/451a4/sketch-2.jpg 2000w,
+/project/static/4b4b6bd50e3efc3645ec3be171d67a89/c7e40/sketch-2.jpg 3000w,
+/project/static/4b4b6bd50e3efc3645ec3be171d67a89/998db/sketch-2.jpg 3072w&quot;
         sizes=&quot;(max-width: 2000px) 100vw, 2000px&quot;
         style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
         loading=&quot;lazy&quot;
@@ -1041,7 +1041,7 @@ TODO: show github issues and summarise problems.&lt;/p&gt;
     &gt;
       &lt;a
     class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/static/95f06c6ca7691457277db3882a8b6699/998db/sketch-3.jpg&quot;
+    href=&quot;/project/static/95f06c6ca7691457277db3882a8b6699/998db/sketch-3.jpg&quot;
     style=&quot;display: block&quot;
     target=&quot;_blank&quot;
     rel=&quot;noopener&quot;
@@ -1054,12 +1054,12 @@ TODO: show github issues and summarise problems.&lt;/p&gt;
         class=&quot;gatsby-resp-image-image&quot;
         alt=&quot;sketch 3&quot;
         title=&quot;sketch 3&quot;
-        src=&quot;/static/95f06c6ca7691457277db3882a8b6699/451a4/sketch-3.jpg&quot;
-        srcset=&quot;/static/95f06c6ca7691457277db3882a8b6699/953fe/sketch-3.jpg 500w,
-/static/95f06c6ca7691457277db3882a8b6699/0a251/sketch-3.jpg 1000w,
-/static/95f06c6ca7691457277db3882a8b6699/451a4/sketch-3.jpg 2000w,
-/static/95f06c6ca7691457277db3882a8b6699/c7e40/sketch-3.jpg 3000w,
-/static/95f06c6ca7691457277db3882a8b6699/998db/sketch-3.jpg 3072w&quot;
+        src=&quot;/project/static/95f06c6ca7691457277db3882a8b6699/451a4/sketch-3.jpg&quot;
+        srcset=&quot;/project/static/95f06c6ca7691457277db3882a8b6699/953fe/sketch-3.jpg 500w,
+/project/static/95f06c6ca7691457277db3882a8b6699/0a251/sketch-3.jpg 1000w,
+/project/static/95f06c6ca7691457277db3882a8b6699/451a4/sketch-3.jpg 2000w,
+/project/static/95f06c6ca7691457277db3882a8b6699/c7e40/sketch-3.jpg 3000w,
+/project/static/95f06c6ca7691457277db3882a8b6699/998db/sketch-3.jpg 3072w&quot;
         sizes=&quot;(max-width: 2000px) 100vw, 2000px&quot;
         style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
         loading=&quot;lazy&quot;
@@ -1136,7 +1136,7 @@ TODO: show github issues and summarise problems.&lt;/p&gt;
     &gt;
       &lt;a
     class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/static/a1bbc246c334b385cd3fc893c8d14cc5/f498b/UI_redesign_sketch.jpg&quot;
+    href=&quot;/project/static/a1bbc246c334b385cd3fc893c8d14cc5/f498b/UI_redesign_sketch.jpg&quot;
     style=&quot;display: block&quot;
     target=&quot;_blank&quot;
     rel=&quot;noopener&quot;
@@ -1149,11 +1149,11 @@ TODO: show github issues and summarise problems.&lt;/p&gt;
         class=&quot;gatsby-resp-image-image&quot;
         alt=&quot;UI redesign sketch&quot;
         title=&quot;UI redesign sketch&quot;
-        src=&quot;/static/a1bbc246c334b385cd3fc893c8d14cc5/451a4/UI_redesign_sketch.jpg&quot;
-        srcset=&quot;/static/a1bbc246c334b385cd3fc893c8d14cc5/953fe/UI_redesign_sketch.jpg 500w,
-/static/a1bbc246c334b385cd3fc893c8d14cc5/0a251/UI_redesign_sketch.jpg 1000w,
-/static/a1bbc246c334b385cd3fc893c8d14cc5/451a4/UI_redesign_sketch.jpg 2000w,
-/static/a1bbc246c334b385cd3fc893c8d14cc5/f498b/UI_redesign_sketch.jpg 2905w&quot;
+        src=&quot;/project/static/a1bbc246c334b385cd3fc893c8d14cc5/451a4/UI_redesign_sketch.jpg&quot;
+        srcset=&quot;/project/static/a1bbc246c334b385cd3fc893c8d14cc5/953fe/UI_redesign_sketch.jpg 500w,
+/project/static/a1bbc246c334b385cd3fc893c8d14cc5/0a251/UI_redesign_sketch.jpg 1000w,
+/project/static/a1bbc246c334b385cd3fc893c8d14cc5/451a4/UI_redesign_sketch.jpg 2000w,
+/project/static/a1bbc246c334b385cd3fc893c8d14cc5/f498b/UI_redesign_sketch.jpg 2905w&quot;
         sizes=&quot;(max-width: 2000px) 100vw, 2000px&quot;
         style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
         loading=&quot;lazy&quot;
@@ -1168,7 +1168,7 @@ TODO: show github issues and summarise problems.&lt;/p&gt;
     &gt;
       &lt;a
     class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/static/537b894814fe54265246f7b63e24b433/47f97/Sketch_3.jpg&quot;
+    href=&quot;/project/static/537b894814fe54265246f7b63e24b433/47f97/Sketch_3.jpg&quot;
     style=&quot;display: block&quot;
     target=&quot;_blank&quot;
     rel=&quot;noopener&quot;
@@ -1181,13 +1181,13 @@ TODO: show github issues and summarise problems.&lt;/p&gt;
         class=&quot;gatsby-resp-image-image&quot;
         alt=&quot;Sketch 3&quot;
         title=&quot;Sketch 3&quot;
-        src=&quot;/static/537b894814fe54265246f7b63e24b433/451a4/Sketch_3.jpg&quot;
-        srcset=&quot;/static/537b894814fe54265246f7b63e24b433/953fe/Sketch_3.jpg 500w,
-/static/537b894814fe54265246f7b63e24b433/0a251/Sketch_3.jpg 1000w,
-/static/537b894814fe54265246f7b63e24b433/451a4/Sketch_3.jpg 2000w,
-/static/537b894814fe54265246f7b63e24b433/c7e40/Sketch_3.jpg 3000w,
-/static/537b894814fe54265246f7b63e24b433/120d2/Sketch_3.jpg 4000w,
-/static/537b894814fe54265246f7b63e24b433/47f97/Sketch_3.jpg 4608w&quot;
+        src=&quot;/project/static/537b894814fe54265246f7b63e24b433/451a4/Sketch_3.jpg&quot;
+        srcset=&quot;/project/static/537b894814fe54265246f7b63e24b433/953fe/Sketch_3.jpg 500w,
+/project/static/537b894814fe54265246f7b63e24b433/0a251/Sketch_3.jpg 1000w,
+/project/static/537b894814fe54265246f7b63e24b433/451a4/Sketch_3.jpg 2000w,
+/project/static/537b894814fe54265246f7b63e24b433/c7e40/Sketch_3.jpg 3000w,
+/project/static/537b894814fe54265246f7b63e24b433/120d2/Sketch_3.jpg 4000w,
+/project/static/537b894814fe54265246f7b63e24b433/47f97/Sketch_3.jpg 4608w&quot;
         sizes=&quot;(max-width: 2000px) 100vw, 2000px&quot;
         style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
         loading=&quot;lazy&quot;
@@ -1200,7 +1200,7 @@ TODO: show github issues and summarise problems.&lt;/p&gt;
     &gt;
       &lt;a
     class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/static/87e5ff1853519d5348161b9a6867e780/e7f75/Sketch_4.jpg&quot;
+    href=&quot;/project/static/87e5ff1853519d5348161b9a6867e780/e7f75/Sketch_4.jpg&quot;
     style=&quot;display: block&quot;
     target=&quot;_blank&quot;
     rel=&quot;noopener&quot;
@@ -1213,11 +1213,11 @@ TODO: show github issues and summarise problems.&lt;/p&gt;
         class=&quot;gatsby-resp-image-image&quot;
         alt=&quot;Sketch 4&quot;
         title=&quot;Sketch 4&quot;
-        src=&quot;/static/87e5ff1853519d5348161b9a6867e780/451a4/Sketch_4.jpg&quot;
-        srcset=&quot;/static/87e5ff1853519d5348161b9a6867e780/953fe/Sketch_4.jpg 500w,
-/static/87e5ff1853519d5348161b9a6867e780/0a251/Sketch_4.jpg 1000w,
-/static/87e5ff1853519d5348161b9a6867e780/451a4/Sketch_4.jpg 2000w,
-/static/87e5ff1853519d5348161b9a6867e780/e7f75/Sketch_4.jpg 2592w&quot;
+        src=&quot;/project/static/87e5ff1853519d5348161b9a6867e780/451a4/Sketch_4.jpg&quot;
+        srcset=&quot;/project/static/87e5ff1853519d5348161b9a6867e780/953fe/Sketch_4.jpg 500w,
+/project/static/87e5ff1853519d5348161b9a6867e780/0a251/Sketch_4.jpg 1000w,
+/project/static/87e5ff1853519d5348161b9a6867e780/451a4/Sketch_4.jpg 2000w,
+/project/static/87e5ff1853519d5348161b9a6867e780/e7f75/Sketch_4.jpg 2592w&quot;
         sizes=&quot;(max-width: 2000px) 100vw, 2000px&quot;
         style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
         loading=&quot;lazy&quot;
@@ -1230,7 +1230,7 @@ TODO: show github issues and summarise problems.&lt;/p&gt;
     &gt;
       &lt;a
     class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/static/c81f9acfe8f15fa1e355a890e47edad8/0079f/Phone_sketch.jpg&quot;
+    href=&quot;/project/static/c81f9acfe8f15fa1e355a890e47edad8/0079f/Phone_sketch.jpg&quot;
     style=&quot;display: block&quot;
     target=&quot;_blank&quot;
     rel=&quot;noopener&quot;
@@ -1243,10 +1243,10 @@ TODO: show github issues and summarise problems.&lt;/p&gt;
         class=&quot;gatsby-resp-image-image&quot;
         alt=&quot;Phone sketch&quot;
         title=&quot;Phone sketch&quot;
-        src=&quot;/static/c81f9acfe8f15fa1e355a890e47edad8/0079f/Phone_sketch.jpg&quot;
-        srcset=&quot;/static/c81f9acfe8f15fa1e355a890e47edad8/953fe/Phone_sketch.jpg 500w,
-/static/c81f9acfe8f15fa1e355a890e47edad8/0a251/Phone_sketch.jpg 1000w,
-/static/c81f9acfe8f15fa1e355a890e47edad8/0079f/Phone_sketch.jpg 1144w&quot;
+        src=&quot;/project/static/c81f9acfe8f15fa1e355a890e47edad8/0079f/Phone_sketch.jpg&quot;
+        srcset=&quot;/project/static/c81f9acfe8f15fa1e355a890e47edad8/953fe/Phone_sketch.jpg 500w,
+/project/static/c81f9acfe8f15fa1e355a890e47edad8/0a251/Phone_sketch.jpg 1000w,
+/project/static/c81f9acfe8f15fa1e355a890e47edad8/0079f/Phone_sketch.jpg 1144w&quot;
         sizes=&quot;(max-width: 1144px) 100vw, 1144px&quot;
         style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
         loading=&quot;lazy&quot;
@@ -1310,7 +1310,7 @@ TODO: show github issues and summarise problems.&lt;/p&gt;
     &gt;
       &lt;a
     class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/static/d9e5bd762402d2ef173af2e5e36445fa/46d55/diagram.png&quot;
+    href=&quot;/project/static/d9e5bd762402d2ef173af2e5e36445fa/46d55/diagram.png&quot;
     style=&quot;display: block&quot;
     target=&quot;_blank&quot;
     rel=&quot;noopener&quot;
@@ -1323,10 +1323,10 @@ TODO: show github issues and summarise problems.&lt;/p&gt;
         class=&quot;gatsby-resp-image-image&quot;
         alt=&quot;diagram&quot;
         title=&quot;diagram&quot;
-        src=&quot;/static/d9e5bd762402d2ef173af2e5e36445fa/46d55/diagram.png&quot;
-        srcset=&quot;/static/d9e5bd762402d2ef173af2e5e36445fa/0eb09/diagram.png 500w,
-/static/d9e5bd762402d2ef173af2e5e36445fa/1263b/diagram.png 1000w,
-/static/d9e5bd762402d2ef173af2e5e36445fa/46d55/diagram.png 1035w&quot;
+        src=&quot;/project/static/d9e5bd762402d2ef173af2e5e36445fa/46d55/diagram.png&quot;
+        srcset=&quot;/project/static/d9e5bd762402d2ef173af2e5e36445fa/0eb09/diagram.png 500w,
+/project/static/d9e5bd762402d2ef173af2e5e36445fa/1263b/diagram.png 1000w,
+/project/static/d9e5bd762402d2ef173af2e5e36445fa/46d55/diagram.png 1035w&quot;
         sizes=&quot;(max-width: 1035px) 100vw, 1035px&quot;
         style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
         loading=&quot;lazy&quot;
@@ -1551,7 +1551,7 @@ api&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=
     &gt;
       &lt;a
     class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/static/038996a89f3697e00aff55d2b4dcc9be/98e2c/electron.png&quot;
+    href=&quot;/project/static/038996a89f3697e00aff55d2b4dcc9be/98e2c/electron.png&quot;
     style=&quot;display: block&quot;
     target=&quot;_blank&quot;
     rel=&quot;noopener&quot;
@@ -1564,11 +1564,11 @@ api&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=
         class=&quot;gatsby-resp-image-image&quot;
         alt=&quot;electron&quot;
         title=&quot;electron&quot;
-        src=&quot;/static/038996a89f3697e00aff55d2b4dcc9be/f97d7/electron.png&quot;
-        srcset=&quot;/static/038996a89f3697e00aff55d2b4dcc9be/0eb09/electron.png 500w,
-/static/038996a89f3697e00aff55d2b4dcc9be/1263b/electron.png 1000w,
-/static/038996a89f3697e00aff55d2b4dcc9be/f97d7/electron.png 2000w,
-/static/038996a89f3697e00aff55d2b4dcc9be/98e2c/electron.png 2400w&quot;
+        src=&quot;/project/static/038996a89f3697e00aff55d2b4dcc9be/f97d7/electron.png&quot;
+        srcset=&quot;/project/static/038996a89f3697e00aff55d2b4dcc9be/0eb09/electron.png 500w,
+/project/static/038996a89f3697e00aff55d2b4dcc9be/1263b/electron.png 1000w,
+/project/static/038996a89f3697e00aff55d2b4dcc9be/f97d7/electron.png 2000w,
+/project/static/038996a89f3697e00aff55d2b4dcc9be/98e2c/electron.png 2400w&quot;
         sizes=&quot;(max-width: 2000px) 100vw, 2000px&quot;
         style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
         loading=&quot;lazy&quot;
@@ -1592,7 +1592,7 @@ api&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=
     &gt;
       &lt;a
     class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/static/4ade5cac5aba1b2a6129e12ce9a93deb/cd15d/react.png&quot;
+    href=&quot;/project/static/4ade5cac5aba1b2a6129e12ce9a93deb/cd15d/react.png&quot;
     style=&quot;display: block&quot;
     target=&quot;_blank&quot;
     rel=&quot;noopener&quot;
@@ -1605,13 +1605,13 @@ api&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=
         class=&quot;gatsby-resp-image-image&quot;
         alt=&quot;react&quot;
         title=&quot;react&quot;
-        src=&quot;/static/4ade5cac5aba1b2a6129e12ce9a93deb/f97d7/react.png&quot;
-        srcset=&quot;/static/4ade5cac5aba1b2a6129e12ce9a93deb/0eb09/react.png 500w,
-/static/4ade5cac5aba1b2a6129e12ce9a93deb/1263b/react.png 1000w,
-/static/4ade5cac5aba1b2a6129e12ce9a93deb/f97d7/react.png 2000w,
-/static/4ade5cac5aba1b2a6129e12ce9a93deb/49142/react.png 3000w,
-/static/4ade5cac5aba1b2a6129e12ce9a93deb/1ce76/react.png 4000w,
-/static/4ade5cac5aba1b2a6129e12ce9a93deb/cd15d/react.png 5000w&quot;
+        src=&quot;/project/static/4ade5cac5aba1b2a6129e12ce9a93deb/f97d7/react.png&quot;
+        srcset=&quot;/project/static/4ade5cac5aba1b2a6129e12ce9a93deb/0eb09/react.png 500w,
+/project/static/4ade5cac5aba1b2a6129e12ce9a93deb/1263b/react.png 1000w,
+/project/static/4ade5cac5aba1b2a6129e12ce9a93deb/f97d7/react.png 2000w,
+/project/static/4ade5cac5aba1b2a6129e12ce9a93deb/49142/react.png 3000w,
+/project/static/4ade5cac5aba1b2a6129e12ce9a93deb/1ce76/react.png 4000w,
+/project/static/4ade5cac5aba1b2a6129e12ce9a93deb/cd15d/react.png 5000w&quot;
         sizes=&quot;(max-width: 2000px) 100vw, 2000px&quot;
         style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
         loading=&quot;lazy&quot;
@@ -1625,7 +1625,7 @@ api&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=
     &gt;
       &lt;a
     class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/static/a7d8618c760b77c849e74bd8942dea47/6bde6/mobx.png&quot;
+    href=&quot;/project/static/a7d8618c760b77c849e74bd8942dea47/6bde6/mobx.png&quot;
     style=&quot;display: block&quot;
     target=&quot;_blank&quot;
     rel=&quot;noopener&quot;
@@ -1638,11 +1638,11 @@ api&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=
         class=&quot;gatsby-resp-image-image&quot;
         alt=&quot;mobx&quot;
         title=&quot;mobx&quot;
-        src=&quot;/static/a7d8618c760b77c849e74bd8942dea47/f97d7/mobx.png&quot;
-        srcset=&quot;/static/a7d8618c760b77c849e74bd8942dea47/0eb09/mobx.png 500w,
-/static/a7d8618c760b77c849e74bd8942dea47/1263b/mobx.png 1000w,
-/static/a7d8618c760b77c849e74bd8942dea47/f97d7/mobx.png 2000w,
-/static/a7d8618c760b77c849e74bd8942dea47/6bde6/mobx.png 2100w&quot;
+        src=&quot;/project/static/a7d8618c760b77c849e74bd8942dea47/f97d7/mobx.png&quot;
+        srcset=&quot;/project/static/a7d8618c760b77c849e74bd8942dea47/0eb09/mobx.png 500w,
+/project/static/a7d8618c760b77c849e74bd8942dea47/1263b/mobx.png 1000w,
+/project/static/a7d8618c760b77c849e74bd8942dea47/f97d7/mobx.png 2000w,
+/project/static/a7d8618c760b77c849e74bd8942dea47/6bde6/mobx.png 2100w&quot;
         sizes=&quot;(max-width: 2000px) 100vw, 2000px&quot;
         style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
         loading=&quot;lazy&quot;
@@ -1655,11 +1655,11 @@ api&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=
 &lt;p&gt;Our system has two types of users - NHS clinicians who design bots, and patients who use them for advice. After empirically surveying users by talking to our client and subsequent pseudo-users, we designed the following personas. &lt;/p&gt;
 &lt;h1&gt;Clinician&lt;/h1&gt;
 &lt;p&gt;Jane is a physiotherapist who currently manually has to tend to problems via a phone call or chat room. She has been inundated with a massive spike in calls related to back problems which can be addressed by following advice on the NHS website. It is more difficult to tend to patients who require more serious attention. &lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;/76879afe6d47e18e2a29a248c3f34d4f/clinician.svg&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/project/76879afe6d47e18e2a29a248c3f34d4f/clinician.svg&quot;&gt;&lt;/p&gt;
 &lt;h2&gt;So What?&lt;/h2&gt;
 &lt;p&gt;Jane is personally affected by the underlying problem (elaborated &lt;a href=&quot;../1-getting-started&quot;&gt;HERE&lt;/a&gt;). She knows how to design an efficient self-service medical advice system. However, she has no technical background and hence the highest priority for her is to have an intuitive, easy-to-use method of designing such bots. She therefore uses VoiceFlow. &lt;/p&gt;
 &lt;h1&gt;Patient&lt;/h1&gt;
-&lt;p&gt;&lt;img src=&quot;/e63f7a82af2708122b23e3f2da3827b9/patient.svg&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/project/e63f7a82af2708122b23e3f2da3827b9/patient.svg&quot;&gt;&lt;/p&gt;
 &lt;h2&gt;So What?&lt;/h2&gt;
 &lt;p&gt;John is affected by the other angle of the problem - accessibility of health advice information. It is simply too inefficient to get personalised advice for generic conditions, so John would rather schedule an appointment with his GP instead, inadvertently wasting NHS resources. John wants something that is quick, simple, and accessible everywhere - whether he is out in the wilderness or back home. &lt;/p&gt;
 &lt;h1&gt;Putting It Together&lt;/h1&gt;
@@ -1669,7 +1669,7 @@ api&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=
     &gt;
       &lt;a
     class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/static/5328fa2681f36c860268325698833401/85b8d/usecase.png&quot;
+    href=&quot;/project/static/5328fa2681f36c860268325698833401/85b8d/usecase.png&quot;
     style=&quot;display: block&quot;
     target=&quot;_blank&quot;
     rel=&quot;noopener&quot;
@@ -1682,9 +1682,9 @@ api&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=
         class=&quot;gatsby-resp-image-image&quot;
         alt=&quot;usecase&quot;
         title=&quot;usecase&quot;
-        src=&quot;/static/5328fa2681f36c860268325698833401/85b8d/usecase.png&quot;
-        srcset=&quot;/static/5328fa2681f36c860268325698833401/0eb09/usecase.png 500w,
-/static/5328fa2681f36c860268325698833401/85b8d/usecase.png 603w&quot;
+        src=&quot;/project/static/5328fa2681f36c860268325698833401/85b8d/usecase.png&quot;
+        srcset=&quot;/project/static/5328fa2681f36c860268325698833401/0eb09/usecase.png 500w,
+/project/static/5328fa2681f36c860268325698833401/85b8d/usecase.png 603w&quot;
         sizes=&quot;(max-width: 603px) 100vw, 603px&quot;
         style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
         loading=&quot;lazy&quot;
@@ -1699,7 +1699,7 @@ api&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=
     &gt;
       &lt;a
     class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/static/4b4d050fa248d2d67ad94d83772bda90/04bec/requests.jpg&quot;
+    href=&quot;/project/static/4b4d050fa248d2d67ad94d83772bda90/04bec/requests.jpg&quot;
     style=&quot;display: block&quot;
     target=&quot;_blank&quot;
     rel=&quot;noopener&quot;
@@ -1712,10 +1712,10 @@ api&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=
         class=&quot;gatsby-resp-image-image&quot;
         alt=&quot;requests&quot;
         title=&quot;requests&quot;
-        src=&quot;/static/4b4d050fa248d2d67ad94d83772bda90/04bec/requests.jpg&quot;
-        srcset=&quot;/static/4b4d050fa248d2d67ad94d83772bda90/953fe/requests.jpg 500w,
-/static/4b4d050fa248d2d67ad94d83772bda90/0a251/requests.jpg 1000w,
-/static/4b4d050fa248d2d67ad94d83772bda90/04bec/requests.jpg 1600w&quot;
+        src=&quot;/project/static/4b4d050fa248d2d67ad94d83772bda90/04bec/requests.jpg&quot;
+        srcset=&quot;/project/static/4b4d050fa248d2d67ad94d83772bda90/953fe/requests.jpg 500w,
+/project/static/4b4d050fa248d2d67ad94d83772bda90/0a251/requests.jpg 1000w,
+/project/static/4b4d050fa248d2d67ad94d83772bda90/04bec/requests.jpg 1600w&quot;
         sizes=&quot;(max-width: 1600px) 100vw, 1600px&quot;
         style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
         loading=&quot;lazy&quot;
@@ -1729,7 +1729,7 @@ api&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=
     &gt;
       &lt;a
     class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/static/d7c5d1c13a7540361c7e1785bee8ab3f/cb61f/data.jpg&quot;
+    href=&quot;/project/static/d7c5d1c13a7540361c7e1785bee8ab3f/cb61f/data.jpg&quot;
     style=&quot;display: block&quot;
     target=&quot;_blank&quot;
     rel=&quot;noopener&quot;
@@ -1742,9 +1742,9 @@ api&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=
         class=&quot;gatsby-resp-image-image&quot;
         alt=&quot;data&quot;
         title=&quot;data&quot;
-        src=&quot;/static/d7c5d1c13a7540361c7e1785bee8ab3f/cb61f/data.jpg&quot;
-        srcset=&quot;/static/d7c5d1c13a7540361c7e1785bee8ab3f/953fe/data.jpg 500w,
-/static/d7c5d1c13a7540361c7e1785bee8ab3f/cb61f/data.jpg 955w&quot;
+        src=&quot;/project/static/d7c5d1c13a7540361c7e1785bee8ab3f/cb61f/data.jpg&quot;
+        srcset=&quot;/project/static/d7c5d1c13a7540361c7e1785bee8ab3f/953fe/data.jpg 500w,
+/project/static/d7c5d1c13a7540361c7e1785bee8ab3f/cb61f/data.jpg 955w&quot;
         sizes=&quot;(max-width: 955px) 100vw, 955px&quot;
         style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
         loading=&quot;lazy&quot;
@@ -1760,7 +1760,7 @@ api&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=
     &gt;
       &lt;a
     class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/static/96b8f612a4c27de6f5b66e95badae1eb/85779/scripts.png&quot;
+    href=&quot;/project/static/96b8f612a4c27de6f5b66e95badae1eb/85779/scripts.png&quot;
     style=&quot;display: block&quot;
     target=&quot;_blank&quot;
     rel=&quot;noopener&quot;
@@ -1773,10 +1773,10 @@ api&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=
         class=&quot;gatsby-resp-image-image&quot;
         alt=&quot;scripts&quot;
         title=&quot;scripts&quot;
-        src=&quot;/static/96b8f612a4c27de6f5b66e95badae1eb/85779/scripts.png&quot;
-        srcset=&quot;/static/96b8f612a4c27de6f5b66e95badae1eb/0eb09/scripts.png 500w,
-/static/96b8f612a4c27de6f5b66e95badae1eb/1263b/scripts.png 1000w,
-/static/96b8f612a4c27de6f5b66e95badae1eb/85779/scripts.png 1239w&quot;
+        src=&quot;/project/static/96b8f612a4c27de6f5b66e95badae1eb/85779/scripts.png&quot;
+        srcset=&quot;/project/static/96b8f612a4c27de6f5b66e95badae1eb/0eb09/scripts.png 500w,
+/project/static/96b8f612a4c27de6f5b66e95badae1eb/1263b/scripts.png 1000w,
+/project/static/96b8f612a4c27de6f5b66e95badae1eb/85779/scripts.png 1239w&quot;
         sizes=&quot;(max-width: 1239px) 100vw, 1239px&quot;
         style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
         loading=&quot;lazy&quot;
@@ -1791,7 +1791,7 @@ api&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=
     &gt;
       &lt;a
     class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/static/95b1f0064f96921e0d0bf19720edbd2c/1906d/voiceflow-export.png&quot;
+    href=&quot;/project/static/95b1f0064f96921e0d0bf19720edbd2c/1906d/voiceflow-export.png&quot;
     style=&quot;display: block&quot;
     target=&quot;_blank&quot;
     rel=&quot;noopener&quot;
@@ -1804,9 +1804,9 @@ api&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=
         class=&quot;gatsby-resp-image-image&quot;
         alt=&quot;voiceflow export&quot;
         title=&quot;voiceflow export&quot;
-        src=&quot;/static/95b1f0064f96921e0d0bf19720edbd2c/1906d/voiceflow-export.png&quot;
-        srcset=&quot;/static/95b1f0064f96921e0d0bf19720edbd2c/0eb09/voiceflow-export.png 500w,
-/static/95b1f0064f96921e0d0bf19720edbd2c/1906d/voiceflow-export.png 599w&quot;
+        src=&quot;/project/static/95b1f0064f96921e0d0bf19720edbd2c/1906d/voiceflow-export.png&quot;
+        srcset=&quot;/project/static/95b1f0064f96921e0d0bf19720edbd2c/0eb09/voiceflow-export.png 500w,
+/project/static/95b1f0064f96921e0d0bf19720edbd2c/1906d/voiceflow-export.png 599w&quot;
         sizes=&quot;(max-width: 599px) 100vw, 599px&quot;
         style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
         loading=&quot;lazy&quot;
@@ -1835,7 +1835,7 @@ api&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=
     &gt;
       &lt;a
     class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/static/e6d11309ebcac9faf31dbe5325b4c4c9/14c08/diagram.png&quot;
+    href=&quot;/project/static/e6d11309ebcac9faf31dbe5325b4c4c9/14c08/diagram.png&quot;
     style=&quot;display: block&quot;
     target=&quot;_blank&quot;
     rel=&quot;noopener&quot;
@@ -1848,10 +1848,10 @@ api&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=
         class=&quot;gatsby-resp-image-image&quot;
         alt=&quot;diagram&quot;
         title=&quot;diagram&quot;
-        src=&quot;/static/e6d11309ebcac9faf31dbe5325b4c4c9/14c08/diagram.png&quot;
-        srcset=&quot;/static/e6d11309ebcac9faf31dbe5325b4c4c9/0eb09/diagram.png 500w,
-/static/e6d11309ebcac9faf31dbe5325b4c4c9/1263b/diagram.png 1000w,
-/static/e6d11309ebcac9faf31dbe5325b4c4c9/14c08/diagram.png 1359w&quot;
+        src=&quot;/project/static/e6d11309ebcac9faf31dbe5325b4c4c9/14c08/diagram.png&quot;
+        srcset=&quot;/project/static/e6d11309ebcac9faf31dbe5325b4c4c9/0eb09/diagram.png 500w,
+/project/static/e6d11309ebcac9faf31dbe5325b4c4c9/1263b/diagram.png 1000w,
+/project/static/e6d11309ebcac9faf31dbe5325b4c4c9/14c08/diagram.png 1359w&quot;
         sizes=&quot;(max-width: 1359px) 100vw, 1359px&quot;
         style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
         loading=&quot;lazy&quot;
@@ -1878,7 +1878,7 @@ The bots that clinicians will create are not in a linear fashion, as they includ
     &gt;
       &lt;a
     class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/static/2e210a9f7956002749f863530784e512/8cb61/platformschart.jpg&quot;
+    href=&quot;/project/static/2e210a9f7956002749f863530784e512/8cb61/platformschart.jpg&quot;
     style=&quot;display: block&quot;
     target=&quot;_blank&quot;
     rel=&quot;noopener&quot;
@@ -1891,10 +1891,10 @@ The bots that clinicians will create are not in a linear fashion, as they includ
         class=&quot;gatsby-resp-image-image&quot;
         alt=&quot;platformschart&quot;
         title=&quot;platformschart&quot;
-        src=&quot;/static/2e210a9f7956002749f863530784e512/8cb61/platformschart.jpg&quot;
-        srcset=&quot;/static/2e210a9f7956002749f863530784e512/953fe/platformschart.jpg 500w,
-/static/2e210a9f7956002749f863530784e512/0a251/platformschart.jpg 1000w,
-/static/2e210a9f7956002749f863530784e512/8cb61/platformschart.jpg 1214w&quot;
+        src=&quot;/project/static/2e210a9f7956002749f863530784e512/8cb61/platformschart.jpg&quot;
+        srcset=&quot;/project/static/2e210a9f7956002749f863530784e512/953fe/platformschart.jpg 500w,
+/project/static/2e210a9f7956002749f863530784e512/0a251/platformschart.jpg 1000w,
+/project/static/2e210a9f7956002749f863530784e512/8cb61/platformschart.jpg 1214w&quot;
         sizes=&quot;(max-width: 1214px) 100vw, 1214px&quot;
         style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
         loading=&quot;lazy&quot;
@@ -1909,7 +1909,7 @@ The bots that clinicians will create are not in a linear fashion, as they includ
     &gt;
       &lt;a
     class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/static/2d6d0e0c8c3509f3e28ac28eaf68477e/20759/Untitled.png&quot;
+    href=&quot;/project/static/2d6d0e0c8c3509f3e28ac28eaf68477e/20759/Untitled.png&quot;
     style=&quot;display: block&quot;
     target=&quot;_blank&quot;
     rel=&quot;noopener&quot;
@@ -1922,12 +1922,12 @@ The bots that clinicians will create are not in a linear fashion, as they includ
         class=&quot;gatsby-resp-image-image&quot;
         alt=&quot;voiceflow-alternatives/Untitled.png&quot;
         title=&quot;voiceflow-alternatives/Untitled.png&quot;
-        src=&quot;/static/2d6d0e0c8c3509f3e28ac28eaf68477e/f97d7/Untitled.png&quot;
-        srcset=&quot;/static/2d6d0e0c8c3509f3e28ac28eaf68477e/0eb09/Untitled.png 500w,
-/static/2d6d0e0c8c3509f3e28ac28eaf68477e/1263b/Untitled.png 1000w,
-/static/2d6d0e0c8c3509f3e28ac28eaf68477e/f97d7/Untitled.png 2000w,
-/static/2d6d0e0c8c3509f3e28ac28eaf68477e/49142/Untitled.png 3000w,
-/static/2d6d0e0c8c3509f3e28ac28eaf68477e/20759/Untitled.png 3360w&quot;
+        src=&quot;/project/static/2d6d0e0c8c3509f3e28ac28eaf68477e/f97d7/Untitled.png&quot;
+        srcset=&quot;/project/static/2d6d0e0c8c3509f3e28ac28eaf68477e/0eb09/Untitled.png 500w,
+/project/static/2d6d0e0c8c3509f3e28ac28eaf68477e/1263b/Untitled.png 1000w,
+/project/static/2d6d0e0c8c3509f3e28ac28eaf68477e/f97d7/Untitled.png 2000w,
+/project/static/2d6d0e0c8c3509f3e28ac28eaf68477e/49142/Untitled.png 3000w,
+/project/static/2d6d0e0c8c3509f3e28ac28eaf68477e/20759/Untitled.png 3360w&quot;
         sizes=&quot;(max-width: 2000px) 100vw, 2000px&quot;
         style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
         loading=&quot;lazy&quot;
@@ -1953,7 +1953,7 @@ The bots that clinicians will create are not in a linear fashion, as they includ
     &gt;
       &lt;a
     class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/static/b9b082264837206a53f948e58be36a7c/9572f/Untitled%201.png&quot;
+    href=&quot;/project/static/b9b082264837206a53f948e58be36a7c/9572f/Untitled%201.png&quot;
     style=&quot;display: block&quot;
     target=&quot;_blank&quot;
     rel=&quot;noopener&quot;
@@ -1966,11 +1966,11 @@ The bots that clinicians will create are not in a linear fashion, as they includ
         class=&quot;gatsby-resp-image-image&quot;
         alt=&quot;voiceflow-alternatives/Untitled 1.png&quot;
         title=&quot;voiceflow-alternatives/Untitled 1.png&quot;
-        src=&quot;/static/b9b082264837206a53f948e58be36a7c/f97d7/Untitled%201.png&quot;
-        srcset=&quot;/static/b9b082264837206a53f948e58be36a7c/0eb09/Untitled%201.png 500w,
-/static/b9b082264837206a53f948e58be36a7c/1263b/Untitled%201.png 1000w,
-/static/b9b082264837206a53f948e58be36a7c/f97d7/Untitled%201.png 2000w,
-/static/b9b082264837206a53f948e58be36a7c/9572f/Untitled%201.png 2650w&quot;
+        src=&quot;/project/static/b9b082264837206a53f948e58be36a7c/f97d7/Untitled%201.png&quot;
+        srcset=&quot;/project/static/b9b082264837206a53f948e58be36a7c/0eb09/Untitled%201.png 500w,
+/project/static/b9b082264837206a53f948e58be36a7c/1263b/Untitled%201.png 1000w,
+/project/static/b9b082264837206a53f948e58be36a7c/f97d7/Untitled%201.png 2000w,
+/project/static/b9b082264837206a53f948e58be36a7c/9572f/Untitled%201.png 2650w&quot;
         sizes=&quot;(max-width: 2000px) 100vw, 2000px&quot;
         style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
         loading=&quot;lazy&quot;
@@ -1996,7 +1996,7 @@ The bots that clinicians will create are not in a linear fashion, as they includ
     &gt;
       &lt;a
     class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/static/e643e30c522b7edd149e5b33ba3fd141/cbcea/Untitled%202.png&quot;
+    href=&quot;/project/static/e643e30c522b7edd149e5b33ba3fd141/cbcea/Untitled%202.png&quot;
     style=&quot;display: block&quot;
     target=&quot;_blank&quot;
     rel=&quot;noopener&quot;
@@ -2009,10 +2009,10 @@ The bots that clinicians will create are not in a linear fashion, as they includ
         class=&quot;gatsby-resp-image-image&quot;
         alt=&quot;voiceflow-alternatives/Untitled 2.png&quot;
         title=&quot;voiceflow-alternatives/Untitled 2.png&quot;
-        src=&quot;/static/e643e30c522b7edd149e5b33ba3fd141/cbcea/Untitled%202.png&quot;
-        srcset=&quot;/static/e643e30c522b7edd149e5b33ba3fd141/0eb09/Untitled%202.png 500w,
-/static/e643e30c522b7edd149e5b33ba3fd141/1263b/Untitled%202.png 1000w,
-/static/e643e30c522b7edd149e5b33ba3fd141/cbcea/Untitled%202.png 1758w&quot;
+        src=&quot;/project/static/e643e30c522b7edd149e5b33ba3fd141/cbcea/Untitled%202.png&quot;
+        srcset=&quot;/project/static/e643e30c522b7edd149e5b33ba3fd141/0eb09/Untitled%202.png 500w,
+/project/static/e643e30c522b7edd149e5b33ba3fd141/1263b/Untitled%202.png 1000w,
+/project/static/e643e30c522b7edd149e5b33ba3fd141/cbcea/Untitled%202.png 1758w&quot;
         sizes=&quot;(max-width: 1758px) 100vw, 1758px&quot;
         style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
         loading=&quot;lazy&quot;
@@ -2038,7 +2038,7 @@ The bots that clinicians will create are not in a linear fashion, as they includ
     &gt;
       &lt;a
     class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/static/463e6f65ddb5dd1eb0c44db4868e4f98/66b6b/Untitled%203.png&quot;
+    href=&quot;/project/static/463e6f65ddb5dd1eb0c44db4868e4f98/66b6b/Untitled%203.png&quot;
     style=&quot;display: block&quot;
     target=&quot;_blank&quot;
     rel=&quot;noopener&quot;
@@ -2051,9 +2051,9 @@ The bots that clinicians will create are not in a linear fashion, as they includ
         class=&quot;gatsby-resp-image-image&quot;
         alt=&quot;voiceflow-alternatives/Untitled 3.png&quot;
         title=&quot;voiceflow-alternatives/Untitled 3.png&quot;
-        src=&quot;/static/463e6f65ddb5dd1eb0c44db4868e4f98/66b6b/Untitled%203.png&quot;
-        srcset=&quot;/static/463e6f65ddb5dd1eb0c44db4868e4f98/0eb09/Untitled%203.png 500w,
-/static/463e6f65ddb5dd1eb0c44db4868e4f98/66b6b/Untitled%203.png 669w&quot;
+        src=&quot;/project/static/463e6f65ddb5dd1eb0c44db4868e4f98/66b6b/Untitled%203.png&quot;
+        srcset=&quot;/project/static/463e6f65ddb5dd1eb0c44db4868e4f98/0eb09/Untitled%203.png 500w,
+/project/static/463e6f65ddb5dd1eb0c44db4868e4f98/66b6b/Untitled%203.png 669w&quot;
         sizes=&quot;(max-width: 669px) 100vw, 669px&quot;
         style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
         loading=&quot;lazy&quot;
@@ -2079,7 +2079,7 @@ The bots that clinicians will create are not in a linear fashion, as they includ
     &gt;
       &lt;a
     class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/static/000d4ced3c66ac8365bcb31392235a2c/1263b/Untitled%204.png&quot;
+    href=&quot;/project/static/000d4ced3c66ac8365bcb31392235a2c/1263b/Untitled%204.png&quot;
     style=&quot;display: block&quot;
     target=&quot;_blank&quot;
     rel=&quot;noopener&quot;
@@ -2092,9 +2092,9 @@ The bots that clinicians will create are not in a linear fashion, as they includ
         class=&quot;gatsby-resp-image-image&quot;
         alt=&quot;voiceflow-alternatives/Untitled 4.png&quot;
         title=&quot;voiceflow-alternatives/Untitled 4.png&quot;
-        src=&quot;/static/000d4ced3c66ac8365bcb31392235a2c/1263b/Untitled%204.png&quot;
-        srcset=&quot;/static/000d4ced3c66ac8365bcb31392235a2c/0eb09/Untitled%204.png 500w,
-/static/000d4ced3c66ac8365bcb31392235a2c/1263b/Untitled%204.png 1000w&quot;
+        src=&quot;/project/static/000d4ced3c66ac8365bcb31392235a2c/1263b/Untitled%204.png&quot;
+        srcset=&quot;/project/static/000d4ced3c66ac8365bcb31392235a2c/0eb09/Untitled%204.png 500w,
+/project/static/000d4ced3c66ac8365bcb31392235a2c/1263b/Untitled%204.png 1000w&quot;
         sizes=&quot;(max-width: 1000px) 100vw, 1000px&quot;
         style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
         loading=&quot;lazy&quot;
@@ -2120,7 +2120,7 @@ The bots that clinicians will create are not in a linear fashion, as they includ
     &gt;
       &lt;a
     class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/static/64450abedac5783ba2462d27d1217150/3643c/Untitled%205.png&quot;
+    href=&quot;/project/static/64450abedac5783ba2462d27d1217150/3643c/Untitled%205.png&quot;
     style=&quot;display: block&quot;
     target=&quot;_blank&quot;
     rel=&quot;noopener&quot;
@@ -2133,10 +2133,10 @@ The bots that clinicians will create are not in a linear fashion, as they includ
         class=&quot;gatsby-resp-image-image&quot;
         alt=&quot;voiceflow-alternatives/Untitled 5.png&quot;
         title=&quot;voiceflow-alternatives/Untitled 5.png&quot;
-        src=&quot;/static/64450abedac5783ba2462d27d1217150/3643c/Untitled%205.png&quot;
-        srcset=&quot;/static/64450abedac5783ba2462d27d1217150/0eb09/Untitled%205.png 500w,
-/static/64450abedac5783ba2462d27d1217150/1263b/Untitled%205.png 1000w,
-/static/64450abedac5783ba2462d27d1217150/3643c/Untitled%205.png 1400w&quot;
+        src=&quot;/project/static/64450abedac5783ba2462d27d1217150/3643c/Untitled%205.png&quot;
+        srcset=&quot;/project/static/64450abedac5783ba2462d27d1217150/0eb09/Untitled%205.png 500w,
+/project/static/64450abedac5783ba2462d27d1217150/1263b/Untitled%205.png 1000w,
+/project/static/64450abedac5783ba2462d27d1217150/3643c/Untitled%205.png 1400w&quot;
         sizes=&quot;(max-width: 1400px) 100vw, 1400px&quot;
         style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
         loading=&quot;lazy&quot;
@@ -2303,7 +2303,7 @@ The bots that clinicians will create are not in a linear fashion, as they includ
 &lt;p&gt;One of these bots that you create with Autopilot are made up what Twilio calls “Tasks”.&lt;/p&gt;
 &lt;p&gt;A task can be described as a single item of work waiting to be processed.&lt;/p&gt;
 &lt;p&gt;You can think of these tasks in a similar way to how we have blocks in Voiceflow. Each task defines an action such as returning a message to the user and you can have many of these tasks to create a chatbot.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;/b9fed9838d82fd6b6a02291ad27b5ba2/vftotwilio.png&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/project/b9fed9838d82fd6b6a02291ad27b5ba2/vftotwilio.png&quot;&gt;&lt;/p&gt;
 &lt;p&gt;However after a task completes and a message is returned to the user, there is no logic that starts another task based on the user’s response.&lt;/p&gt;
 &lt;p&gt;This is why we need to utilise another feature that Twilio offers.&lt;/p&gt;
 &lt;h2&gt;Feature 2 - Twilio Services&lt;/h2&gt;
@@ -2324,10 +2324,10 @@ The bots that clinicians will create are not in a linear fashion, as they includ
 &lt;p&gt;Previously I likened Twilio tasks to blocks in Voiceflow and that gave us the idea where we can try converting each Voiceflow block into a Twilio task.&lt;/p&gt;
 &lt;p&gt;Within each Task you are able to define a set of actions and the thing most important to us is defining what text you want to be displayed to the user. You can also define which task you want to redirect to from your current task.&lt;/p&gt;
 &lt;p&gt;For a Yes or No question, you will have one task holding the answer to a question if a user responds “Yes” and you will have another task holding the answer to a question if a user responds “No”.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;/d2428a05e47304a5e1165cc8ae0e1665/taskExample.png&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/project/d2428a05e47304a5e1165cc8ae0e1665/taskExample.png&quot;&gt;&lt;/p&gt;
 &lt;p&gt;However you can only redirect to &lt;strong&gt;one specific task&lt;/strong&gt; but a Yes or No question would require redirecting to one or the other task which you don’t know until the point the user gives a response.&lt;/p&gt;
 &lt;p&gt;This is where Twilio Services are useful to us. We could theoretically make a handling script which take a “Yes”/“No” and the current task as an input and it returns the name of the next task Twilio needs to route to, continuing the conversation.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;/fd2b2ad4b4904a585a3d916914e219ed/handler.png&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/project/fd2b2ad4b4904a585a3d916914e219ed/handler.png&quot;&gt;&lt;/p&gt;
 &lt;p&gt;By combining Twilio Autopilot and Twilio Services, we are able to support conversational branching where we can dynamically change which question a user gets routed to, based on their input.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[User Interviews]]></title><description><![CDATA[After gathering requirements, we focused on learning more about our users and their pain points. We conducted 5 interviews with clinicians…]]></description><link>https://sms-it.io/project/requirements/3-user-interviews/</link><guid isPermaLink="false">https://sms-it.io/project/requirements/3-user-interviews/</guid><pubDate>Mon, 20 Aug 2012 15:11:55 GMT</pubDate><content:encoded>&lt;p&gt;After gathering requirements, we focused on learning more about our users and their pain points. We conducted 5 interviews with clinicians, and 4 with patients. Key information from all interviews is presented below.&lt;/p&gt;
 &lt;h1&gt;Clinician Interviews&lt;/h1&gt;
 &lt;h2&gt;&lt;em&gt;Do you consider low-priority calls for trivial problems a widespread issue within the NHS?&lt;/em&gt;&lt;/h2&gt;
@@ -2379,7 +2379,7 @@ The bots that clinicians will create are not in a linear fashion, as they includ
     &gt;
       &lt;a
     class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/static/cb5740664b66ff11b2660f7cc84ef6d0/323fc/e2e.jpg&quot;
+    href=&quot;/project/static/cb5740664b66ff11b2660f7cc84ef6d0/323fc/e2e.jpg&quot;
     style=&quot;display: block&quot;
     target=&quot;_blank&quot;
     rel=&quot;noopener&quot;
@@ -2392,10 +2392,10 @@ The bots that clinicians will create are not in a linear fashion, as they includ
         class=&quot;gatsby-resp-image-image&quot;
         alt=&quot;e2e&quot;
         title=&quot;e2e&quot;
-        src=&quot;/static/cb5740664b66ff11b2660f7cc84ef6d0/323fc/e2e.jpg&quot;
-        srcset=&quot;/static/cb5740664b66ff11b2660f7cc84ef6d0/953fe/e2e.jpg 500w,
-/static/cb5740664b66ff11b2660f7cc84ef6d0/0a251/e2e.jpg 1000w,
-/static/cb5740664b66ff11b2660f7cc84ef6d0/323fc/e2e.jpg 1031w&quot;
+        src=&quot;/project/static/cb5740664b66ff11b2660f7cc84ef6d0/323fc/e2e.jpg&quot;
+        srcset=&quot;/project/static/cb5740664b66ff11b2660f7cc84ef6d0/953fe/e2e.jpg 500w,
+/project/static/cb5740664b66ff11b2660f7cc84ef6d0/0a251/e2e.jpg 1000w,
+/project/static/cb5740664b66ff11b2660f7cc84ef6d0/323fc/e2e.jpg 1031w&quot;
         sizes=&quot;(max-width: 1031px) 100vw, 1031px&quot;
         style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
         loading=&quot;lazy&quot;
@@ -2443,7 +2443,7 @@ The bots that clinicians will create are not in a linear fashion and include con
     &gt;
       &lt;a
     class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/static/1471f31812925782f40e7774702738ef/99ce0/twilioplatforms.jpg&quot;
+    href=&quot;/project/static/1471f31812925782f40e7774702738ef/99ce0/twilioplatforms.jpg&quot;
     style=&quot;display: block&quot;
     target=&quot;_blank&quot;
     rel=&quot;noopener&quot;
@@ -2456,10 +2456,10 @@ The bots that clinicians will create are not in a linear fashion and include con
         class=&quot;gatsby-resp-image-image&quot;
         alt=&quot;twilio-alternatives/twilioplatforms.jpg&quot;
         title=&quot;twilio-alternatives/twilioplatforms.jpg&quot;
-        src=&quot;/static/1471f31812925782f40e7774702738ef/99ce0/twilioplatforms.jpg&quot;
-        srcset=&quot;/static/1471f31812925782f40e7774702738ef/953fe/twilioplatforms.jpg 500w,
-/static/1471f31812925782f40e7774702738ef/0a251/twilioplatforms.jpg 1000w,
-/static/1471f31812925782f40e7774702738ef/99ce0/twilioplatforms.jpg 1068w&quot;
+        src=&quot;/project/static/1471f31812925782f40e7774702738ef/99ce0/twilioplatforms.jpg&quot;
+        srcset=&quot;/project/static/1471f31812925782f40e7774702738ef/953fe/twilioplatforms.jpg 500w,
+/project/static/1471f31812925782f40e7774702738ef/0a251/twilioplatforms.jpg 1000w,
+/project/static/1471f31812925782f40e7774702738ef/99ce0/twilioplatforms.jpg 1068w&quot;
         sizes=&quot;(max-width: 1068px) 100vw, 1068px&quot;
         style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
         loading=&quot;lazy&quot;
@@ -2473,7 +2473,7 @@ The bots that clinicians will create are not in a linear fashion and include con
     &gt;
       &lt;a
     class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/static/00287d4420f87b4b031a3a069abe96d0/1a2d7/Untitled%203.png&quot;
+    href=&quot;/project/static/00287d4420f87b4b031a3a069abe96d0/1a2d7/Untitled%203.png&quot;
     style=&quot;display: block&quot;
     target=&quot;_blank&quot;
     rel=&quot;noopener&quot;
@@ -2486,11 +2486,11 @@ The bots that clinicians will create are not in a linear fashion and include con
         class=&quot;gatsby-resp-image-image&quot;
         alt=&quot;twilio-alternatives/Untitled 3.png&quot;
         title=&quot;twilio-alternatives/Untitled 3.png&quot;
-        src=&quot;/static/00287d4420f87b4b031a3a069abe96d0/f97d7/Untitled%203.png&quot;
-        srcset=&quot;/static/00287d4420f87b4b031a3a069abe96d0/0eb09/Untitled%203.png 500w,
-/static/00287d4420f87b4b031a3a069abe96d0/1263b/Untitled%203.png 1000w,
-/static/00287d4420f87b4b031a3a069abe96d0/f97d7/Untitled%203.png 2000w,
-/static/00287d4420f87b4b031a3a069abe96d0/1a2d7/Untitled%203.png 2516w&quot;
+        src=&quot;/project/static/00287d4420f87b4b031a3a069abe96d0/f97d7/Untitled%203.png&quot;
+        srcset=&quot;/project/static/00287d4420f87b4b031a3a069abe96d0/0eb09/Untitled%203.png 500w,
+/project/static/00287d4420f87b4b031a3a069abe96d0/1263b/Untitled%203.png 1000w,
+/project/static/00287d4420f87b4b031a3a069abe96d0/f97d7/Untitled%203.png 2000w,
+/project/static/00287d4420f87b4b031a3a069abe96d0/1a2d7/Untitled%203.png 2516w&quot;
         sizes=&quot;(max-width: 2000px) 100vw, 2000px&quot;
         style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
         loading=&quot;lazy&quot;
@@ -2513,7 +2513,7 @@ The bots that clinicians will create are not in a linear fashion and include con
     &gt;
       &lt;a
     class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/static/71a1ec07bdb83d08f5e4e7e0feeed6b8/8cf9a/Untitled%204.png&quot;
+    href=&quot;/project/static/71a1ec07bdb83d08f5e4e7e0feeed6b8/8cf9a/Untitled%204.png&quot;
     style=&quot;display: block&quot;
     target=&quot;_blank&quot;
     rel=&quot;noopener&quot;
@@ -2526,10 +2526,10 @@ The bots that clinicians will create are not in a linear fashion and include con
         class=&quot;gatsby-resp-image-image&quot;
         alt=&quot;twilio-alternatives/Untitled 4.png&quot;
         title=&quot;twilio-alternatives/Untitled 4.png&quot;
-        src=&quot;/static/71a1ec07bdb83d08f5e4e7e0feeed6b8/8cf9a/Untitled%204.png&quot;
-        srcset=&quot;/static/71a1ec07bdb83d08f5e4e7e0feeed6b8/0eb09/Untitled%204.png 500w,
-/static/71a1ec07bdb83d08f5e4e7e0feeed6b8/1263b/Untitled%204.png 1000w,
-/static/71a1ec07bdb83d08f5e4e7e0feeed6b8/8cf9a/Untitled%204.png 1161w&quot;
+        src=&quot;/project/static/71a1ec07bdb83d08f5e4e7e0feeed6b8/8cf9a/Untitled%204.png&quot;
+        srcset=&quot;/project/static/71a1ec07bdb83d08f5e4e7e0feeed6b8/0eb09/Untitled%204.png 500w,
+/project/static/71a1ec07bdb83d08f5e4e7e0feeed6b8/1263b/Untitled%204.png 1000w,
+/project/static/71a1ec07bdb83d08f5e4e7e0feeed6b8/8cf9a/Untitled%204.png 1161w&quot;
         sizes=&quot;(max-width: 1161px) 100vw, 1161px&quot;
         style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
         loading=&quot;lazy&quot;
@@ -2553,7 +2553,7 @@ The bots that clinicians will create are not in a linear fashion and include con
     &gt;
       &lt;a
     class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/static/30d7f5485b3a8f80e7e8e8b2b91e0acd/f631a/Untitled%205.png&quot;
+    href=&quot;/project/static/30d7f5485b3a8f80e7e8e8b2b91e0acd/f631a/Untitled%205.png&quot;
     style=&quot;display: block&quot;
     target=&quot;_blank&quot;
     rel=&quot;noopener&quot;
@@ -2566,10 +2566,10 @@ The bots that clinicians will create are not in a linear fashion and include con
         class=&quot;gatsby-resp-image-image&quot;
         alt=&quot;twilio-alternatives/Untitled 5.png&quot;
         title=&quot;twilio-alternatives/Untitled 5.png&quot;
-        src=&quot;/static/30d7f5485b3a8f80e7e8e8b2b91e0acd/f631a/Untitled%205.png&quot;
-        srcset=&quot;/static/30d7f5485b3a8f80e7e8e8b2b91e0acd/0eb09/Untitled%205.png 500w,
-/static/30d7f5485b3a8f80e7e8e8b2b91e0acd/1263b/Untitled%205.png 1000w,
-/static/30d7f5485b3a8f80e7e8e8b2b91e0acd/f631a/Untitled%205.png 1351w&quot;
+        src=&quot;/project/static/30d7f5485b3a8f80e7e8e8b2b91e0acd/f631a/Untitled%205.png&quot;
+        srcset=&quot;/project/static/30d7f5485b3a8f80e7e8e8b2b91e0acd/0eb09/Untitled%205.png 500w,
+/project/static/30d7f5485b3a8f80e7e8e8b2b91e0acd/1263b/Untitled%205.png 1000w,
+/project/static/30d7f5485b3a8f80e7e8e8b2b91e0acd/f631a/Untitled%205.png 1351w&quot;
         sizes=&quot;(max-width: 1351px) 100vw, 1351px&quot;
         style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
         loading=&quot;lazy&quot;
@@ -2593,7 +2593,7 @@ The bots that clinicians will create are not in a linear fashion and include con
     &gt;
       &lt;a
     class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/static/8e486e4647e5815c5c96d56b8e69de6c/bbbf7/Untitled%206.png&quot;
+    href=&quot;/project/static/8e486e4647e5815c5c96d56b8e69de6c/bbbf7/Untitled%206.png&quot;
     style=&quot;display: block&quot;
     target=&quot;_blank&quot;
     rel=&quot;noopener&quot;
@@ -2606,10 +2606,10 @@ The bots that clinicians will create are not in a linear fashion and include con
         class=&quot;gatsby-resp-image-image&quot;
         alt=&quot;twilio-alternatives/Untitled 6.png&quot;
         title=&quot;twilio-alternatives/Untitled 6.png&quot;
-        src=&quot;/static/8e486e4647e5815c5c96d56b8e69de6c/bbbf7/Untitled%206.png&quot;
-        srcset=&quot;/static/8e486e4647e5815c5c96d56b8e69de6c/0eb09/Untitled%206.png 500w,
-/static/8e486e4647e5815c5c96d56b8e69de6c/1263b/Untitled%206.png 1000w,
-/static/8e486e4647e5815c5c96d56b8e69de6c/bbbf7/Untitled%206.png 1280w&quot;
+        src=&quot;/project/static/8e486e4647e5815c5c96d56b8e69de6c/bbbf7/Untitled%206.png&quot;
+        srcset=&quot;/project/static/8e486e4647e5815c5c96d56b8e69de6c/0eb09/Untitled%206.png 500w,
+/project/static/8e486e4647e5815c5c96d56b8e69de6c/1263b/Untitled%206.png 1000w,
+/project/static/8e486e4647e5815c5c96d56b8e69de6c/bbbf7/Untitled%206.png 1280w&quot;
         sizes=&quot;(max-width: 1280px) 100vw, 1280px&quot;
         style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
         loading=&quot;lazy&quot;
@@ -2633,7 +2633,7 @@ The bots that clinicians will create are not in a linear fashion and include con
     &gt;
       &lt;a
     class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/static/221ec8eece838cfae2edc607e503e66f/42a19/Untitled%207.png&quot;
+    href=&quot;/project/static/221ec8eece838cfae2edc607e503e66f/42a19/Untitled%207.png&quot;
     style=&quot;display: block&quot;
     target=&quot;_blank&quot;
     rel=&quot;noopener&quot;
@@ -2646,10 +2646,10 @@ The bots that clinicians will create are not in a linear fashion and include con
         class=&quot;gatsby-resp-image-image&quot;
         alt=&quot;twilio-alternatives/Untitled 7.png&quot;
         title=&quot;twilio-alternatives/Untitled 7.png&quot;
-        src=&quot;/static/221ec8eece838cfae2edc607e503e66f/42a19/Untitled%207.png&quot;
-        srcset=&quot;/static/221ec8eece838cfae2edc607e503e66f/0eb09/Untitled%207.png 500w,
-/static/221ec8eece838cfae2edc607e503e66f/1263b/Untitled%207.png 1000w,
-/static/221ec8eece838cfae2edc607e503e66f/42a19/Untitled%207.png 1024w&quot;
+        src=&quot;/project/static/221ec8eece838cfae2edc607e503e66f/42a19/Untitled%207.png&quot;
+        srcset=&quot;/project/static/221ec8eece838cfae2edc607e503e66f/0eb09/Untitled%207.png 500w,
+/project/static/221ec8eece838cfae2edc607e503e66f/1263b/Untitled%207.png 1000w,
+/project/static/221ec8eece838cfae2edc607e503e66f/42a19/Untitled%207.png 1024w&quot;
         sizes=&quot;(max-width: 1024px) 100vw, 1024px&quot;
         style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
         loading=&quot;lazy&quot;
@@ -2673,7 +2673,7 @@ The bots that clinicians will create are not in a linear fashion and include con
     &gt;
       &lt;a
     class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/static/79f9435ba5f2dd0e4be44e777946e34e/9d567/Untitled%208.png&quot;
+    href=&quot;/project/static/79f9435ba5f2dd0e4be44e777946e34e/9d567/Untitled%208.png&quot;
     style=&quot;display: block&quot;
     target=&quot;_blank&quot;
     rel=&quot;noopener&quot;
@@ -2686,10 +2686,10 @@ The bots that clinicians will create are not in a linear fashion and include con
         class=&quot;gatsby-resp-image-image&quot;
         alt=&quot;twilio-alternatives/Untitled 8.png&quot;
         title=&quot;twilio-alternatives/Untitled 8.png&quot;
-        src=&quot;/static/79f9435ba5f2dd0e4be44e777946e34e/9d567/Untitled%208.png&quot;
-        srcset=&quot;/static/79f9435ba5f2dd0e4be44e777946e34e/0eb09/Untitled%208.png 500w,
-/static/79f9435ba5f2dd0e4be44e777946e34e/1263b/Untitled%208.png 1000w,
-/static/79f9435ba5f2dd0e4be44e777946e34e/9d567/Untitled%208.png 1360w&quot;
+        src=&quot;/project/static/79f9435ba5f2dd0e4be44e777946e34e/9d567/Untitled%208.png&quot;
+        srcset=&quot;/project/static/79f9435ba5f2dd0e4be44e777946e34e/0eb09/Untitled%208.png 500w,
+/project/static/79f9435ba5f2dd0e4be44e777946e34e/1263b/Untitled%208.png 1000w,
+/project/static/79f9435ba5f2dd0e4be44e777946e34e/9d567/Untitled%208.png 1360w&quot;
         sizes=&quot;(max-width: 1360px) 100vw, 1360px&quot;
         style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
         loading=&quot;lazy&quot;
@@ -2713,7 +2713,7 @@ The bots that clinicians will create are not in a linear fashion and include con
     &gt;
       &lt;a
     class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/static/7884d82fe74980246ffee69fb2f4471c/2fc92/Untitled%209.png&quot;
+    href=&quot;/project/static/7884d82fe74980246ffee69fb2f4471c/2fc92/Untitled%209.png&quot;
     style=&quot;display: block&quot;
     target=&quot;_blank&quot;
     rel=&quot;noopener&quot;
@@ -2726,9 +2726,9 @@ The bots that clinicians will create are not in a linear fashion and include con
         class=&quot;gatsby-resp-image-image&quot;
         alt=&quot;twilio-alternatives/Untitled 9.png&quot;
         title=&quot;twilio-alternatives/Untitled 9.png&quot;
-        src=&quot;/static/7884d82fe74980246ffee69fb2f4471c/2fc92/Untitled%209.png&quot;
-        srcset=&quot;/static/7884d82fe74980246ffee69fb2f4471c/0eb09/Untitled%209.png 500w,
-/static/7884d82fe74980246ffee69fb2f4471c/2fc92/Untitled%209.png 709w&quot;
+        src=&quot;/project/static/7884d82fe74980246ffee69fb2f4471c/2fc92/Untitled%209.png&quot;
+        srcset=&quot;/project/static/7884d82fe74980246ffee69fb2f4471c/0eb09/Untitled%209.png 500w,
+/project/static/7884d82fe74980246ffee69fb2f4471c/2fc92/Untitled%209.png 709w&quot;
         sizes=&quot;(max-width: 709px) 100vw, 709px&quot;
         style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
         loading=&quot;lazy&quot;
@@ -2752,7 +2752,7 @@ The bots that clinicians will create are not in a linear fashion and include con
     &gt;
       &lt;a
     class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/static/98354b5ed9df5f6981913fe1902ed823/d8ad8/Untitled%2010.png&quot;
+    href=&quot;/project/static/98354b5ed9df5f6981913fe1902ed823/d8ad8/Untitled%2010.png&quot;
     style=&quot;display: block&quot;
     target=&quot;_blank&quot;
     rel=&quot;noopener&quot;
@@ -2765,8 +2765,8 @@ The bots that clinicians will create are not in a linear fashion and include con
         class=&quot;gatsby-resp-image-image&quot;
         alt=&quot;twilio-alternatives/Untitled 10.png&quot;
         title=&quot;twilio-alternatives/Untitled 10.png&quot;
-        src=&quot;/static/98354b5ed9df5f6981913fe1902ed823/d8ad8/Untitled%2010.png&quot;
-        srcset=&quot;/static/98354b5ed9df5f6981913fe1902ed823/d8ad8/Untitled%2010.png 369w&quot;
+        src=&quot;/project/static/98354b5ed9df5f6981913fe1902ed823/d8ad8/Untitled%2010.png&quot;
+        srcset=&quot;/project/static/98354b5ed9df5f6981913fe1902ed823/d8ad8/Untitled%2010.png 369w&quot;
         sizes=&quot;(max-width: 369px) 100vw, 369px&quot;
         style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
         loading=&quot;lazy&quot;
@@ -2790,7 +2790,7 @@ The bots that clinicians will create are not in a linear fashion and include con
     &gt;
       &lt;a
     class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/static/c7ac2900d1aa0c8b962853a06f81c331/369c0/Untitled%2011.png&quot;
+    href=&quot;/project/static/c7ac2900d1aa0c8b962853a06f81c331/369c0/Untitled%2011.png&quot;
     style=&quot;display: block&quot;
     target=&quot;_blank&quot;
     rel=&quot;noopener&quot;
@@ -2803,11 +2803,11 @@ The bots that clinicians will create are not in a linear fashion and include con
         class=&quot;gatsby-resp-image-image&quot;
         alt=&quot;twilio-alternatives/Untitled 11.png&quot;
         title=&quot;twilio-alternatives/Untitled 11.png&quot;
-        src=&quot;/static/c7ac2900d1aa0c8b962853a06f81c331/f97d7/Untitled%2011.png&quot;
-        srcset=&quot;/static/c7ac2900d1aa0c8b962853a06f81c331/0eb09/Untitled%2011.png 500w,
-/static/c7ac2900d1aa0c8b962853a06f81c331/1263b/Untitled%2011.png 1000w,
-/static/c7ac2900d1aa0c8b962853a06f81c331/f97d7/Untitled%2011.png 2000w,
-/static/c7ac2900d1aa0c8b962853a06f81c331/369c0/Untitled%2011.png 2490w&quot;
+        src=&quot;/project/static/c7ac2900d1aa0c8b962853a06f81c331/f97d7/Untitled%2011.png&quot;
+        srcset=&quot;/project/static/c7ac2900d1aa0c8b962853a06f81c331/0eb09/Untitled%2011.png 500w,
+/project/static/c7ac2900d1aa0c8b962853a06f81c331/1263b/Untitled%2011.png 1000w,
+/project/static/c7ac2900d1aa0c8b962853a06f81c331/f97d7/Untitled%2011.png 2000w,
+/project/static/c7ac2900d1aa0c8b962853a06f81c331/369c0/Untitled%2011.png 2490w&quot;
         sizes=&quot;(max-width: 2000px) 100vw, 2000px&quot;
         style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
         loading=&quot;lazy&quot;
@@ -2831,7 +2831,7 @@ The bots that clinicians will create are not in a linear fashion and include con
     &gt;
       &lt;a
     class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/static/9a8a592af9d0e0d8bb59ffcdafdd37d0/bbbf7/Untitled%2012.png&quot;
+    href=&quot;/project/static/9a8a592af9d0e0d8bb59ffcdafdd37d0/bbbf7/Untitled%2012.png&quot;
     style=&quot;display: block&quot;
     target=&quot;_blank&quot;
     rel=&quot;noopener&quot;
@@ -2844,10 +2844,10 @@ The bots that clinicians will create are not in a linear fashion and include con
         class=&quot;gatsby-resp-image-image&quot;
         alt=&quot;twilio-alternatives/Untitled 12.png&quot;
         title=&quot;twilio-alternatives/Untitled 12.png&quot;
-        src=&quot;/static/9a8a592af9d0e0d8bb59ffcdafdd37d0/bbbf7/Untitled%2012.png&quot;
-        srcset=&quot;/static/9a8a592af9d0e0d8bb59ffcdafdd37d0/0eb09/Untitled%2012.png 500w,
-/static/9a8a592af9d0e0d8bb59ffcdafdd37d0/1263b/Untitled%2012.png 1000w,
-/static/9a8a592af9d0e0d8bb59ffcdafdd37d0/bbbf7/Untitled%2012.png 1280w&quot;
+        src=&quot;/project/static/9a8a592af9d0e0d8bb59ffcdafdd37d0/bbbf7/Untitled%2012.png&quot;
+        srcset=&quot;/project/static/9a8a592af9d0e0d8bb59ffcdafdd37d0/0eb09/Untitled%2012.png 500w,
+/project/static/9a8a592af9d0e0d8bb59ffcdafdd37d0/1263b/Untitled%2012.png 1000w,
+/project/static/9a8a592af9d0e0d8bb59ffcdafdd37d0/bbbf7/Untitled%2012.png 1280w&quot;
         sizes=&quot;(max-width: 1280px) 100vw, 1280px&quot;
         style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
         loading=&quot;lazy&quot;
@@ -2894,7 +2894,7 @@ The bots that clinicians will create are not in a linear fashion and include con
     &gt;
       &lt;a
     class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/static/6f8a7ec7464dad57a0622900016a65c3/f6540/delete-tooltip.png&quot;
+    href=&quot;/project/static/6f8a7ec7464dad57a0622900016a65c3/f6540/delete-tooltip.png&quot;
     style=&quot;display: block&quot;
     target=&quot;_blank&quot;
     rel=&quot;noopener&quot;
@@ -2907,10 +2907,10 @@ The bots that clinicians will create are not in a linear fashion and include con
         class=&quot;gatsby-resp-image-image&quot;
         alt=&quot;delete tooltip&quot;
         title=&quot;delete tooltip&quot;
-        src=&quot;/static/6f8a7ec7464dad57a0622900016a65c3/f6540/delete-tooltip.png&quot;
-        srcset=&quot;/static/6f8a7ec7464dad57a0622900016a65c3/0eb09/delete-tooltip.png 500w,
-/static/6f8a7ec7464dad57a0622900016a65c3/1263b/delete-tooltip.png 1000w,
-/static/6f8a7ec7464dad57a0622900016a65c3/f6540/delete-tooltip.png 1063w&quot;
+        src=&quot;/project/static/6f8a7ec7464dad57a0622900016a65c3/f6540/delete-tooltip.png&quot;
+        srcset=&quot;/project/static/6f8a7ec7464dad57a0622900016a65c3/0eb09/delete-tooltip.png 500w,
+/project/static/6f8a7ec7464dad57a0622900016a65c3/1263b/delete-tooltip.png 1000w,
+/project/static/6f8a7ec7464dad57a0622900016a65c3/f6540/delete-tooltip.png 1063w&quot;
         sizes=&quot;(max-width: 1063px) 100vw, 1063px&quot;
         style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
         loading=&quot;lazy&quot;
@@ -2924,7 +2924,7 @@ The bots that clinicians will create are not in a linear fashion and include con
     &gt;
       &lt;a
     class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/static/1316d144ec84f0b6d36eb594a9a4aa84/cf20c/delete-confirm.png&quot;
+    href=&quot;/project/static/1316d144ec84f0b6d36eb594a9a4aa84/cf20c/delete-confirm.png&quot;
     style=&quot;display: block&quot;
     target=&quot;_blank&quot;
     rel=&quot;noopener&quot;
@@ -2937,8 +2937,8 @@ The bots that clinicians will create are not in a linear fashion and include con
         class=&quot;gatsby-resp-image-image&quot;
         alt=&quot;delete confirm&quot;
         title=&quot;delete confirm&quot;
-        src=&quot;/static/1316d144ec84f0b6d36eb594a9a4aa84/cf20c/delete-confirm.png&quot;
-        srcset=&quot;/static/1316d144ec84f0b6d36eb594a9a4aa84/cf20c/delete-confirm.png 493w&quot;
+        src=&quot;/project/static/1316d144ec84f0b6d36eb594a9a4aa84/cf20c/delete-confirm.png&quot;
+        srcset=&quot;/project/static/1316d144ec84f0b6d36eb594a9a4aa84/cf20c/delete-confirm.png 493w&quot;
         sizes=&quot;(max-width: 493px) 100vw, 493px&quot;
         style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
         loading=&quot;lazy&quot;
@@ -2954,7 +2954,7 @@ The bots that clinicians will create are not in a linear fashion and include con
     &gt;
       &lt;a
     class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/static/42b169eef90320a2e566ba444ad616e1/9eda5/voiceflow-scripts.png&quot;
+    href=&quot;/project/static/42b169eef90320a2e566ba444ad616e1/9eda5/voiceflow-scripts.png&quot;
     style=&quot;display: block&quot;
     target=&quot;_blank&quot;
     rel=&quot;noopener&quot;
@@ -2967,10 +2967,10 @@ The bots that clinicians will create are not in a linear fashion and include con
         class=&quot;gatsby-resp-image-image&quot;
         alt=&quot;voiceflow scripts&quot;
         title=&quot;voiceflow scripts&quot;
-        src=&quot;/static/42b169eef90320a2e566ba444ad616e1/9eda5/voiceflow-scripts.png&quot;
-        srcset=&quot;/static/42b169eef90320a2e566ba444ad616e1/0eb09/voiceflow-scripts.png 500w,
-/static/42b169eef90320a2e566ba444ad616e1/1263b/voiceflow-scripts.png 1000w,
-/static/42b169eef90320a2e566ba444ad616e1/9eda5/voiceflow-scripts.png 1375w&quot;
+        src=&quot;/project/static/42b169eef90320a2e566ba444ad616e1/9eda5/voiceflow-scripts.png&quot;
+        srcset=&quot;/project/static/42b169eef90320a2e566ba444ad616e1/0eb09/voiceflow-scripts.png 500w,
+/project/static/42b169eef90320a2e566ba444ad616e1/1263b/voiceflow-scripts.png 1000w,
+/project/static/42b169eef90320a2e566ba444ad616e1/9eda5/voiceflow-scripts.png 1375w&quot;
         sizes=&quot;(max-width: 1375px) 100vw, 1375px&quot;
         style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
         loading=&quot;lazy&quot;
@@ -2985,7 +2985,7 @@ The bots that clinicians will create are not in a linear fashion and include con
     &gt;
       &lt;a
     class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/static/730658e49bacc5d4dbadfd31e94170a8/1d5a8/python-interpreter.png&quot;
+    href=&quot;/project/static/730658e49bacc5d4dbadfd31e94170a8/1d5a8/python-interpreter.png&quot;
     style=&quot;display: block&quot;
     target=&quot;_blank&quot;
     rel=&quot;noopener&quot;
@@ -2998,9 +2998,9 @@ The bots that clinicians will create are not in a linear fashion and include con
         class=&quot;gatsby-resp-image-image&quot;
         alt=&quot;python interpreter&quot;
         title=&quot;python interpreter&quot;
-        src=&quot;/static/730658e49bacc5d4dbadfd31e94170a8/1d5a8/python-interpreter.png&quot;
-        srcset=&quot;/static/730658e49bacc5d4dbadfd31e94170a8/0eb09/python-interpreter.png 500w,
-/static/730658e49bacc5d4dbadfd31e94170a8/1d5a8/python-interpreter.png 979w&quot;
+        src=&quot;/project/static/730658e49bacc5d4dbadfd31e94170a8/1d5a8/python-interpreter.png&quot;
+        srcset=&quot;/project/static/730658e49bacc5d4dbadfd31e94170a8/0eb09/python-interpreter.png 500w,
+/project/static/730658e49bacc5d4dbadfd31e94170a8/1d5a8/python-interpreter.png 979w&quot;
         sizes=&quot;(max-width: 979px) 100vw, 979px&quot;
         style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
         loading=&quot;lazy&quot;
@@ -3016,7 +3016,7 @@ The bots that clinicians will create are not in a linear fashion and include con
     &gt;
       &lt;a
     class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/static/f932d0323c494c1f361a8b39c4e2a2d6/eb228/twilio-scripts.png&quot;
+    href=&quot;/project/static/f932d0323c494c1f361a8b39c4e2a2d6/eb228/twilio-scripts.png&quot;
     style=&quot;display: block&quot;
     target=&quot;_blank&quot;
     rel=&quot;noopener&quot;
@@ -3029,10 +3029,10 @@ The bots that clinicians will create are not in a linear fashion and include con
         class=&quot;gatsby-resp-image-image&quot;
         alt=&quot;twilio scripts&quot;
         title=&quot;twilio scripts&quot;
-        src=&quot;/static/f932d0323c494c1f361a8b39c4e2a2d6/eb228/twilio-scripts.png&quot;
-        srcset=&quot;/static/f932d0323c494c1f361a8b39c4e2a2d6/0eb09/twilio-scripts.png 500w,
-/static/f932d0323c494c1f361a8b39c4e2a2d6/1263b/twilio-scripts.png 1000w,
-/static/f932d0323c494c1f361a8b39c4e2a2d6/eb228/twilio-scripts.png 1429w&quot;
+        src=&quot;/project/static/f932d0323c494c1f361a8b39c4e2a2d6/eb228/twilio-scripts.png&quot;
+        srcset=&quot;/project/static/f932d0323c494c1f361a8b39c4e2a2d6/0eb09/twilio-scripts.png 500w,
+/project/static/f932d0323c494c1f361a8b39c4e2a2d6/1263b/twilio-scripts.png 1000w,
+/project/static/f932d0323c494c1f361a8b39c4e2a2d6/eb228/twilio-scripts.png 1429w&quot;
         sizes=&quot;(max-width: 1429px) 100vw, 1429px&quot;
         style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
         loading=&quot;lazy&quot;
@@ -3064,7 +3064,7 @@ The bots that clinicians will create are not in a linear fashion and include con
     &gt;
       &lt;a
     class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/static/2cc79e45c678ebf6f1237be922db955f/25ed3/vfToUbf.jpg&quot;
+    href=&quot;/project/static/2cc79e45c678ebf6f1237be922db955f/25ed3/vfToUbf.jpg&quot;
     style=&quot;display: block&quot;
     target=&quot;_blank&quot;
     rel=&quot;noopener&quot;
@@ -3077,9 +3077,9 @@ The bots that clinicians will create are not in a linear fashion and include con
         class=&quot;gatsby-resp-image-image&quot;
         alt=&quot;vfToUbf&quot;
         title=&quot;vfToUbf&quot;
-        src=&quot;/static/2cc79e45c678ebf6f1237be922db955f/25ed3/vfToUbf.jpg&quot;
-        srcset=&quot;/static/2cc79e45c678ebf6f1237be922db955f/953fe/vfToUbf.jpg 500w,
-/static/2cc79e45c678ebf6f1237be922db955f/25ed3/vfToUbf.jpg 599w&quot;
+        src=&quot;/project/static/2cc79e45c678ebf6f1237be922db955f/25ed3/vfToUbf.jpg&quot;
+        srcset=&quot;/project/static/2cc79e45c678ebf6f1237be922db955f/953fe/vfToUbf.jpg 500w,
+/project/static/2cc79e45c678ebf6f1237be922db955f/25ed3/vfToUbf.jpg 599w&quot;
         sizes=&quot;(max-width: 599px) 100vw, 599px&quot;
         style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
         loading=&quot;lazy&quot;
@@ -3096,7 +3096,7 @@ The bots that clinicians will create are not in a linear fashion and include con
     &gt;
       &lt;a
     class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/static/159960acbb33c24e7702b73d753eb06e/25ed3/ubfToTwilio.jpg&quot;
+    href=&quot;/project/static/159960acbb33c24e7702b73d753eb06e/25ed3/ubfToTwilio.jpg&quot;
     style=&quot;display: block&quot;
     target=&quot;_blank&quot;
     rel=&quot;noopener&quot;
@@ -3109,9 +3109,9 @@ The bots that clinicians will create are not in a linear fashion and include con
         class=&quot;gatsby-resp-image-image&quot;
         alt=&quot;ubfToTwilio&quot;
         title=&quot;ubfToTwilio&quot;
-        src=&quot;/static/159960acbb33c24e7702b73d753eb06e/25ed3/ubfToTwilio.jpg&quot;
-        srcset=&quot;/static/159960acbb33c24e7702b73d753eb06e/953fe/ubfToTwilio.jpg 500w,
-/static/159960acbb33c24e7702b73d753eb06e/25ed3/ubfToTwilio.jpg 599w&quot;
+        src=&quot;/project/static/159960acbb33c24e7702b73d753eb06e/25ed3/ubfToTwilio.jpg&quot;
+        srcset=&quot;/project/static/159960acbb33c24e7702b73d753eb06e/953fe/ubfToTwilio.jpg 500w,
+/project/static/159960acbb33c24e7702b73d753eb06e/25ed3/ubfToTwilio.jpg 599w&quot;
         sizes=&quot;(max-width: 599px) 100vw, 599px&quot;
         style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
         loading=&quot;lazy&quot;
@@ -3119,10 +3119,10 @@ The bots that clinicians will create are not in a linear fashion and include con
   &lt;/a&gt;
     &lt;/span&gt;&lt;/p&gt;
 &lt;p&gt;For &lt;code class=&quot;language-text&quot;&gt;ubf-to-twilio&lt;/code&gt;, the main purpose for it is to put and get data in and out of Twilio with &lt;code class=&quot;language-text&quot;&gt;API&lt;/code&gt; calls. This means taking each call within our Twilio implementation of our API interface and ensuring we exhaustively try diverse sets of inputs. If a request to Twilio is sent successfully, we check if the right value is returned and if a request fails we check that the expected error condition is triggered.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Continous Integration]]></title><description><![CDATA[Using Continous Integration (CI) within our project due to the agile approach we have taken. The places where we are using CI include the…]]></description><link>https://sms-it.io/project/testing/6-continuous-integration/</link><guid isPermaLink="false">https://sms-it.io/project/testing/6-continuous-integration/</guid><pubDate>Mon, 20 Aug 2012 15:11:55 GMT</pubDate><content:encoded>&lt;p&gt;Using Continous Integration (CI) within our project due to the agile approach we have taken. The places where we are using CI include the &lt;code class=&quot;language-text&quot;&gt;vf-to-ubf&lt;/code&gt; and &lt;code class=&quot;language-text&quot;&gt;ubf-to-twilio&lt;/code&gt; packages. &lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;/390c1c8c47a9fbe48fe486e761060cce/ci.png&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/project/390c1c8c47a9fbe48fe486e761060cce/ci.png&quot;&gt;&lt;/p&gt;
 &lt;p&gt;Catching bugs early and automatically is critical for reducing the number of defects introduced into production, increasing the overall quality and efficiency, and shortening the feedback cycle. &lt;/p&gt;
 &lt;p&gt;Using Github actions, We have set it up in a way where we run all unit tests as well as integration tests stated above, running each time we push a new change or merge a pull request to master. &lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;/625ffea4078748a160b9cdcf561fc73e/ciPage.png&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/project/625ffea4078748a160b9cdcf561fc73e/ciPage.png&quot;&gt;&lt;/p&gt;
 &lt;p&gt;Our CI tests also use Twilio test credentials which are hidden away using Github secrets. This allows CI to not only notify us of any bugs but also if any changes occur to the Twilio  API.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[User Acceptance Tests]]></title><description><![CDATA[When it came to User Acceptance tests we wrapped up everything into an installation file and provided it to our client for testing. Our…]]></description><link>https://sms-it.io/project/testing/7-user-acceptance/</link><guid isPermaLink="false">https://sms-it.io/project/testing/7-user-acceptance/</guid><pubDate>Mon, 20 Aug 2012 15:11:55 GMT</pubDate><content:encoded>&lt;p&gt;When it came to User Acceptance tests we wrapped up everything into an installation file and provided it to our client for testing. Our client expressed how they were impressed by the product we created saying how they liked the simple and intuative design and how it met their expectations. They also expressed interest in wanting to test the system in a NHS Hospital within Wales.&lt;/p&gt;
 &lt;p&gt;Throughout the process we didn’t have access to any real clinicians but we were fortunate enough to have a member of the RCGP review our system and give us feedback from a non-technical lense. The feedback included stating how the design was simple as well as we were given points on how we could improve our system.&lt;/p&gt;
 &lt;p&gt;Based on this feedback we iterated further on the UI going above and beyond client expectations.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Compatibility Testing]]></title><description><![CDATA[Working on different Operating Systems Our application will be used by clinicians who could be designing bots anywhere on any OS so it was…]]></description><link>https://sms-it.io/project/testing/5-compatibility-testing/</link><guid isPermaLink="false">https://sms-it.io/project/testing/5-compatibility-testing/</guid><pubDate>Mon, 20 Aug 2012 15:11:55 GMT</pubDate><content:encoded>&lt;h1&gt;Working on different Operating Systems&lt;/h1&gt;
@@ -3201,7 +3201,7 @@ api&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=
     &gt;
       &lt;a
     class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/static/96ef07630c4ff219084c741e0d0ef5de/1144c/supportedNodes.png&quot;
+    href=&quot;/project/static/96ef07630c4ff219084c741e0d0ef5de/1144c/supportedNodes.png&quot;
     style=&quot;display: block&quot;
     target=&quot;_blank&quot;
     rel=&quot;noopener&quot;
@@ -3214,9 +3214,9 @@ api&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=
         class=&quot;gatsby-resp-image-image&quot;
         alt=&quot;supportedNodes&quot;
         title=&quot;supportedNodes&quot;
-        src=&quot;/static/96ef07630c4ff219084c741e0d0ef5de/1144c/supportedNodes.png&quot;
-        srcset=&quot;/static/96ef07630c4ff219084c741e0d0ef5de/0eb09/supportedNodes.png 500w,
-/static/96ef07630c4ff219084c741e0d0ef5de/1144c/supportedNodes.png 955w&quot;
+        src=&quot;/project/static/96ef07630c4ff219084c741e0d0ef5de/1144c/supportedNodes.png&quot;
+        srcset=&quot;/project/static/96ef07630c4ff219084c741e0d0ef5de/0eb09/supportedNodes.png 500w,
+/project/static/96ef07630c4ff219084c741e0d0ef5de/1144c/supportedNodes.png 955w&quot;
         sizes=&quot;(max-width: 955px) 100vw, 955px&quot;
         style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
         loading=&quot;lazy&quot;
@@ -3237,7 +3237,7 @@ api&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=
     &gt;
       &lt;a
     class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/static/32df121ad246da4565188f24560aba84/cb861/Choice.png&quot;
+    href=&quot;/project/static/32df121ad246da4565188f24560aba84/cb861/Choice.png&quot;
     style=&quot;display: block&quot;
     target=&quot;_blank&quot;
     rel=&quot;noopener&quot;
@@ -3250,8 +3250,8 @@ api&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=
         class=&quot;gatsby-resp-image-image&quot;
         alt=&quot;Choice&quot;
         title=&quot;Choice&quot;
-        src=&quot;/static/32df121ad246da4565188f24560aba84/cb861/Choice.png&quot;
-        srcset=&quot;/static/32df121ad246da4565188f24560aba84/cb861/Choice.png 322w&quot;
+        src=&quot;/project/static/32df121ad246da4565188f24560aba84/cb861/Choice.png&quot;
+        srcset=&quot;/project/static/32df121ad246da4565188f24560aba84/cb861/Choice.png 322w&quot;
         sizes=&quot;(max-width: 322px) 100vw, 322px&quot;
         style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
         loading=&quot;lazy&quot;
@@ -3272,7 +3272,7 @@ api&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=
     &gt;
       &lt;a
     class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/static/9876da863382be235e41bb7185c86abc/efc29/speak.png&quot;
+    href=&quot;/project/static/9876da863382be235e41bb7185c86abc/efc29/speak.png&quot;
     style=&quot;display: block&quot;
     target=&quot;_blank&quot;
     rel=&quot;noopener&quot;
@@ -3285,8 +3285,8 @@ api&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=
         class=&quot;gatsby-resp-image-image&quot;
         alt=&quot;speak&quot;
         title=&quot;speak&quot;
-        src=&quot;/static/9876da863382be235e41bb7185c86abc/efc29/speak.png&quot;
-        srcset=&quot;/static/9876da863382be235e41bb7185c86abc/efc29/speak.png 287w&quot;
+        src=&quot;/project/static/9876da863382be235e41bb7185c86abc/efc29/speak.png&quot;
+        srcset=&quot;/project/static/9876da863382be235e41bb7185c86abc/efc29/speak.png 287w&quot;
         sizes=&quot;(max-width: 287px) 100vw, 287px&quot;
         style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
         loading=&quot;lazy&quot;
@@ -3316,7 +3316,7 @@ api&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=
     &gt;
       &lt;a
     class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/static/a0116e6b6d8681e2db9ff570e14b2d24/1475c/format.png&quot;
+    href=&quot;/project/static/a0116e6b6d8681e2db9ff570e14b2d24/1475c/format.png&quot;
     style=&quot;display: block&quot;
     target=&quot;_blank&quot;
     rel=&quot;noopener&quot;
@@ -3329,9 +3329,9 @@ api&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=
         class=&quot;gatsby-resp-image-image&quot;
         alt=&quot;format&quot;
         title=&quot;format&quot;
-        src=&quot;/static/a0116e6b6d8681e2db9ff570e14b2d24/1475c/format.png&quot;
-        srcset=&quot;/static/a0116e6b6d8681e2db9ff570e14b2d24/0eb09/format.png 500w,
-/static/a0116e6b6d8681e2db9ff570e14b2d24/1475c/format.png 657w&quot;
+        src=&quot;/project/static/a0116e6b6d8681e2db9ff570e14b2d24/1475c/format.png&quot;
+        srcset=&quot;/project/static/a0116e6b6d8681e2db9ff570e14b2d24/0eb09/format.png 500w,
+/project/static/a0116e6b6d8681e2db9ff570e14b2d24/1475c/format.png 657w&quot;
         sizes=&quot;(max-width: 657px) 100vw, 657px&quot;
         style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
         loading=&quot;lazy&quot;
@@ -3396,7 +3396,7 @@ api&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=
     &gt;
       &lt;a
     class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/static/95b1f0064f96921e0d0bf19720edbd2c/1906d/voiceflow-export.png&quot;
+    href=&quot;/project/static/95b1f0064f96921e0d0bf19720edbd2c/1906d/voiceflow-export.png&quot;
     style=&quot;display: block&quot;
     target=&quot;_blank&quot;
     rel=&quot;noopener&quot;
@@ -3409,9 +3409,9 @@ api&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=
         class=&quot;gatsby-resp-image-image&quot;
         alt=&quot;voiceflow export&quot;
         title=&quot;voiceflow export&quot;
-        src=&quot;/static/95b1f0064f96921e0d0bf19720edbd2c/1906d/voiceflow-export.png&quot;
-        srcset=&quot;/static/95b1f0064f96921e0d0bf19720edbd2c/0eb09/voiceflow-export.png 500w,
-/static/95b1f0064f96921e0d0bf19720edbd2c/1906d/voiceflow-export.png 599w&quot;
+        src=&quot;/project/static/95b1f0064f96921e0d0bf19720edbd2c/1906d/voiceflow-export.png&quot;
+        srcset=&quot;/project/static/95b1f0064f96921e0d0bf19720edbd2c/0eb09/voiceflow-export.png 500w,
+/project/static/95b1f0064f96921e0d0bf19720edbd2c/1906d/voiceflow-export.png 599w&quot;
         sizes=&quot;(max-width: 599px) 100vw, 599px&quot;
         style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
         loading=&quot;lazy&quot;
@@ -3425,7 +3425,7 @@ api&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=
     &gt;
       &lt;a
     class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/static/f77246373294e270f34ebb5b84504385/64756/upload.png&quot;
+    href=&quot;/project/static/f77246373294e270f34ebb5b84504385/64756/upload.png&quot;
     style=&quot;display: block&quot;
     target=&quot;_blank&quot;
     rel=&quot;noopener&quot;
@@ -3438,10 +3438,10 @@ api&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=
         class=&quot;gatsby-resp-image-image&quot;
         alt=&quot;upload&quot;
         title=&quot;upload&quot;
-        src=&quot;/static/f77246373294e270f34ebb5b84504385/64756/upload.png&quot;
-        srcset=&quot;/static/f77246373294e270f34ebb5b84504385/0eb09/upload.png 500w,
-/static/f77246373294e270f34ebb5b84504385/1263b/upload.png 1000w,
-/static/f77246373294e270f34ebb5b84504385/64756/upload.png 1200w&quot;
+        src=&quot;/project/static/f77246373294e270f34ebb5b84504385/64756/upload.png&quot;
+        srcset=&quot;/project/static/f77246373294e270f34ebb5b84504385/0eb09/upload.png 500w,
+/project/static/f77246373294e270f34ebb5b84504385/1263b/upload.png 1000w,
+/project/static/f77246373294e270f34ebb5b84504385/64756/upload.png 1200w&quot;
         sizes=&quot;(max-width: 1200px) 100vw, 1200px&quot;
         style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
         loading=&quot;lazy&quot;
@@ -3456,7 +3456,7 @@ api&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=
     &gt;
       &lt;a
     class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/static/79de115040fc412b83a677437da3c444/0595e/test-tooltip.png&quot;
+    href=&quot;/project/static/79de115040fc412b83a677437da3c444/0595e/test-tooltip.png&quot;
     style=&quot;display: block&quot;
     target=&quot;_blank&quot;
     rel=&quot;noopener&quot;
@@ -3469,8 +3469,8 @@ api&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=
         class=&quot;gatsby-resp-image-image&quot;
         alt=&quot;test tooltip&quot;
         title=&quot;test tooltip&quot;
-        src=&quot;/static/79de115040fc412b83a677437da3c444/0595e/test-tooltip.png&quot;
-        srcset=&quot;/static/79de115040fc412b83a677437da3c444/0595e/test-tooltip.png 301w&quot;
+        src=&quot;/project/static/79de115040fc412b83a677437da3c444/0595e/test-tooltip.png&quot;
+        srcset=&quot;/project/static/79de115040fc412b83a677437da3c444/0595e/test-tooltip.png 301w&quot;
         sizes=&quot;(max-width: 301px) 100vw, 301px&quot;
         style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
         loading=&quot;lazy&quot;
@@ -3484,7 +3484,7 @@ api&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=
     &gt;
       &lt;a
     class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/static/f8fed82a49cc210c6ff49ca6a8d7a5ac/64756/test.png&quot;
+    href=&quot;/project/static/f8fed82a49cc210c6ff49ca6a8d7a5ac/64756/test.png&quot;
     style=&quot;display: block&quot;
     target=&quot;_blank&quot;
     rel=&quot;noopener&quot;
@@ -3497,10 +3497,10 @@ api&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=
         class=&quot;gatsby-resp-image-image&quot;
         alt=&quot;test&quot;
         title=&quot;test&quot;
-        src=&quot;/static/f8fed82a49cc210c6ff49ca6a8d7a5ac/64756/test.png&quot;
-        srcset=&quot;/static/f8fed82a49cc210c6ff49ca6a8d7a5ac/0eb09/test.png 500w,
-/static/f8fed82a49cc210c6ff49ca6a8d7a5ac/1263b/test.png 1000w,
-/static/f8fed82a49cc210c6ff49ca6a8d7a5ac/64756/test.png 1200w&quot;
+        src=&quot;/project/static/f8fed82a49cc210c6ff49ca6a8d7a5ac/64756/test.png&quot;
+        srcset=&quot;/project/static/f8fed82a49cc210c6ff49ca6a8d7a5ac/0eb09/test.png 500w,
+/project/static/f8fed82a49cc210c6ff49ca6a8d7a5ac/1263b/test.png 1000w,
+/project/static/f8fed82a49cc210c6ff49ca6a8d7a5ac/64756/test.png 1200w&quot;
         sizes=&quot;(max-width: 1200px) 100vw, 1200px&quot;
         style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
         loading=&quot;lazy&quot;
@@ -3515,7 +3515,7 @@ api&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=
     &gt;
       &lt;a
     class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/static/f7fc9f1126f0caaca6f80377d34a3d7a/f57f1/edit-tooltip.png&quot;
+    href=&quot;/project/static/f7fc9f1126f0caaca6f80377d34a3d7a/f57f1/edit-tooltip.png&quot;
     style=&quot;display: block&quot;
     target=&quot;_blank&quot;
     rel=&quot;noopener&quot;
@@ -3528,8 +3528,8 @@ api&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=
         class=&quot;gatsby-resp-image-image&quot;
         alt=&quot;edit tooltip&quot;
         title=&quot;edit tooltip&quot;
-        src=&quot;/static/f7fc9f1126f0caaca6f80377d34a3d7a/f57f1/edit-tooltip.png&quot;
-        srcset=&quot;/static/f7fc9f1126f0caaca6f80377d34a3d7a/f57f1/edit-tooltip.png 337w&quot;
+        src=&quot;/project/static/f7fc9f1126f0caaca6f80377d34a3d7a/f57f1/edit-tooltip.png&quot;
+        srcset=&quot;/project/static/f7fc9f1126f0caaca6f80377d34a3d7a/f57f1/edit-tooltip.png 337w&quot;
         sizes=&quot;(max-width: 337px) 100vw, 337px&quot;
         style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
         loading=&quot;lazy&quot;
@@ -3543,7 +3543,7 @@ api&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=
     &gt;
       &lt;a
     class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/static/41c46d58fb96c9035851bac164d30697/64756/edit.png&quot;
+    href=&quot;/project/static/41c46d58fb96c9035851bac164d30697/64756/edit.png&quot;
     style=&quot;display: block&quot;
     target=&quot;_blank&quot;
     rel=&quot;noopener&quot;
@@ -3556,10 +3556,10 @@ api&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=
         class=&quot;gatsby-resp-image-image&quot;
         alt=&quot;edit&quot;
         title=&quot;edit&quot;
-        src=&quot;/static/41c46d58fb96c9035851bac164d30697/64756/edit.png&quot;
-        srcset=&quot;/static/41c46d58fb96c9035851bac164d30697/0eb09/edit.png 500w,
-/static/41c46d58fb96c9035851bac164d30697/1263b/edit.png 1000w,
-/static/41c46d58fb96c9035851bac164d30697/64756/edit.png 1200w&quot;
+        src=&quot;/project/static/41c46d58fb96c9035851bac164d30697/64756/edit.png&quot;
+        srcset=&quot;/project/static/41c46d58fb96c9035851bac164d30697/0eb09/edit.png 500w,
+/project/static/41c46d58fb96c9035851bac164d30697/1263b/edit.png 1000w,
+/project/static/41c46d58fb96c9035851bac164d30697/64756/edit.png 1200w&quot;
         sizes=&quot;(max-width: 1200px) 100vw, 1200px&quot;
         style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
         loading=&quot;lazy&quot;
@@ -3593,10 +3593,10 @@ api&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=
         class=&quot;gatsby-resp-image-image&quot;
         alt=&quot;Test Image&quot;
         title=&quot;Test Image&quot;
-        src=&quot;/static/8bafcea43f0bc141b01ef5b43dd2003b/b37e7/testimg1.jpg&quot;
-        srcset=&quot;/static/8bafcea43f0bc141b01ef5b43dd2003b/953fe/testimg1.jpg 500w,
-/static/8bafcea43f0bc141b01ef5b43dd2003b/0a251/testimg1.jpg 1000w,
-/static/8bafcea43f0bc141b01ef5b43dd2003b/b37e7/testimg1.jpg 1080w&quot;
+        src=&quot;/project/static/8bafcea43f0bc141b01ef5b43dd2003b/b37e7/testimg1.jpg&quot;
+        srcset=&quot;/project/static/8bafcea43f0bc141b01ef5b43dd2003b/953fe/testimg1.jpg 500w,
+/project/static/8bafcea43f0bc141b01ef5b43dd2003b/0a251/testimg1.jpg 1000w,
+/project/static/8bafcea43f0bc141b01ef5b43dd2003b/b37e7/testimg1.jpg 1080w&quot;
         sizes=&quot;(max-width: 1080px) 100vw, 1080px&quot;
         style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
         loading=&quot;lazy&quot;
@@ -3617,8 +3617,8 @@ api&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=
         class=&quot;gatsby-resp-image-image&quot;
         alt=&quot;Small Test Image&quot;
         title=&quot;Small Test Image&quot;
-        src=&quot;/static/b629d579b1c63df6750fc11d47141796/0cdb7/testimg2.jpg&quot;
-        srcset=&quot;/static/b629d579b1c63df6750fc11d47141796/0cdb7/testimg2.jpg 300w&quot;
+        src=&quot;/project/static/b629d579b1c63df6750fc11d47141796/0cdb7/testimg2.jpg&quot;
+        srcset=&quot;/project/static/b629d579b1c63df6750fc11d47141796/0cdb7/testimg2.jpg 300w&quot;
         sizes=&quot;(max-width: 300px) 100vw, 300px&quot;
         style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
         loading=&quot;lazy&quot;
