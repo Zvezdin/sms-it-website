@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[SMS It]]></title><description><![CDATA[Smart Bots for Everyone]]></description><link>https://sms-it.io/project</link><generator>GatsbyJS</generator><lastBuildDate>Fri, 19 Mar 2021 09:54:49 GMT</lastBuildDate><item><title><![CDATA[Project Overview]]></title><description><![CDATA[SMS It Abstract Admist the pandemic, NHS doctors are being overwhelmed by queries from patients with generic problems which can be resolved…]]></description><link>https://sms-it.io/project/overview/</link><guid isPermaLink="false">https://sms-it.io/project/overview/</guid><pubDate>Wed, 20 Aug 2014 15:11:55 GMT</pubDate><content:encoded>&lt;h1&gt;&lt;p style=&quot;text-align: center;&quot;&gt;SMS It&lt;/p&gt;&lt;/h1&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[SMS It]]></title><description><![CDATA[Smart Bots for Everyone]]></description><link>https://sms-it.io/project</link><generator>GatsbyJS</generator><lastBuildDate>Fri, 19 Mar 2021 09:58:09 GMT</lastBuildDate><item><title><![CDATA[Project Overview]]></title><description><![CDATA[SMS It Abstract Admist the pandemic, NHS doctors are being overwhelmed by queries from patients with generic problems which can be resolved…]]></description><link>https://sms-it.io/project/overview/</link><guid isPermaLink="false">https://sms-it.io/project/overview/</guid><pubDate>Wed, 20 Aug 2014 15:11:55 GMT</pubDate><content:encoded>&lt;h1&gt;&lt;p style=&quot;text-align: center;&quot;&gt;SMS It&lt;/p&gt;&lt;/h1&gt;
 &lt;h1&gt;Abstract&lt;/h1&gt;
 &lt;p&gt;Admist the pandemic, NHS doctors are being overwhelmed by queries from patients with generic problems which can be resolved with generic advice. This is not efficient use of NHS resources.&lt;/p&gt;
 &lt;p&gt;To solve that, the NHS want to design automated medical advice bots. These bots should be accessible over SMS in order to reach as many patients as possible. Many bot design platforms exist, with VoiceFlow being the NHS’s preferred choice. However none of these platforms support exporting bot designs over SMS. &lt;/p&gt;
@@ -703,7 +703,44 @@ These bots have the respective options to be linked to a phone number, tested, o
 &lt;li&gt;The generated &lt;code class=&quot;language-text&quot;&gt;mapping.json&lt;/code&gt; is a private asset and can be &lt;a href=&quot;https://www.twilio.com/docs/runtime/functions-assets-api&quot;&gt;no larger than 10MB in size&lt;/a&gt;. A 15 node diagram produces an on average 1KB file, so you can have an estimated 150,000 nodes before this limit is reached.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;/ul&gt;</content:encoded></item><item><title><![CDATA[Our Achievements]]></title><description><![CDATA[MosCow Status Functional Requirements Requirement Severity State The ability convert any VoiceFlow into a SMS bot with the same…]]></description><link>https://sms-it.io/project/evaluation/2-achievements/</link><guid isPermaLink="false">https://sms-it.io/project/evaluation/2-achievements/</guid><pubDate>Mon, 20 Aug 2012 15:11:55 GMT</pubDate><content:encoded>&lt;h1&gt;MosCow Status&lt;/h1&gt;
+&lt;/ul&gt;</content:encoded></item><item><title><![CDATA[End To End Testing]]></title><description><![CDATA[Why? To have a focus on usability and to make sure that the overall flow of our application makes sense, we employed the use of end to end…]]></description><link>https://sms-it.io/project/testing/4-end-to-end-testing/</link><guid isPermaLink="false">https://sms-it.io/project/testing/4-end-to-end-testing/</guid><pubDate>Mon, 20 Aug 2012 15:11:55 GMT</pubDate><content:encoded>&lt;h1&gt;Why?&lt;/h1&gt;
+&lt;p&gt;To have a focus on usability and to make sure that the overall flow of our application makes sense, we employed the use of end to end testing.&lt;/p&gt;
+&lt;p&gt;Going through each and every workflow of the application not only ensures the correctness of our application but also allows us to focus on optmising user experience. &lt;/p&gt;
+&lt;h1&gt;Examples&lt;/h1&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 1031px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/project/static/cb5740664b66ff11b2660f7cc84ef6d0/323fc/e2e.jpg&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 95.60000000000001%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/jpeg;base64,/9j/2wBDAAEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQH/2wBDAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQH/wgARCAATABQDASIAAhEBAxEB/8QAGQABAAMBAQAAAAAAAAAAAAAAAAIEBQYI/8QAFgEBAQEAAAAAAAAAAAAAAAAAAgAB/9oADAMBAAIQAxAAAAHwtC1MXPLZWrfDmGFv/8QAHBAAAwEAAgMAAAAAAAAAAAAAAQIDBAUSFSMz/9oACAEBAAEFAsqJXjYwm8yrKcQbxcC8p1t2fCxHEYPlsPu//8QAFBEBAAAAAAAAAAAAAAAAAAAAIP/aAAgBAwEBPwEf/8QAHBEAAQMFAAAAAAAAAAAAAAAAAQBRcRAxQbHw/9oACAECAQE/AX7NHkbQsIX/xAApEAABAgUCAwkAAAAAAAAAAAABAjEAERIhcQMEQVGRFCMkMlRhc6Gy/9oACAEBAAY/AtoojvOy6AmEpLIGFsL3xCqqqwVASUlIMgJTqv8AXs8EENG0AqHh9K4x0zGpImlKjcMyeI6RMSVNzd42svTp/JML+RWPKng0Fm5DmY//xAAeEAEBAAICAwEBAAAAAAAAAAABEQAhMUFRYXGBkf/aAAgBAQABPyGKqAGJ7N2qrj24xF7faFBnJXW2G8IozZ+JpMcwC3RQjuaMTwqUxjvNVmhtUHhfxMpagKNeW6X7iap6h/cPe8ddjdcOV+GnqTGlIIPH8c//2gAMAwEAAgADAAAAEPjofP/EAB4RAAAEBwAAAAAAAAAAAAAAAAABEHERQYGxwdHw/9oACAEDAQE/EBW+ugwmTHhP/8QAHhEAAQMFAQEAAAAAAAAAAAAAAREhMQBBYXHwgdH/2gAIAQIBAT8QdgKOyaCcx8uCUCjmzyaUxUCILD6gev/EABsQAQEBAAMBAQAAAAAAAAAAAAERIQBBUTFx/9oACAEBAAE/EIfkEFQSRTDZkzjC8XAnjLYKFKYBy1jb07uR0inTohIw0Ul4pSkNCNXhtuH3AtOblQQA5IV4StAUrINCt1XguUOK8QE8k/QXjE2Uq64P2FpihAhAGEQABUB5KzwgQAP/2Q==&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;e2e&quot;
+        title=&quot;e2e&quot;
+        src=&quot;/project/static/cb5740664b66ff11b2660f7cc84ef6d0/323fc/e2e.jpg&quot;
+        srcset=&quot;/project/static/cb5740664b66ff11b2660f7cc84ef6d0/953fe/e2e.jpg 500w,
+/project/static/cb5740664b66ff11b2660f7cc84ef6d0/0a251/e2e.jpg 1000w,
+/project/static/cb5740664b66ff11b2660f7cc84ef6d0/323fc/e2e.jpg 1031w&quot;
+        sizes=&quot;(max-width: 1031px) 100vw, 1031px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;An example of a workflow is that a user may login and attempt to upload a file which isn’t in the required &lt;code class=&quot;language-text&quot;&gt;.vf&lt;/code&gt; format. We have a test to simulate that behaviour and make sure if a user follows that workflow, they are shown an &lt;code class=&quot;language-text&quot;&gt;unsupported diagram&lt;/code&gt; error message.&lt;/p&gt;
+&lt;h1&gt;Implementation&lt;/h1&gt;
+&lt;p&gt;&lt;img src=&quot;/project/246dac4701eac662e239013d576ad3c7/E2E_tests.gif&quot;&gt;&lt;/p&gt;
+&lt;p&gt;To create these end to end tests we use an electron testing framework named &lt;code class=&quot;language-text&quot;&gt;Spectron&lt;/code&gt;. &lt;code class=&quot;language-text&quot;&gt;Spectron&lt;/code&gt; acts as a way for us to start our application as well as control the UI within our test suite. &lt;/p&gt;
+&lt;p&gt;To have fully automated end to end tests we use &lt;code class=&quot;language-text&quot;&gt;WebdriverIO&lt;/code&gt; and the testing package used is &lt;code class=&quot;language-text&quot;&gt;mocha&lt;/code&gt;. The reason &lt;code class=&quot;language-text&quot;&gt;Mocha&lt;/code&gt; was picked over any other package was to ensure that we stay consistent with the WebdriverIO documentation. &lt;/p&gt;</content:encoded></item><item><title><![CDATA[Our Achievements]]></title><description><![CDATA[MosCow Status Functional Requirements Requirement Severity State The ability convert any VoiceFlow into a SMS bot with the same…]]></description><link>https://sms-it.io/project/evaluation/2-achievements/</link><guid isPermaLink="false">https://sms-it.io/project/evaluation/2-achievements/</guid><pubDate>Mon, 20 Aug 2012 15:11:55 GMT</pubDate><content:encoded>&lt;h1&gt;MosCow Status&lt;/h1&gt;
 &lt;h2&gt;Functional Requirements&lt;/h2&gt;
 &lt;table&gt;
 &lt;thead&gt;
@@ -2369,44 +2406,7 @@ The bots that clinicians will create are not in a linear fashion, as they includ
 &lt;p&gt;For unit testing &lt;code class=&quot;language-text&quot;&gt;ubf-to-twilio&lt;/code&gt; it was a bit more tricky as part of the package is making external &lt;code class=&quot;language-text&quot;&gt;API&lt;/code&gt; calls to Twilio and the purpose of a unit test is to test a module in isolation. To enable that we ended up using jest to mock specific &lt;code class=&quot;language-text&quot;&gt;API&lt;/code&gt; calls to allow us to extensively unit test modules. The purpose of the mocks is to emulate what Twilio would respond if we were to make the same call in a live environment.&lt;/p&gt;
 &lt;h1&gt;The Frontend&lt;/h1&gt;
 &lt;p&gt;The UI unit tests were responsible for ensuring that everyting on the frontend works as to be expected. An example of this is checking that once you login, all the data that is recieved from the the &lt;code class=&quot;language-text&quot;&gt;API&lt;/code&gt; call is correctly displayed to the user.&lt;/p&gt;
-&lt;p&gt;To test components that usually require calling our &lt;code class=&quot;language-text&quot;&gt;API&lt;/code&gt;, we would also mock those functionalities using &lt;code class=&quot;language-text&quot;&gt;jest&lt;/code&gt; so every test is isolated to test a specific component.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[End To End Testing]]></title><description><![CDATA[Why? To have a focus on usability and to make sure that the overall flow of our application makes sense, we employed the use of end to end…]]></description><link>https://sms-it.io/project/testing/4-end-to-end-testing/</link><guid isPermaLink="false">https://sms-it.io/project/testing/4-end-to-end-testing/</guid><pubDate>Mon, 20 Aug 2012 15:11:55 GMT</pubDate><content:encoded>&lt;h1&gt;Why?&lt;/h1&gt;
-&lt;p&gt;To have a focus on usability and to make sure that the overall flow of our application makes sense, we employed the use of end to end testing.&lt;/p&gt;
-&lt;p&gt;Going through each and every workflow of the application not only ensures the correctness of our application but also allows us to focus on optmising user experience. &lt;/p&gt;
-&lt;h1&gt;Examples&lt;/h1&gt;
-&lt;p&gt;&lt;span
-      class=&quot;gatsby-resp-image-wrapper&quot;
-      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 1031px; &quot;
-    &gt;
-      &lt;a
-    class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/project/static/cb5740664b66ff11b2660f7cc84ef6d0/323fc/e2e.jpg&quot;
-    style=&quot;display: block&quot;
-    target=&quot;_blank&quot;
-    rel=&quot;noopener&quot;
-  &gt;
-    &lt;span
-    class=&quot;gatsby-resp-image-background-image&quot;
-    style=&quot;padding-bottom: 95.60000000000001%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/jpeg;base64,/9j/2wBDAAEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQH/2wBDAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQH/wgARCAATABQDASIAAhEBAxEB/8QAGQABAAMBAQAAAAAAAAAAAAAAAAIEBQYI/8QAFgEBAQEAAAAAAAAAAAAAAAAAAgAB/9oADAMBAAIQAxAAAAHwtC1MXPLZWrfDmGFv/8QAHBAAAwEAAgMAAAAAAAAAAAAAAQIDBAUSFSMz/9oACAEBAAEFAsqJXjYwm8yrKcQbxcC8p1t2fCxHEYPlsPu//8QAFBEBAAAAAAAAAAAAAAAAAAAAIP/aAAgBAwEBPwEf/8QAHBEAAQMFAAAAAAAAAAAAAAAAAQBRcRAxQbHw/9oACAECAQE/AX7NHkbQsIX/xAApEAABAgUCAwkAAAAAAAAAAAABAjEAERIhcQMEQVGRFCMkMlRhc6Gy/9oACAEBAAY/AtoojvOy6AmEpLIGFsL3xCqqqwVASUlIMgJTqv8AXs8EENG0AqHh9K4x0zGpImlKjcMyeI6RMSVNzd42svTp/JML+RWPKng0Fm5DmY//xAAeEAEBAAICAwEBAAAAAAAAAAABEQAhMUFRYXGBkf/aAAgBAQABPyGKqAGJ7N2qrj24xF7faFBnJXW2G8IozZ+JpMcwC3RQjuaMTwqUxjvNVmhtUHhfxMpagKNeW6X7iap6h/cPe8ddjdcOV+GnqTGlIIPH8c//2gAMAwEAAgADAAAAEPjofP/EAB4RAAAEBwAAAAAAAAAAAAAAAAABEHERQYGxwdHw/9oACAEDAQE/EBW+ugwmTHhP/8QAHhEAAQMFAQEAAAAAAAAAAAAAAREhMQBBYXHwgdH/2gAIAQIBAT8QdgKOyaCcx8uCUCjmzyaUxUCILD6gev/EABsQAQEBAAMBAQAAAAAAAAAAAAERIQBBUTFx/9oACAEBAAE/EIfkEFQSRTDZkzjC8XAnjLYKFKYBy1jb07uR0inTohIw0Ul4pSkNCNXhtuH3AtOblQQA5IV4StAUrINCt1XguUOK8QE8k/QXjE2Uq64P2FpihAhAGEQABUB5KzwgQAP/2Q==&apos;); background-size: cover; display: block;&quot;
-  &gt;&lt;/span&gt;
-  &lt;img
-        class=&quot;gatsby-resp-image-image&quot;
-        alt=&quot;e2e&quot;
-        title=&quot;e2e&quot;
-        src=&quot;/project/static/cb5740664b66ff11b2660f7cc84ef6d0/323fc/e2e.jpg&quot;
-        srcset=&quot;/project/static/cb5740664b66ff11b2660f7cc84ef6d0/953fe/e2e.jpg 500w,
-/project/static/cb5740664b66ff11b2660f7cc84ef6d0/0a251/e2e.jpg 1000w,
-/project/static/cb5740664b66ff11b2660f7cc84ef6d0/323fc/e2e.jpg 1031w&quot;
-        sizes=&quot;(max-width: 1031px) 100vw, 1031px&quot;
-        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
-        loading=&quot;lazy&quot;
-      /&gt;
-  &lt;/a&gt;
-    &lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;An example of a workflow is that a user may login and attempt to upload a file which isn’t in the required &lt;code class=&quot;language-text&quot;&gt;.vf&lt;/code&gt; format. We have a test to simulate that behaviour and make sure if a user follows that workflow, they are shown an &lt;code class=&quot;language-text&quot;&gt;unsupported diagram&lt;/code&gt; error message.&lt;/p&gt;
-&lt;h1&gt;Implementation&lt;/h1&gt;
-&lt;p&gt;To create these end to end tests we use an electron testing framework named &lt;code class=&quot;language-text&quot;&gt;spectron&lt;/code&gt;. Spectron acts as a way for us to start our application as well as control the UI within our test suite. &lt;/p&gt;
-&lt;p&gt;To have fully automated end to end tests we use &lt;code class=&quot;language-text&quot;&gt;WebdriverIO&lt;/code&gt; and the testing package used is &lt;code class=&quot;language-text&quot;&gt;mocha&lt;/code&gt;. The reason Mocha was picked over any other package was to ensure that we stay consistent with the WebdriverIO documentation. &lt;/p&gt;
-&lt;p&gt;We then go through an expansive list of tests from logging in all the way to uploading a deployed bot.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Research Overview]]></title><description><![CDATA[The idea of the project seems fairly straightforward - you have a bot design in some data format, you have some services for sending and…]]></description><link>https://sms-it.io/project/research/1-research-overview/</link><guid isPermaLink="false">https://sms-it.io/project/research/1-research-overview/</guid><pubDate>Mon, 20 Aug 2012 15:11:55 GMT</pubDate><content:encoded>&lt;p&gt;The idea of the project seems fairly straightforward - you have a bot design in some data format, you have some services for sending and receiving SMS messages, so find a way to engineer them together. Someone could even call that a hackathon project. &lt;/p&gt;
+&lt;p&gt;To test components that usually require calling our &lt;code class=&quot;language-text&quot;&gt;API&lt;/code&gt;, we would also mock those functionalities using &lt;code class=&quot;language-text&quot;&gt;jest&lt;/code&gt; so every test is isolated to test a specific component.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Research Overview]]></title><description><![CDATA[The idea of the project seems fairly straightforward - you have a bot design in some data format, you have some services for sending and…]]></description><link>https://sms-it.io/project/research/1-research-overview/</link><guid isPermaLink="false">https://sms-it.io/project/research/1-research-overview/</guid><pubDate>Mon, 20 Aug 2012 15:11:55 GMT</pubDate><content:encoded>&lt;p&gt;The idea of the project seems fairly straightforward - you have a bot design in some data format, you have some services for sending and receiving SMS messages, so find a way to engineer them together. Someone could even call that a hackathon project. &lt;/p&gt;
 &lt;p&gt;After further research it seemed that both of these seemingly simple tasks had many unknowns. Neither VoiceFlow actually supported any kind of data export, nor was there an SMS service that supported the bot capabilities we needed. &lt;/p&gt;
 &lt;p&gt;Indeed, the first few months were invested solely in research to answer these unknowns. Every time we learnt something, we developed hypothesis, and consequently proved or disproved them. &lt;/p&gt;
 &lt;p&gt;We took an Agile approach to manage that. There wasn’t anything certain to step on - any aspect of the project could change based on new information. Are we developing a browser extension? A Windows native app? A server API? Do we have a backend? Can we even use VoiceFlow (&lt;em&gt;remember&lt;/em&gt;: no data export)? If not, do we have to make our own super intuitive bot design interface? Making plans at this stage was meaningless. &lt;/p&gt;
