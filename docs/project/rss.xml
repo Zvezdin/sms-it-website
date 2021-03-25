@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[SMS It]]></title><description><![CDATA[Smart Bots for Everyone]]></description><link>https://sms-it.io/project</link><generator>GatsbyJS</generator><lastBuildDate>Mon, 22 Mar 2021 11:52:52 GMT</lastBuildDate><item><title><![CDATA[Project Overview]]></title><description><![CDATA[SMS It Abstract Amidst the pandemic, NHS doctors are being overwhelmed by queries from patients with generic problems which can be resolved…]]></description><link>https://sms-it.io/project/overview/</link><guid isPermaLink="false">https://sms-it.io/project/overview/</guid><pubDate>Sat, 20 Mar 2021 15:11:55 GMT</pubDate><content:encoded>&lt;h1&gt;&lt;p style=&quot;text-align: center;&quot;&gt;SMS It&lt;/p&gt;&lt;/h1&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[SMS It]]></title><description><![CDATA[Smart Bots for Everyone]]></description><link>https://sms-it.io/project</link><generator>GatsbyJS</generator><lastBuildDate>Thu, 25 Mar 2021 13:18:10 GMT</lastBuildDate><item><title><![CDATA[Project Overview]]></title><description><![CDATA[SMS It Abstract Amidst the pandemic, NHS doctors are being overwhelmed by queries from patients with generic problems which can be resolved…]]></description><link>https://sms-it.io/project/overview/</link><guid isPermaLink="false">https://sms-it.io/project/overview/</guid><pubDate>Sat, 20 Mar 2021 15:11:55 GMT</pubDate><content:encoded>&lt;h1&gt;&lt;p style=&quot;text-align: center;&quot;&gt;SMS It&lt;/p&gt;&lt;/h1&gt;
 &lt;h1&gt;Abstract&lt;/h1&gt;
 &lt;p&gt;Amidst the pandemic, NHS doctors are being overwhelmed by queries from patients with generic problems which can be resolved with generic advice. This is not efficient use of NHS resources.&lt;/p&gt;
 &lt;p&gt;To solve this issue, the NHS want to design automated medical advice bots. These bots should be accessible over SMS in order to reach as many patients as possible. Many bot design platforms exist, with VoiceFlow being the NHS’s preferred choice. However none of these platforms support exporting bot designs over SMS. &lt;/p&gt;
@@ -358,7 +358,21 @@
 &lt;td align=&quot;center&quot;&gt;Frontend Development&lt;/td&gt;
 &lt;/tr&gt;
 &lt;/tbody&gt;
-&lt;/table&gt;</content:encoded></item><item><title><![CDATA[The UI and Key Functionality]]></title><description><![CDATA[User Interface and Experience The UI is designed with our key users in mind - primarily non-technical, busy clinicians within the NHS…]]></description><link>https://sms-it.io/project/evaluation/3-ui-and-functionality/</link><guid isPermaLink="false">https://sms-it.io/project/evaluation/3-ui-and-functionality/</guid><pubDate>Sat, 20 Mar 2021 15:11:55 GMT</pubDate><content:encoded>&lt;h1&gt;User Interface and Experience&lt;/h1&gt;
+&lt;/table&gt;</content:encoded></item><item><title><![CDATA[Stability and Efficiency of the System]]></title><description><![CDATA[Stability Our system has been thoroughly tested and as it stands we don’t have any bugs that effect performance or stability on the…]]></description><link>https://sms-it.io/project/evaluation/4-stability-and-efficiency/</link><guid isPermaLink="false">https://sms-it.io/project/evaluation/4-stability-and-efficiency/</guid><pubDate>Sat, 20 Mar 2021 15:11:55 GMT</pubDate><content:encoded>&lt;h1&gt;Stability&lt;/h1&gt;
+&lt;p&gt;Our system has been thoroughly tested and as it stands we don’t have any bugs that effect performance or stability on the application. We also have complete error handling and logging, so if anything unexpected were to happen, the user would get a visual notification that something went wrong with the option of emailing us (&lt;code class=&quot;language-text&quot;&gt;team@sms-it.io&lt;/code&gt;) the error log.&lt;/p&gt;
+&lt;h2&gt;Relying on Twilio&lt;/h2&gt;
+&lt;p&gt;When it comes to one of our main dependencies, Twilio, we are using the most recent stable version of the Twilio API. All these releases have been made to be backwards compatible, and previous versions of the API are still maintained by Twilio so possible issues are limited on that front. &lt;/p&gt;
+&lt;h2&gt;What about Voiceflow diagrams?&lt;/h2&gt;
+&lt;p&gt;Voiceflow diagrams were initially made in a way that didn’t allow users to export and were potentially designed not be used outside of Voiceflow. This means that there is a chance in the future that Voiceflow may adapt or change this format.&lt;/p&gt;
+&lt;p&gt;This is why we made our own Unified Bot Format to combat this. The idea is to take any diagram and convert it into this one format that can be interpreted and read by our &lt;code class=&quot;language-text&quot;&gt;ubf-to-twilio&lt;/code&gt; package. If Voiceflow decides to change the format of their diagrams, you only need to convert this new updated format to UBF and you are ready to go.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/project/a0917d728c5d05732e9847c0bf7b8581/diagramtoubf.png&quot;&gt;&lt;/p&gt;
+&lt;p&gt;We also put in a lot of research reverse engineering Voiceflow, so if Voiceflow were to remove the ability to export the &lt;code class=&quot;language-text&quot;&gt;.vf&lt;/code&gt; files, we have an alternative way on accessing the diagrams.&lt;/p&gt;
+&lt;h1&gt;Efficiency&lt;/h1&gt;
+&lt;p&gt;We have many isolated components that come together to make our system. Our application is currently a frontend that connects to a backend (Twilio) so it is incredibly efficient in terms of resource usage, since the main computation done consists of converting a Voiceflow diagram into something the backend can understand.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/project/cadb3f310c7dffaaaa49535832c48da2/twiliotosmsit.png&quot;&gt;&lt;/p&gt;
+&lt;h2&gt;Usability&lt;/h2&gt;
+&lt;p&gt;We went through many stages of iterating the UI to get it to a state where a user can efficiently navigate through it. The main way we achieved this was by getting feedback through multiple channels.&lt;/p&gt;
+&lt;p&gt;This included getting input from our TA and client as well as users who don’t have a technical background such as friends or doctors. Going to many different channels for feedback helped us to not make a system that was developer biased. &lt;/p&gt;</content:encoded></item><item><title><![CDATA[The UI and Key Functionality]]></title><description><![CDATA[User Interface and Experience The UI is designed with our key users in mind - primarily non-technical, busy clinicians within the NHS…]]></description><link>https://sms-it.io/project/evaluation/3-ui-and-functionality/</link><guid isPermaLink="false">https://sms-it.io/project/evaluation/3-ui-and-functionality/</guid><pubDate>Sat, 20 Mar 2021 15:11:55 GMT</pubDate><content:encoded>&lt;h1&gt;User Interface and Experience&lt;/h1&gt;
 &lt;p&gt;The UI is designed with our key users in mind - primarily non-technical, busy clinicians within the NHS. Therefore we made it imperative that we try to keep the UI as simple and straightforward as possible, with a minimalistic design and straightforward functions. &lt;/p&gt;
 &lt;span class=&quot;gatsby-resp-image-wrapper&quot; style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 1920px; &quot;&gt;
       &lt;a class=&quot;gatsby-resp-image-link&quot; href=&quot;/project/static/8b63c09cd8432a9c17530d7e1f18e5cf/aaf92/ui.jpg&quot; style=&quot;display: block&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;
@@ -373,42 +387,7 @@
 &lt;h1&gt;Functionality&lt;/h1&gt;
 &lt;p&gt;We have achieved &lt;strong&gt;100%&lt;/strong&gt; of our Functional requirements when it comes to our application. When it came to judging whether we passed those requirements it was mainly from client satisfcation, expressing how they recieved what they expected as well as the thorough testing we did.&lt;/p&gt;
 &lt;p&gt;The client provided an initial short list of requirements but we went out of our way, with approval of the client, to extend this list to add features and functionalities. &lt;/p&gt;
-&lt;p&gt;A lot of these additional requirements helps the long term maintainability because of all the testing and modularity we added to the project. It also addressed creating a more usuable system by adding aspects like the ability simulate a bot.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Stability and Efficiency of the System]]></title><description><![CDATA[Stability Our system has been thoroughly tested and as it stands we don’t have any bugs that effect performance or stability on the…]]></description><link>https://sms-it.io/project/evaluation/4-stability-and-efficiency/</link><guid isPermaLink="false">https://sms-it.io/project/evaluation/4-stability-and-efficiency/</guid><pubDate>Sat, 20 Mar 2021 15:11:55 GMT</pubDate><content:encoded>&lt;h1&gt;Stability&lt;/h1&gt;
-&lt;p&gt;Our system has been thoroughly tested and as it stands we don’t have any bugs that effect performance or stability on the application. We also have complete error handling and logging, so if anything unexpected were to happen, the user would get a visual notification that something went wrong with the option of emailing us (&lt;code class=&quot;language-text&quot;&gt;team@sms-it.io&lt;/code&gt;) the error log.&lt;/p&gt;
-&lt;h2&gt;Relying on Twilio&lt;/h2&gt;
-&lt;p&gt;When it comes to one of our main dependencies, Twilio, we are using the most recent stable version of the Twilio API. All these releases have been made to be backwards compatible, and previous versions of the API are still maintained by Twilio so possible issues are limited on that front. &lt;/p&gt;
-&lt;h2&gt;What about Voiceflow diagrams?&lt;/h2&gt;
-&lt;p&gt;Voiceflow diagrams were initially made in a way that didn’t allow users to export and were potentially designed not be used outside of Voiceflow. This means that there is a chance in the future that Voiceflow may adapt or change this format.&lt;/p&gt;
-&lt;p&gt;This is why we made our own Unified Bot Format to combat this. The idea is to take any diagram and convert it into this one format that can be interpreted and read by our &lt;code class=&quot;language-text&quot;&gt;ubf-to-twilio&lt;/code&gt; package. If Voiceflow decides to change the format of their diagrams, you only need to convert this new updated format to UBF and you are ready to go.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;/project/a0917d728c5d05732e9847c0bf7b8581/diagramtoubf.png&quot;&gt;&lt;/p&gt;
-&lt;p&gt;We also put in a lot of research reverse engineering Voiceflow, so if Voiceflow were to remove the ability to export the &lt;code class=&quot;language-text&quot;&gt;.vf&lt;/code&gt; files, we have an alternative way on accessing the diagrams.&lt;/p&gt;
-&lt;h1&gt;Efficiency&lt;/h1&gt;
-&lt;p&gt;We have many isolated components that come together to make our system. Our application is currently a frontend that connects to a backend (Twilio) so it is incredibly efficient in terms of resource usage, since the main computation done consists of converting a Voiceflow diagram into something the backend can understand.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;/project/cadb3f310c7dffaaaa49535832c48da2/twiliotosmsit.png&quot;&gt;&lt;/p&gt;
-&lt;h2&gt;Usability&lt;/h2&gt;
-&lt;p&gt;We went through many stages of iterating the UI to get it to a state where a user can efficiently navigate through it. The main way we achieved this was by getting feedback through multiple channels.&lt;/p&gt;
-&lt;p&gt;This included getting input from our TA and client as well as users who don’t have a technical background such as friends or doctors. Going to many different channels for feedback helped us to not make a system that was developer biased. &lt;/p&gt;</content:encoded></item><item><title><![CDATA[Compatibility and Maintainability]]></title><description><![CDATA[Compatibility Since we use Electron, our application is compatabile on MacOS, Windows and Linux. The NHS largely uses Windows machines with…]]></description><link>https://sms-it.io/project/evaluation/5-compatibility-and-maintainability/</link><guid isPermaLink="false">https://sms-it.io/project/evaluation/5-compatibility-and-maintainability/</guid><pubDate>Sat, 20 Mar 2021 15:11:55 GMT</pubDate><content:encoded>&lt;h1&gt;Compatibility&lt;/h1&gt;
-&lt;p&gt;Since we use Electron, our application is compatabile on MacOS, Windows and Linux. The NHS largely uses Windows machines with some of the oldest being Windows 7 which Electron is able to support.&lt;/p&gt;
-&lt;p&gt;By supporting all major OS’s, there are minimal restrictions to who is able to run our application.&lt;/p&gt;
-&lt;h1&gt;Maintainability&lt;/h1&gt;
-&lt;p&gt;Our project focuses on being flexible as we provide many modules and an interface that can be extended and built on top of. &lt;/p&gt;
-&lt;h2&gt;Complete Modularity&lt;/h2&gt;
-&lt;p&gt;&lt;img src=&quot;/project/7f63d768ceaf37c18763572fac6a2b75/modulardiagram.png&quot;&gt;&lt;/p&gt;
-&lt;p&gt;We decouple the UI from the backend logic using connectors in terms of different packages (following the principle of seperation of responsibilities), so in the case Twilio or Voiceflow shuts down, you can easily adapt and chance these connectors to support new packages.&lt;/p&gt;
-&lt;h2&gt;Interfaces&lt;/h2&gt;
-&lt;p&gt;Despite Twilio being a rather large company, there is no guarantee that they will be around in the future. That is why we made the &lt;code class=&quot;language-text&quot;&gt;UBF SMS Interface&lt;/code&gt;.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;/project/9dc5533ddddc9203fcd757f056413a5b/ubftobackend.png&quot;&gt;&lt;/p&gt;
-&lt;p&gt;Implementing this interface with your own backend allows developers to integrate internet services like Telegram and Whatsapp so you are able to take a Voiceflow bot designed for smartspeakers and put it straight onto Whatsapp.&lt;/p&gt;
-&lt;h2&gt;Documentation&lt;/h2&gt;
-&lt;p&gt;To allow anyone to pick up this project and know exactly what everything does, we focused heavily on providing good user and developer facing documentation which covers our whole system. This includes:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Providing JSDoc style documentation for all functions.&lt;/li&gt;
-&lt;li&gt;Web documentation for our the UI and both of our packages.&lt;/li&gt;
-&lt;li&gt;Limits documentation stating how far you can push our product such as how many chatbots you can create, how many &lt;code class=&quot;language-text&quot;&gt;API&lt;/code&gt; calls you can do at one time, and many other key edge points.&lt;/li&gt;
-&lt;li&gt;We made sure to have thorough maintenance documentation and clear setup and usage documentation.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2&gt;Testing&lt;/h2&gt;
-&lt;p&gt;Each of the differents elements of our project have been through vast testing suites ensuring that each module works as desired. These tests included unit, integration, end to end, compatibility and user acceptance testing with continuous integration set up to automate our unit and integration tests.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Project Management]]></title><description><![CDATA[Daily Meetings We would have daily team meetings outlining what we had done the day before, what progress we aim to make that day, and go…]]></description><link>https://sms-it.io/project/evaluation/6-project-management/</link><guid isPermaLink="false">https://sms-it.io/project/evaluation/6-project-management/</guid><pubDate>Sat, 20 Mar 2021 15:11:55 GMT</pubDate><content:encoded>&lt;h1&gt;Daily Meetings&lt;/h1&gt;
+&lt;p&gt;A lot of these additional requirements helps the long term maintainability because of all the testing and modularity we added to the project. It also addressed creating a more usuable system by adding aspects like the ability simulate a bot.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Project Management]]></title><description><![CDATA[Daily Meetings We would have daily team meetings outlining what we had done the day before, what progress we aim to make that day, and go…]]></description><link>https://sms-it.io/project/evaluation/6-project-management/</link><guid isPermaLink="false">https://sms-it.io/project/evaluation/6-project-management/</guid><pubDate>Sat, 20 Mar 2021 15:11:55 GMT</pubDate><content:encoded>&lt;h1&gt;Daily Meetings&lt;/h1&gt;
 &lt;p&gt;We would have daily team meetings outlining what we had done the day before, what progress we aim to make that day, and go over any issues that we had. This ensured that everyone was held to account and encouraged team discussion when it came to solving problems. &lt;/p&gt;
 &lt;h1&gt;Constant Channel of communication&lt;/h1&gt;
 &lt;p&gt;Despite COVID and us not being able to meet in person, it was important to have as many other clear channels of communication as possible. &lt;/p&gt;
@@ -440,7 +419,28 @@
 &lt;br&gt;
 &lt;p&gt;We created road maps that would outline all the tasks we expected to get done during each and every week leading up to our delivery date.&lt;/p&gt;
 &lt;p&gt;The roadmap was designed to be heavy with the number of tasks early on but reduced as the weeks went by. &lt;/p&gt;
-&lt;p&gt;This allowed us to have a clear idea of what we want to get done each week but also mitigate issues caused by unexpected problems.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[The Future of SMS-IT]]></title><description><![CDATA[We’ve made great progress in being the first to take a conversation diagram in Voiceflow and turn it into an SMS chatbot, but our vision of…]]></description><link>https://sms-it.io/project/evaluation/7-the-future/</link><guid isPermaLink="false">https://sms-it.io/project/evaluation/7-the-future/</guid><pubDate>Sat, 20 Mar 2021 15:11:55 GMT</pubDate><content:encoded>&lt;p&gt;We’ve made great progress in being the first to take a conversation diagram in Voiceflow and turn it into an SMS chatbot, but our vision of SMS-IT is much greater than that.&lt;/p&gt;
+&lt;p&gt;This allowed us to have a clear idea of what we want to get done each week but also mitigate issues caused by unexpected problems.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Compatibility and Maintainability]]></title><description><![CDATA[Compatibility Since we use Electron, our application is compatabile on MacOS, Windows and Linux. The NHS largely uses Windows machines with…]]></description><link>https://sms-it.io/project/evaluation/5-compatibility-and-maintainability/</link><guid isPermaLink="false">https://sms-it.io/project/evaluation/5-compatibility-and-maintainability/</guid><pubDate>Sat, 20 Mar 2021 15:11:55 GMT</pubDate><content:encoded>&lt;h1&gt;Compatibility&lt;/h1&gt;
+&lt;p&gt;Since we use Electron, our application is compatabile on MacOS, Windows and Linux. The NHS largely uses Windows machines with some of the oldest being Windows 7 which Electron is able to support.&lt;/p&gt;
+&lt;p&gt;By supporting all major OS’s, there are minimal restrictions to who is able to run our application.&lt;/p&gt;
+&lt;h1&gt;Maintainability&lt;/h1&gt;
+&lt;p&gt;Our project focuses on being flexible as we provide many modules and an interface that can be extended and built on top of. &lt;/p&gt;
+&lt;h2&gt;Complete Modularity&lt;/h2&gt;
+&lt;p&gt;&lt;img src=&quot;/project/7f63d768ceaf37c18763572fac6a2b75/modulardiagram.png&quot;&gt;&lt;/p&gt;
+&lt;p&gt;We decouple the UI from the backend logic using connectors in terms of different packages (following the principle of seperation of responsibilities), so in the case Twilio or Voiceflow shuts down, you can easily adapt and chance these connectors to support new packages.&lt;/p&gt;
+&lt;h2&gt;Interfaces&lt;/h2&gt;
+&lt;p&gt;Despite Twilio being a rather large company, there is no guarantee that they will be around in the future. That is why we made the &lt;code class=&quot;language-text&quot;&gt;UBF SMS Interface&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/project/9dc5533ddddc9203fcd757f056413a5b/ubftobackend.png&quot;&gt;&lt;/p&gt;
+&lt;p&gt;Implementing this interface with your own backend allows developers to integrate internet services like Telegram and Whatsapp so you are able to take a Voiceflow bot designed for smartspeakers and put it straight onto Whatsapp.&lt;/p&gt;
+&lt;h2&gt;Documentation&lt;/h2&gt;
+&lt;p&gt;To allow anyone to pick up this project and know exactly what everything does, we focused heavily on providing good user and developer facing documentation which covers our whole system. This includes:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Providing JSDoc style documentation for all functions.&lt;/li&gt;
+&lt;li&gt;Web documentation for our the UI and both of our packages.&lt;/li&gt;
+&lt;li&gt;Limits documentation stating how far you can push our product such as how many chatbots you can create, how many &lt;code class=&quot;language-text&quot;&gt;API&lt;/code&gt; calls you can do at one time, and many other key edge points.&lt;/li&gt;
+&lt;li&gt;We made sure to have thorough maintenance documentation and clear setup and usage documentation.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Testing&lt;/h2&gt;
+&lt;p&gt;Each of the differents elements of our project have been through vast testing suites ensuring that each module works as desired. These tests included unit, integration, end to end, compatibility and user acceptance testing with continuous integration set up to automate our unit and integration tests.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[The Future of SMS-IT]]></title><description><![CDATA[We’ve made great progress in being the first to take a conversation diagram in Voiceflow and turn it into an SMS chatbot, but our vision of…]]></description><link>https://sms-it.io/project/evaluation/7-the-future/</link><guid isPermaLink="false">https://sms-it.io/project/evaluation/7-the-future/</guid><pubDate>Sat, 20 Mar 2021 15:11:55 GMT</pubDate><content:encoded>&lt;p&gt;We’ve made great progress in being the first to take a conversation diagram in Voiceflow and turn it into an SMS chatbot, but our vision of SMS-IT is much greater than that.&lt;/p&gt;
 &lt;h1&gt;Support more Voiceflow Features&lt;/h1&gt;
 &lt;p&gt;&lt;img src=&quot;/project/f9e40da46fa1a531653d2181092c7478/apiblocks.png&quot;&gt;&lt;/p&gt;
 &lt;p&gt;Currently we only support 3 different types of blocks: start, speak and choice blocks. Although these are the main ones required to make a majority of conversations, Voiceflow has other features such as integration blocks to connect to platforms like Google Sheets. Going forward this would require extending our interpreter of VF files within &lt;code class=&quot;language-text&quot;&gt;vf-to-ubf&lt;/code&gt; to support these blocks.&lt;/p&gt;
@@ -687,69 +687,7 @@ _[CSS]: Cascading Style Sheets&lt;/p&gt;</content:encoded></item><item><title><!
         loading=&quot;lazy&quot;
       /&gt;
   &lt;/a&gt;
-    &lt;/span&gt;&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Uploading Bots]]></title><description><![CDATA[Uploading bots involves getting your bot design as a VoiceFlow  file and uploading it in our app.  Getting the Voiceflow File First, go and…]]></description><link>https://sms-it.io/project/for-users/05-upload/</link><guid isPermaLink="false">https://sms-it.io/project/for-users/05-upload/</guid><pubDate>Sat, 20 Mar 2021 15:11:55 GMT</pubDate><content:encoded>&lt;p&gt;Uploading bots involves getting your bot design as a VoiceFlow &lt;code class=&quot;language-text&quot;&gt;.vf&lt;/code&gt; file and uploading it in our app. &lt;/p&gt;
-&lt;h1&gt;Getting the Voiceflow File&lt;/h1&gt;
-&lt;p&gt;First, go and export your VoiceFlow design as a &lt;code class=&quot;language-text&quot;&gt;.vf&lt;/code&gt; file. Instructions &lt;a href=&quot;https://docs.voiceflow.com/#/features/sharing-features?id=export-your-canvas-as-pdfpng&quot;&gt;HERE&lt;/a&gt;. You will likely need to be on their paid plan to do that. &lt;/p&gt;
-&lt;p&gt;&lt;span
-      class=&quot;gatsby-resp-image-wrapper&quot;
-      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 599px; &quot;
-    &gt;
-      &lt;a
-    class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/project/static/95b1f0064f96921e0d0bf19720edbd2c/1906d/voiceflow-export.png&quot;
-    style=&quot;display: block&quot;
-    target=&quot;_blank&quot;
-    rel=&quot;noopener&quot;
-  &gt;
-    &lt;span
-    class=&quot;gatsby-resp-image-background-image&quot;
-    style=&quot;padding-bottom: 76.6%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAPCAIAAABr+ngCAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAB1klEQVQoz41SS47VMBDMIXjP8ad//iWZQaM3QmKDWCKxBrFiMafhHEgcgDNSTggMi5GQSlan0+XuqvY0hxgSJZbae6513ba+bqXWmFcfaQ4BBS9hOsghsZVqudS+tGVB8F/kyLoXJeA6+1fX+eLcxXk3z84HF6LzO04C2oByYEqiLnJfltvjI4lGImKJxBCSmPGZEBMC3slh0MR2sozOcwRLa2ultdoqlLOq5ZxLUbMR1IrYx4RZSEsSCySDHFgCGYugOfhDLSwgmUlDTOgJRzD21Q/xILNmLbjdosg0U/baElGuDXwSgdVSuvTXrSGzIg3+IXiQraBScobBE+qSFj+6ocnoM+JI4cz4fReYxUN2TJwrbEIS54QBFKOaaC3QDHlDfAUqgCY4xha3B4iEYaSZMDMshGaxvNzf+3H36IbUuQk54LlceHGyBlvgLFsd5P3XhDvGTupidzfdbslKZP7DDCm5D9/600/36Uf6/D3cvRchshwOMpEUUs+atFJu+w7lLzDOw0d59xTefvVvvoS8sVk6a7Aq5boaDLQynhGMhQS2wHk/LaTg/RV/Ivz+LUrOsVnJ4E0vrWMZeAlApOdF+5M68HyoMbZo6x22gTOfCP+QX8QvDsxt5Nr3ctcAAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
-  &gt;&lt;/span&gt;
-  &lt;img
-        class=&quot;gatsby-resp-image-image&quot;
-        alt=&quot;voiceflow export&quot;
-        title=&quot;voiceflow export&quot;
-        src=&quot;/project/static/95b1f0064f96921e0d0bf19720edbd2c/1906d/voiceflow-export.png&quot;
-        srcset=&quot;/project/static/95b1f0064f96921e0d0bf19720edbd2c/0eb09/voiceflow-export.png 500w,
-/project/static/95b1f0064f96921e0d0bf19720edbd2c/1906d/voiceflow-export.png 599w&quot;
-        sizes=&quot;(max-width: 599px) 100vw, 599px&quot;
-        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
-        loading=&quot;lazy&quot;
-      /&gt;
-  &lt;/a&gt;
-    &lt;/span&gt;&lt;/p&gt;
-&lt;h1&gt;Uploading&lt;/h1&gt;
-&lt;p&gt;&lt;span
-      class=&quot;gatsby-resp-image-wrapper&quot;
-      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 1200px; &quot;
-    &gt;
-      &lt;a
-    class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/project/static/f77246373294e270f34ebb5b84504385/64756/upload.png&quot;
-    style=&quot;display: block&quot;
-    target=&quot;_blank&quot;
-    rel=&quot;noopener&quot;
-  &gt;
-    &lt;span
-    class=&quot;gatsby-resp-image-background-image&quot;
-    style=&quot;padding-bottom: 64.6%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAANCAYAAACpUE5eAAAACXBIWXMAAAsTAAALEwEAmpwYAAABEklEQVQ4y5WT2w6DMAiG9/5v5L0P4ZXGODWej1m0atlgsmDrTiSExtKPv1AvsJvW+hCrqgLf9yGOYwjDkGKSJBAEAaRpCtu2vfL5DNoFhMnNtm0hiiLI85w8yzKo65rARVFYAiyg3ODq0zQRpCxLilik7/tnjih+UMiq+CPC2JdlAaUUxXVdaY0ucyygqRCTzMrYO8/zrF6fArG6eV1Tteu64DgOqZS9PgXiNBFqAnk9jiMNAfMY8FGhBKChCv6GhYZhOBRkELpU/LaH8rqssO06aJqGpswt0v9Mmac5zzN0O4yB+JR4+j8plEA8SFfbXT6lr8CzV4+mlhWSZoDrw2+zsva//imHFuzxpZBy9Mce3gHVEv6eIRhFIAAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
-  &gt;&lt;/span&gt;
-  &lt;img
-        class=&quot;gatsby-resp-image-image&quot;
-        alt=&quot;upload&quot;
-        title=&quot;upload&quot;
-        src=&quot;/project/static/f77246373294e270f34ebb5b84504385/64756/upload.png&quot;
-        srcset=&quot;/project/static/f77246373294e270f34ebb5b84504385/0eb09/upload.png 500w,
-/project/static/f77246373294e270f34ebb5b84504385/1263b/upload.png 1000w,
-/project/static/f77246373294e270f34ebb5b84504385/64756/upload.png 1200w&quot;
-        sizes=&quot;(max-width: 1200px) 100vw, 1200px&quot;
-        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
-        loading=&quot;lazy&quot;
-      /&gt;
-  &lt;/a&gt;
-    &lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;You can upload the exported file at the upload screen, after which you can give your bot a name.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Attention!&lt;/strong&gt; Two bots cannot have the same name, so make sure the name you choose is unique.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Managing Bots]]></title><description><![CDATA[The main application screen connects all of the main operations available within our app. It lists all currently uploaded SMS bots, along…]]></description><link>https://sms-it.io/project/for-users/04-manage/</link><guid isPermaLink="false">https://sms-it.io/project/for-users/04-manage/</guid><pubDate>Sat, 20 Mar 2021 15:11:55 GMT</pubDate><content:encoded>&lt;p&gt;The main application screen connects all of the main operations available within our app. It lists all currently uploaded SMS bots, along with the option to upload a new one. For each bot, we can take multiple actions.&lt;/p&gt;
+    &lt;/span&gt;&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Managing Bots]]></title><description><![CDATA[The main application screen connects all of the main operations available within our app. It lists all currently uploaded SMS bots, along…]]></description><link>https://sms-it.io/project/for-users/04-manage/</link><guid isPermaLink="false">https://sms-it.io/project/for-users/04-manage/</guid><pubDate>Sat, 20 Mar 2021 15:11:55 GMT</pubDate><content:encoded>&lt;p&gt;The main application screen connects all of the main operations available within our app. It lists all currently uploaded SMS bots, along with the option to upload a new one. For each bot, we can take multiple actions.&lt;/p&gt;
 &lt;p&gt;&lt;span
       class=&quot;gatsby-resp-image-wrapper&quot;
       style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 1200px; &quot;
@@ -839,7 +777,69 @@ These bots have the respective options to be linked to a phone number, tested, o
       /&gt;
   &lt;/a&gt;
     &lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;These bots can be edited, tested, or unlinked. These operations are also explained later. &lt;/p&gt;</content:encoded></item><item><title><![CDATA[Testing Bots]]></title><description><![CDATA[Once a bot has been uploaded and converted to SMS, you should test to see if it works correctly.   Clicking the message icon opens the test…]]></description><link>https://sms-it.io/project/for-users/06-test/</link><guid isPermaLink="false">https://sms-it.io/project/for-users/06-test/</guid><pubDate>Sat, 20 Mar 2021 15:11:55 GMT</pubDate><content:encoded>&lt;p&gt;Once a bot has been uploaded and converted to SMS, you should test to see if it works correctly. &lt;/p&gt;
+&lt;p&gt;These bots can be edited, tested, or unlinked. These operations are also explained later. &lt;/p&gt;</content:encoded></item><item><title><![CDATA[Uploading Bots]]></title><description><![CDATA[Uploading bots involves getting your bot design as a VoiceFlow  file and uploading it in our app.  Getting the Voiceflow File First, go and…]]></description><link>https://sms-it.io/project/for-users/05-upload/</link><guid isPermaLink="false">https://sms-it.io/project/for-users/05-upload/</guid><pubDate>Sat, 20 Mar 2021 15:11:55 GMT</pubDate><content:encoded>&lt;p&gt;Uploading bots involves getting your bot design as a VoiceFlow &lt;code class=&quot;language-text&quot;&gt;.vf&lt;/code&gt; file and uploading it in our app. &lt;/p&gt;
+&lt;h1&gt;Getting the Voiceflow File&lt;/h1&gt;
+&lt;p&gt;First, go and export your VoiceFlow design as a &lt;code class=&quot;language-text&quot;&gt;.vf&lt;/code&gt; file. Instructions &lt;a href=&quot;https://docs.voiceflow.com/#/features/sharing-features?id=export-your-canvas-as-pdfpng&quot;&gt;HERE&lt;/a&gt;. You will likely need to be on their paid plan to do that. &lt;/p&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 599px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/project/static/95b1f0064f96921e0d0bf19720edbd2c/1906d/voiceflow-export.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 76.6%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAPCAIAAABr+ngCAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAB1klEQVQoz41SS47VMBDMIXjP8ad//iWZQaM3QmKDWCKxBrFiMafhHEgcgDNSTggMi5GQSlan0+XuqvY0hxgSJZbae6513ba+bqXWmFcfaQ4BBS9hOsghsZVqudS+tGVB8F/kyLoXJeA6+1fX+eLcxXk3z84HF6LzO04C2oByYEqiLnJfltvjI4lGImKJxBCSmPGZEBMC3slh0MR2sozOcwRLa2ultdoqlLOq5ZxLUbMR1IrYx4RZSEsSCySDHFgCGYugOfhDLSwgmUlDTOgJRzD21Q/xILNmLbjdosg0U/baElGuDXwSgdVSuvTXrSGzIg3+IXiQraBScobBE+qSFj+6ocnoM+JI4cz4fReYxUN2TJwrbEIS54QBFKOaaC3QDHlDfAUqgCY4xha3B4iEYaSZMDMshGaxvNzf+3H36IbUuQk54LlceHGyBlvgLFsd5P3XhDvGTupidzfdbslKZP7DDCm5D9/600/36Uf6/D3cvRchshwOMpEUUs+atFJu+w7lLzDOw0d59xTefvVvvoS8sVk6a7Aq5boaDLQynhGMhQS2wHk/LaTg/RV/Ivz+LUrOsVnJ4E0vrWMZeAlApOdF+5M68HyoMbZo6x22gTOfCP+QX8QvDsxt5Nr3ctcAAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;voiceflow export&quot;
+        title=&quot;voiceflow export&quot;
+        src=&quot;/project/static/95b1f0064f96921e0d0bf19720edbd2c/1906d/voiceflow-export.png&quot;
+        srcset=&quot;/project/static/95b1f0064f96921e0d0bf19720edbd2c/0eb09/voiceflow-export.png 500w,
+/project/static/95b1f0064f96921e0d0bf19720edbd2c/1906d/voiceflow-export.png 599w&quot;
+        sizes=&quot;(max-width: 599px) 100vw, 599px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;h1&gt;Uploading&lt;/h1&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 1200px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/project/static/f77246373294e270f34ebb5b84504385/64756/upload.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 64.6%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAANCAYAAACpUE5eAAAACXBIWXMAAAsTAAALEwEAmpwYAAABEklEQVQ4y5WT2w6DMAiG9/5v5L0P4ZXGODWej1m0atlgsmDrTiSExtKPv1AvsJvW+hCrqgLf9yGOYwjDkGKSJBAEAaRpCtu2vfL5DNoFhMnNtm0hiiLI85w8yzKo65rARVFYAiyg3ODq0zQRpCxLilik7/tnjih+UMiq+CPC2JdlAaUUxXVdaY0ucyygqRCTzMrYO8/zrF6fArG6eV1Tteu64DgOqZS9PgXiNBFqAnk9jiMNAfMY8FGhBKChCv6GhYZhOBRkELpU/LaH8rqssO06aJqGpswt0v9Mmac5zzN0O4yB+JR4+j8plEA8SFfbXT6lr8CzV4+mlhWSZoDrw2+zsva//imHFuzxpZBy9Mce3gHVEv6eIRhFIAAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;upload&quot;
+        title=&quot;upload&quot;
+        src=&quot;/project/static/f77246373294e270f34ebb5b84504385/64756/upload.png&quot;
+        srcset=&quot;/project/static/f77246373294e270f34ebb5b84504385/0eb09/upload.png 500w,
+/project/static/f77246373294e270f34ebb5b84504385/1263b/upload.png 1000w,
+/project/static/f77246373294e270f34ebb5b84504385/64756/upload.png 1200w&quot;
+        sizes=&quot;(max-width: 1200px) 100vw, 1200px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;You can upload the exported file at the upload screen, after which you can give your bot a name.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Attention!&lt;/strong&gt; Two bots cannot have the same name, so make sure the name you choose is unique.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Testing Bots]]></title><description><![CDATA[Once a bot has been uploaded and converted to SMS, you should test to see if it works correctly.   Clicking the message icon opens the test…]]></description><link>https://sms-it.io/project/for-users/06-test/</link><guid isPermaLink="false">https://sms-it.io/project/for-users/06-test/</guid><pubDate>Sat, 20 Mar 2021 15:11:55 GMT</pubDate><content:encoded>&lt;p&gt;Once a bot has been uploaded and converted to SMS, you should test to see if it works correctly. &lt;/p&gt;
 &lt;p&gt;&lt;span
       class=&quot;gatsby-resp-image-wrapper&quot;
       style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 301px; &quot;
@@ -1818,7 +1818,50 @@ These bots have the respective options to be linked to a phone number, tested, o
   &lt;/a&gt;
     &lt;/span&gt;&lt;/p&gt;
 &lt;h1&gt;The End Result&lt;/h1&gt;
-&lt;p&gt;These scripts outline the core capabilities of what we aim to achieve. This exact code has been rewritten and is no longer part of our end product, but it stands as a valid and minimalistic proof of concept. To see more, start by reading our system architecture &lt;a href=&quot;../02-system-architecture&quot;&gt;HERE&lt;/a&gt;. &lt;/p&gt;</content:encoded></item><item><title><![CDATA[System Architecture]]></title><description><![CDATA[Our product is a backend-less desktop app. While it is made to serve a specific purpose for the NHS, we have designed its architecture to be…]]></description><link>https://sms-it.io/project/implementation/02-system-architecture/</link><guid isPermaLink="false">https://sms-it.io/project/implementation/02-system-architecture/</guid><pubDate>Sat, 20 Mar 2021 15:11:55 GMT</pubDate><content:encoded>&lt;p&gt;Our product is a backend-less desktop app. While it is made to serve a specific purpose for the NHS, we have designed its architecture to be modular. Developers can reuse these modules for various purposes involving SMS bots. In addition, the interaction of these modules is via custom but generalised interfaces and file formats. This allows other developers to implement other modules that can be interchanged frictionlessly. Thus, this allows for a developer community to emerge. &lt;/p&gt;
+&lt;p&gt;These scripts outline the core capabilities of what we aim to achieve. This exact code has been rewritten and is no longer part of our end product, but it stands as a valid and minimalistic proof of concept. To see more, start by reading our system architecture &lt;a href=&quot;../02-system-architecture&quot;&gt;HERE&lt;/a&gt;. &lt;/p&gt;</content:encoded></item><item><title><![CDATA[The Unified Bot Format]]></title><description><![CDATA[Idea We wanted to define a stable file format for a bot which SMS systems can interface with. This format must only support bot capabilities…]]></description><link>https://sms-it.io/project/implementation/03-unified-bot-format/</link><guid isPermaLink="false">https://sms-it.io/project/implementation/03-unified-bot-format/</guid><pubDate>Sat, 20 Mar 2021 15:11:55 GMT</pubDate><content:encoded>&lt;h1&gt;Idea&lt;/h1&gt;
+&lt;p&gt;We wanted to define a stable file format for a bot which SMS systems can interface with. This format must only support bot capabilities which are relevant to the SMS interface. This gives us the possibility to create an ecosystem where bot designs can come from many different sources, not just VoiceFlow. &lt;/p&gt;
+&lt;p&gt;The capabilities that we look for is multi-choice conversation branching. That is, every question has multiple choices, each of which may lead the conversation to a different question. This is a simple idea but surprisingly, none of the current SMS systems support that in any kind of format, as our research &lt;a href=&quot;../../research/6-twilio-alternatives&quot;&gt;HERE&lt;/a&gt; concluded. &lt;/p&gt;
+&lt;h1&gt;Design&lt;/h1&gt;
+&lt;p&gt;It’s best to explain this by example. Picture the following bot. &lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;json&quot;&gt;&lt;pre class=&quot;language-json&quot;&gt;&lt;code class=&quot;language-json&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+	&lt;span class=&quot;token property&quot;&gt;&quot;project&quot;&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+        &lt;span class=&quot;token property&quot;&gt;&quot;name&quot;&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;A Fantastic Bot&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+        &lt;span class=&quot;token property&quot;&gt;&quot;nodes&quot;&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+            &lt;span class=&quot;token property&quot;&gt;&quot;jkl&quot;&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+                &lt;span class=&quot;token property&quot;&gt;&quot;type&quot;&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;start&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+                &lt;span class=&quot;token property&quot;&gt;&quot;next&quot;&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;tty&quot;&lt;/span&gt;
+            &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+            &lt;span class=&quot;token property&quot;&gt;&quot;tty&quot;&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+                &lt;span class=&quot;token property&quot;&gt;&quot;type&quot;&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;speak&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+                &lt;span class=&quot;token property&quot;&gt;&quot;content&quot;&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;What is the meaning of life&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+                &lt;span class=&quot;token property&quot;&gt;&quot;next&quot;&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;abc&quot;&lt;/span&gt;
+            &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+            &lt;span class=&quot;token property&quot;&gt;&quot;kek&quot;&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+                &lt;span class=&quot;token property&quot;&gt;&quot;type&quot;&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;speak&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+                &lt;span class=&quot;token property&quot;&gt;&quot;content&quot;&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;Please answer with yes :)&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+                &lt;span class=&quot;token property&quot;&gt;&quot;next&quot;&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;abc&quot;&lt;/span&gt;
+            &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+            &lt;span class=&quot;token property&quot;&gt;&quot;abc&quot;&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+                &lt;span class=&quot;token property&quot;&gt;&quot;type&quot;&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;choice&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+                &lt;span class=&quot;token property&quot;&gt;&quot;options&quot;&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;
+                    &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;token property&quot;&gt;&quot;type&quot;&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;yes&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token property&quot;&gt;&quot;next&quot;&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;aer&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+                    &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;token property&quot;&gt;&quot;type&quot;&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;no&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token property&quot;&gt;&quot;next&quot;&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;kek&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+                &lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;
+            &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+            &lt;span class=&quot;token property&quot;&gt;&quot;aer&quot;&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+                &lt;span class=&quot;token property&quot;&gt;&quot;type&quot;&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;speak&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+                &lt;span class=&quot;token property&quot;&gt;&quot;content&quot;&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;Correct answer. You are on your own now&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+                &lt;span class=&quot;token property&quot;&gt;&quot;next&quot;&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;hgf&quot;&lt;/span&gt;
+            &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+        &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+    &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Even intuitively you might be able to understand how this bot functions. This bot asks the &lt;code class=&quot;language-text&quot;&gt;yes&lt;/code&gt; or &lt;code class=&quot;language-text&quot;&gt;no&lt;/code&gt; question “What is the meaning of life”, and doesn’t stop asking until the user answers a yes, after which it exits. &lt;/p&gt;
+&lt;p&gt;In a way this format is just a glorified Deterministic Finate Automaton (DFA). The nodes are questions, its state is which question you are currently on, and the input determines the next state. &lt;/p&gt;
+&lt;p&gt;In particular, we have different types of nodes. One type are &lt;code class=&quot;language-text&quot;&gt;speak&lt;/code&gt; nodes, which just send some response, and continue to some specific next node. The only node which does conditional branching is the &lt;code class=&quot;language-text&quot;&gt;choice&lt;/code&gt; node, which can branch to multiple nodes based on user input (or branch if the input matches none of the options). Special nodes are &lt;code class=&quot;language-text&quot;&gt;start&lt;/code&gt; and &lt;code class=&quot;language-text&quot;&gt;end&lt;/code&gt; with self-explanatory meaning. &lt;/p&gt;
+&lt;h1&gt;Definition&lt;/h1&gt;
+&lt;p&gt;The format is strictly defined in the form of a &lt;code class=&quot;language-text&quot;&gt;JSON Schema&lt;/code&gt;. In extension, any JSON that passes that schema should be considered an implementation of that format. We chose schema as it serves &lt;em&gt;both&lt;/em&gt; &lt;strong&gt;definition&lt;/strong&gt; and &lt;strong&gt;verification&lt;/strong&gt; of the format with the same structure. The schema is below:&lt;/p&gt;
+&lt;p&gt;TODO SCHEMA THOWHID IS IT DONE&lt;/p&gt;</content:encoded></item><item><title><![CDATA[System Architecture]]></title><description><![CDATA[Our product is a backend-less desktop app. While it is made to serve a specific purpose for the NHS, we have designed its architecture to be…]]></description><link>https://sms-it.io/project/implementation/02-system-architecture/</link><guid isPermaLink="false">https://sms-it.io/project/implementation/02-system-architecture/</guid><pubDate>Sat, 20 Mar 2021 15:11:55 GMT</pubDate><content:encoded>&lt;p&gt;Our product is a backend-less desktop app. While it is made to serve a specific purpose for the NHS, we have designed its architecture to be modular. Developers can reuse these modules for various purposes involving SMS bots. In addition, the interaction of these modules is via custom but generalised interfaces and file formats. This allows other developers to implement other modules that can be interchanged frictionlessly. Thus, this allows for a developer community to emerge. &lt;/p&gt;
 &lt;h1&gt;Architectural Overview&lt;/h1&gt;
 &lt;p&gt;Our standalone app is split on 3 main components - UI, and two business logic entities. &lt;/p&gt;
 &lt;p&gt;&lt;span
@@ -1980,50 +2023,7 @@ These bots have the respective options to be linked to a phone number, tested, o
  * @returns {boolean} - `true` if number successfully changed. `false` otherwise.
  * 
  */&lt;/span&gt;
-&lt;span class=&quot;token keyword&quot;&gt;async&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;unlinkFromNumber&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token parameter&quot;&gt;client&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; id&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</content:encoded></item><item><title><![CDATA[The Unified Bot Format]]></title><description><![CDATA[Idea We wanted to define a stable file format for a bot which SMS systems can interface with. This format must only support bot capabilities…]]></description><link>https://sms-it.io/project/implementation/03-unified-bot-format/</link><guid isPermaLink="false">https://sms-it.io/project/implementation/03-unified-bot-format/</guid><pubDate>Sat, 20 Mar 2021 15:11:55 GMT</pubDate><content:encoded>&lt;h1&gt;Idea&lt;/h1&gt;
-&lt;p&gt;We wanted to define a stable file format for a bot which SMS systems can interface with. This format must only support bot capabilities which are relevant to the SMS interface. This gives us the possibility to create an ecosystem where bot designs can come from many different sources, not just VoiceFlow. &lt;/p&gt;
-&lt;p&gt;The capabilities that we look for is multi-choice conversation branching. That is, every question has multiple choices, each of which may lead the conversation to a different question. This is a simple idea but surprisingly, none of the current SMS systems support that in any kind of format, as our research &lt;a href=&quot;../../research/6-twilio-alternatives&quot;&gt;HERE&lt;/a&gt; concluded. &lt;/p&gt;
-&lt;h1&gt;Design&lt;/h1&gt;
-&lt;p&gt;It’s best to explain this by example. Picture the following bot. &lt;/p&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;json&quot;&gt;&lt;pre class=&quot;language-json&quot;&gt;&lt;code class=&quot;language-json&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
-	&lt;span class=&quot;token property&quot;&gt;&quot;project&quot;&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
-        &lt;span class=&quot;token property&quot;&gt;&quot;name&quot;&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;A Fantastic Bot&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
-        &lt;span class=&quot;token property&quot;&gt;&quot;nodes&quot;&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
-            &lt;span class=&quot;token property&quot;&gt;&quot;jkl&quot;&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
-                &lt;span class=&quot;token property&quot;&gt;&quot;type&quot;&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;start&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
-                &lt;span class=&quot;token property&quot;&gt;&quot;next&quot;&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;tty&quot;&lt;/span&gt;
-            &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
-            &lt;span class=&quot;token property&quot;&gt;&quot;tty&quot;&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
-                &lt;span class=&quot;token property&quot;&gt;&quot;type&quot;&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;speak&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
-                &lt;span class=&quot;token property&quot;&gt;&quot;content&quot;&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;What is the meaning of life&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
-                &lt;span class=&quot;token property&quot;&gt;&quot;next&quot;&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;abc&quot;&lt;/span&gt;
-            &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
-            &lt;span class=&quot;token property&quot;&gt;&quot;kek&quot;&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
-                &lt;span class=&quot;token property&quot;&gt;&quot;type&quot;&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;speak&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
-                &lt;span class=&quot;token property&quot;&gt;&quot;content&quot;&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;Please answer with yes :)&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
-                &lt;span class=&quot;token property&quot;&gt;&quot;next&quot;&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;abc&quot;&lt;/span&gt;
-            &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
-            &lt;span class=&quot;token property&quot;&gt;&quot;abc&quot;&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
-                &lt;span class=&quot;token property&quot;&gt;&quot;type&quot;&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;choice&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
-                &lt;span class=&quot;token property&quot;&gt;&quot;options&quot;&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;
-                    &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;token property&quot;&gt;&quot;type&quot;&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;yes&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token property&quot;&gt;&quot;next&quot;&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;aer&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
-                    &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;token property&quot;&gt;&quot;type&quot;&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;no&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token property&quot;&gt;&quot;next&quot;&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;kek&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
-                &lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;
-            &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
-            &lt;span class=&quot;token property&quot;&gt;&quot;aer&quot;&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
-                &lt;span class=&quot;token property&quot;&gt;&quot;type&quot;&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;speak&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
-                &lt;span class=&quot;token property&quot;&gt;&quot;content&quot;&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;Correct answer. You are on your own now&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
-                &lt;span class=&quot;token property&quot;&gt;&quot;next&quot;&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;hgf&quot;&lt;/span&gt;
-            &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
-        &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
-    &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
-&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;Even intuitively you might be able to understand how this bot functions. This bot asks the &lt;code class=&quot;language-text&quot;&gt;yes&lt;/code&gt; or &lt;code class=&quot;language-text&quot;&gt;no&lt;/code&gt; question “What is the meaning of life”, and doesn’t stop asking until the user answers a yes, after which it exits. &lt;/p&gt;
-&lt;p&gt;In a way this format is just a glorified Deterministic Finate Automaton (DFA). The nodes are questions, its state is which question you are currently on, and the input determines the next state. &lt;/p&gt;
-&lt;p&gt;In particular, we have different types of nodes. One type are &lt;code class=&quot;language-text&quot;&gt;speak&lt;/code&gt; nodes, which just send some response, and continue to some specific next node. The only node which does conditional branching is the &lt;code class=&quot;language-text&quot;&gt;choice&lt;/code&gt; node, which can branch to multiple nodes based on user input (or branch if the input matches none of the options). Special nodes are &lt;code class=&quot;language-text&quot;&gt;start&lt;/code&gt; and &lt;code class=&quot;language-text&quot;&gt;end&lt;/code&gt; with self-explanatory meaning. &lt;/p&gt;
-&lt;h1&gt;Definition&lt;/h1&gt;
-&lt;p&gt;The format is strictly defined in the form of a &lt;code class=&quot;language-text&quot;&gt;JSON Schema&lt;/code&gt;. In extension, any JSON that passes that schema should be considered an implementation of that format. We chose schema as it serves &lt;em&gt;both&lt;/em&gt; &lt;strong&gt;definition&lt;/strong&gt; and &lt;strong&gt;verification&lt;/strong&gt; of the format with the same structure. The schema is below:&lt;/p&gt;
-&lt;p&gt;TODO SCHEMA THOWHID IS IT DONE&lt;/p&gt;</content:encoded></item><item><title><![CDATA[vf-to-ubf Module]]></title><description><![CDATA[This module is responsible for converting any  () file to its respective representation in the . It is written as an independent and self…]]></description><link>https://sms-it.io/project/implementation/05-vf-to-ubf-module/</link><guid isPermaLink="false">https://sms-it.io/project/implementation/05-vf-to-ubf-module/</guid><pubDate>Sat, 20 Mar 2021 15:11:55 GMT</pubDate><content:encoded>&lt;p&gt;This module is responsible for converting any &lt;code class=&quot;language-text&quot;&gt;VoiceFlow&lt;/code&gt; (&lt;code class=&quot;language-text&quot;&gt;.vf&lt;/code&gt;) file to its respective representation in the &lt;code class=&quot;language-text&quot;&gt;Universal Bot Format&lt;/code&gt;. It is written as an independent and self-contained &lt;code class=&quot;language-text&quot;&gt;npm&lt;/code&gt; package. &lt;/p&gt;
+&lt;span class=&quot;token keyword&quot;&gt;async&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;unlinkFromNumber&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token parameter&quot;&gt;client&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; id&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</content:encoded></item><item><title><![CDATA[vf-to-ubf Module]]></title><description><![CDATA[This module is responsible for converting any  () file to its respective representation in the . It is written as an independent and self…]]></description><link>https://sms-it.io/project/implementation/05-vf-to-ubf-module/</link><guid isPermaLink="false">https://sms-it.io/project/implementation/05-vf-to-ubf-module/</guid><pubDate>Sat, 20 Mar 2021 15:11:55 GMT</pubDate><content:encoded>&lt;p&gt;This module is responsible for converting any &lt;code class=&quot;language-text&quot;&gt;VoiceFlow&lt;/code&gt; (&lt;code class=&quot;language-text&quot;&gt;.vf&lt;/code&gt;) file to its respective representation in the &lt;code class=&quot;language-text&quot;&gt;Universal Bot Format&lt;/code&gt;. It is written as an independent and self-contained &lt;code class=&quot;language-text&quot;&gt;npm&lt;/code&gt; package. &lt;/p&gt;
 &lt;h1&gt;Schema Validation&lt;/h1&gt;
 &lt;p&gt;We must guarantee that we interpret the VoiceFlow format correctly. That is, if anything in the format changes - even a seemingly innocent extra metadata key - we must not proceed with that input until the conversion software is updated to work with the new format. This way we can guarantee that if the package does not throw an exception, its input has been interpreted correctly. &lt;/p&gt;
 &lt;p&gt;We achieve this by defining a &lt;code class=&quot;language-text&quot;&gt;JSON Schema&lt;/code&gt; for the VoiceFlow format. This way we can guarantee that if the input matches the schema, then it must be supported, by definition. &lt;/p&gt;
@@ -3839,52 +3839,7 @@ The bots that clinicians will create are not in a linear fashion and include con
 [7] “SMS/MMS Documentation - Send and Receive SMS with Telnyx API”, Telnyx. [Online]. Available: &lt;a href=&quot;https://developers.telnyx.com/docs/v2/messaging&quot;&gt;https://developers.telnyx.com/docs/v2/messaging&lt;/a&gt;. [Accessed: 21- Mar- 2021].
 [8] W. Mills, “Why omnichannel is critical for customer-centric brands | SurveyMonkey”, SurveyMonkey. [Online]. Available: &lt;a href=&quot;https://www.surveymonkey.co.uk/curiosity/why-omnichannel-is-critical-for-customer-centric-brands/&quot;&gt;https://www.surveymonkey.co.uk/curiosity/why-omnichannel-is-critical-for-customer-centric-brands/&lt;/a&gt;. [Accessed: 21- Mar- 2021].
 [9] “Features – GOV.UK Notify”, Notifications.service.gov.uk. [Online]. Available: &lt;a href=&quot;https://www.notifications.service.gov.uk/features&quot;&gt;https://www.notifications.service.gov.uk/features&lt;/a&gt;. [Accessed: 21- Mar- 2021].
-[10] “Autopilot CLI Plugin (Community Project)”, Twilio.com. [Online]. Available: &lt;a href=&quot;https://www.twilio.com/docs/autopilot/twilio-autopilot-cli&quot;&gt;https://www.twilio.com/docs/autopilot/twilio-autopilot-cli&lt;/a&gt;. [Accessed: 21- Mar- 2021].&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Repurposing Twilio]]></title><description><![CDATA[Initially it seemed that Twilio didn’t have the capability to run our SMS bots. However after we dove deeper in its feature set, we found a…]]></description><link>https://sms-it.io/project/research/7-repurposing-twilio/</link><guid isPermaLink="false">https://sms-it.io/project/research/7-repurposing-twilio/</guid><pubDate>Sat, 20 Mar 2021 15:11:55 GMT</pubDate><content:encoded>&lt;p&gt;Initially it seemed that Twilio didn’t have the capability to run our SMS bots. However after we dove deeper in its feature set, we found a way to repurpose them to achieve what we need. &lt;/p&gt;
-&lt;h1&gt;How Twilio Works&lt;/h1&gt;
-&lt;p&gt;There are two main features that Twilio provide when it comes to their platform being feasible for the system we want to design.&lt;/p&gt;
-&lt;h2&gt;Twilio Autopilot&lt;/h2&gt;
-&lt;p&gt;Twilio Autopilot allows users to create custom bots, IVRs and home assistant apps[1] giving access to developers through their API.&lt;/p&gt;
-&lt;p&gt;Bots that you create with Autopilot are made up with what Twilio calls “Tasks”.&lt;/p&gt;
-&lt;p&gt;A Task can be described as a single item of work waiting to be processed[2].&lt;/p&gt;
-&lt;p&gt;You can think of these Tasks in a similar way to how we have blocks in Voiceflow. Each Task defines an action such as returning a message to the user, and you can have many of these Tasks to create a chatbot.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;/project/b9fed9838d82fd6b6a02291ad27b5ba2/vftotwilio.png&quot;&gt;&lt;/p&gt;
-&lt;p&gt;However after a Task completes and a message is returned to the user, there is no logic that starts another Task based on the user’s response.&lt;/p&gt;
-&lt;p&gt;Only one task can redirect to another specific task, no branching is supported.&lt;/p&gt;
-&lt;p&gt;This is why we need to utilise another feature that Twilio offers.&lt;/p&gt;
-&lt;h2&gt;Twilio Services&lt;/h2&gt;
-&lt;p&gt;Twilio enables developers to create a serverless environment on their platform[3].&lt;/p&gt;
-&lt;p&gt;With this serverless environment you are able to upload your own custom code and files which Twilio will host for you.&lt;/p&gt;
-&lt;p&gt;This custom code can be used to create event-driven scripts such as when a user responds to a bot[4].&lt;/p&gt;
-&lt;p&gt;In a task you are able to redirect to this custom code.&lt;/p&gt;
-&lt;h1&gt;How Can We Use These Twilio Features?&lt;/h1&gt;
-&lt;p&gt;This is an example of how a Task is constructed under one of these chatbots.&lt;/p&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;{
-	&amp;quot;actions&amp;quot;: [
-		{
-			&amp;quot;say&amp;quot;: &amp;quot;Are you feeling ill?&amp;quot;
-		},
-		{
-			&amp;quot;redirect&amp;quot;: &amp;quot;task://next-question&amp;quot;
-		}
-	]
-}&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;Previously I likened Twilio Tasks to blocks in Voiceflow and that gave us the idea to try converting each Voiceflow block into a Twilio Task.&lt;/p&gt;
-&lt;p&gt;Within each Task you are able to define a set of actions and the thing most important to us is defining what text you want to be displayed to the user. You can also define which Task you want to redirect to from your current Task.&lt;/p&gt;
-&lt;p&gt;For a Yes or No question, you will have one Task holding the answer to a question if a user responds “Yes” and you will have another Task holding the answer to a question if a user responds “No”.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;/project/d2428a05e47304a5e1165cc8ae0e1665/taskExample.png&quot;&gt;&lt;/p&gt;
-&lt;p&gt;You can only redirect to &lt;strong&gt;one specific Task&lt;/strong&gt; [5], but a Yes or No question would require redirecting to one or the other Task which you don’t know until the user gives a response.&lt;/p&gt;
-&lt;p&gt;This is where Twilio Services are useful to us. When a user responds and a task finishes, we can then redirect the task to a handling script which knows the current task and user input and, using that, pursues to the next task Twilio needs to route to in order to continue the conversation.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;/project/fd2b2ad4b4904a585a3d916914e219ed/handler.png&quot;&gt;&lt;/p&gt;
-&lt;p&gt;By combining Twilio Autopilot and Twilio Services, we are able to support conversational branching where we can dynamically change which question a user gets routed to, based on their input.&lt;/p&gt;
-&lt;p&gt;[1] “Twilio Autopilot - An AI Platform to build artificially intelligent assistants, bots, IVRs, and Alexa apps.”, Twilio, 2021. [Online]. Available: &lt;a href=&quot;https://www.twilio.com/autopilot&quot;&gt;https://www.twilio.com/autopilot&lt;/a&gt;. [Accessed: 21 Mar 2021].
-&lt;br&gt;
-[2] “Twilio TaskRouter Task Resource”, Twilio.com. [Online]. Available: &lt;a href=&quot;https://www.twilio.com/docs/taskrouter/api/task&quot;&gt;https://www.twilio.com/docs/taskrouter/api/task&lt;/a&gt;. [Accessed: 21 Mar 2021].
-&lt;br&gt;
-[3] C. RABASA, “Introducing Twilio Functions — Public Beta Now Open”, Twilio Blog, 2017. [Online]. Available: &lt;a href=&quot;https://www.twilio.com/blog/2017/05/introducing-twilio-functions.html&quot;&gt;https://www.twilio.com/blog/2017/05/introducing-twilio-functions.html&lt;/a&gt;. [Accessed: 21 Mar 2021].
-&lt;br&gt;
-[4] Twilio.com. Functions. [online] Available at: &lt;a href=&quot;https://www.twilio.com/docs/runtime/functions&quot;&gt;https://www.twilio.com/docs/runtime/functions&lt;/a&gt; [Accessed 21 March 2021].
-&lt;br&gt;
-[5] Twilio.com. Redirect. [online] Available at: &lt;a href=&quot;https://www.twilio.com/docs/autopilot/actions/redirect&quot;&gt;https://www.twilio.com/docs/autopilot/actions/redirect&lt;/a&gt; [Accessed 21 March 2021].&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Testing Overview]]></title><description><![CDATA[Testing Strategy One of the things that is noticable about this project that details from others is the level of testing that’s taken place…]]></description><link>https://sms-it.io/project/testing/1-testing-overview/</link><guid isPermaLink="false">https://sms-it.io/project/testing/1-testing-overview/</guid><pubDate>Sat, 20 Mar 2021 15:11:55 GMT</pubDate><content:encoded>&lt;h1&gt;Testing Strategy&lt;/h1&gt;
+[10] “Autopilot CLI Plugin (Community Project)”, Twilio.com. [Online]. Available: &lt;a href=&quot;https://www.twilio.com/docs/autopilot/twilio-autopilot-cli&quot;&gt;https://www.twilio.com/docs/autopilot/twilio-autopilot-cli&lt;/a&gt;. [Accessed: 21- Mar- 2021].&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Testing Overview]]></title><description><![CDATA[Testing Strategy One of the things that is noticable about this project that details from others is the level of testing that’s taken place…]]></description><link>https://sms-it.io/project/testing/1-testing-overview/</link><guid isPermaLink="false">https://sms-it.io/project/testing/1-testing-overview/</guid><pubDate>Sat, 20 Mar 2021 15:11:55 GMT</pubDate><content:encoded>&lt;h1&gt;Testing Strategy&lt;/h1&gt;
 &lt;blockquote&gt;
 &lt;p&gt;One of the things that is noticable about this project that details from others is the level of testing that’s taken place. 97% code coverage is better than most student projects. - &lt;em&gt;Prof. Joseph Connor&lt;/em&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
@@ -3978,7 +3933,52 @@ The bots that clinicians will create are not in a linear fashion and include con
 &lt;p&gt;&lt;img src=&quot;/project/e5580ad8d3d4b2127795c8bc3ebf05b9/unittestubftotwilio.png&quot;&gt;&lt;/p&gt;
 &lt;h1&gt;The Frontend&lt;/h1&gt;
 &lt;p&gt;The UI unit tests were responsible for ensuring that everything on the frontend works as expected. They were written to check that pages displayed the correct info and core elements relevant to the user experience such as text data, buttons, and written instructions to help guide the user on some pages. Components were also tested to ensure they processed and displayed data correctly based on certain user inputs. An example of this is checking the UI for notifications relating to error validation on the upload chatbot page.&lt;/p&gt;
-&lt;p&gt;To test components that usually require calling our &lt;code class=&quot;language-text&quot;&gt;API&lt;/code&gt;, we would also mock those functionalities using &lt;code class=&quot;language-text&quot;&gt;jest&lt;/code&gt; mocks so that every test is isolated to test a specific component.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Integration Tests]]></title><description><![CDATA[We had two sets of integration tests, one for each of our  modules. Combining our tests yielded over 97% coverage of our codebase. In both…]]></description><link>https://sms-it.io/project/testing/3-integration-tests/</link><guid isPermaLink="false">https://sms-it.io/project/testing/3-integration-tests/</guid><pubDate>Sat, 20 Mar 2021 15:11:55 GMT</pubDate><content:encoded>&lt;p&gt;We had two sets of integration tests, one for each of our &lt;code class=&quot;language-text&quot;&gt;npm&lt;/code&gt; modules. Combining our tests yielded over &lt;strong&gt;97%&lt;/strong&gt; coverage of our codebase.&lt;/p&gt;
+&lt;p&gt;To test components that usually require calling our &lt;code class=&quot;language-text&quot;&gt;API&lt;/code&gt;, we would also mock those functionalities using &lt;code class=&quot;language-text&quot;&gt;jest&lt;/code&gt; mocks so that every test is isolated to test a specific component.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Repurposing Twilio]]></title><description><![CDATA[Initially it seemed that Twilio didn’t have the capability to run our SMS bots. However after we dove deeper in its feature set, we found a…]]></description><link>https://sms-it.io/project/research/7-repurposing-twilio/</link><guid isPermaLink="false">https://sms-it.io/project/research/7-repurposing-twilio/</guid><pubDate>Sat, 20 Mar 2021 15:11:55 GMT</pubDate><content:encoded>&lt;p&gt;Initially it seemed that Twilio didn’t have the capability to run our SMS bots. However after we dove deeper in its feature set, we found a way to repurpose them to achieve what we need. &lt;/p&gt;
+&lt;h1&gt;How Twilio Works&lt;/h1&gt;
+&lt;p&gt;There are two main features that Twilio provide when it comes to their platform being feasible for the system we want to design.&lt;/p&gt;
+&lt;h2&gt;Twilio Autopilot&lt;/h2&gt;
+&lt;p&gt;Twilio Autopilot allows users to create custom bots, IVRs and home assistant apps[1] giving access to developers through their API.&lt;/p&gt;
+&lt;p&gt;Bots that you create with Autopilot are made up with what Twilio calls “Tasks”.&lt;/p&gt;
+&lt;p&gt;A Task can be described as a single item of work waiting to be processed[2].&lt;/p&gt;
+&lt;p&gt;You can think of these Tasks in a similar way to how we have blocks in Voiceflow. Each Task defines an action such as returning a message to the user, and you can have many of these Tasks to create a chatbot.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/project/b9fed9838d82fd6b6a02291ad27b5ba2/vftotwilio.png&quot;&gt;&lt;/p&gt;
+&lt;p&gt;However after a Task completes and a message is returned to the user, there is no logic that starts another Task based on the user’s response.&lt;/p&gt;
+&lt;p&gt;Only one task can redirect to another specific task, no branching is supported.&lt;/p&gt;
+&lt;p&gt;This is why we need to utilise another feature that Twilio offers.&lt;/p&gt;
+&lt;h2&gt;Twilio Services&lt;/h2&gt;
+&lt;p&gt;Twilio enables developers to create a serverless environment on their platform[3].&lt;/p&gt;
+&lt;p&gt;With this serverless environment you are able to upload your own custom code and files which Twilio will host for you.&lt;/p&gt;
+&lt;p&gt;This custom code can be used to create event-driven scripts such as when a user responds to a bot[4].&lt;/p&gt;
+&lt;p&gt;In a task you are able to redirect to this custom code.&lt;/p&gt;
+&lt;h1&gt;How Can We Use These Twilio Features?&lt;/h1&gt;
+&lt;p&gt;This is an example of how a Task is constructed under one of these chatbots.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;{
+	&amp;quot;actions&amp;quot;: [
+		{
+			&amp;quot;say&amp;quot;: &amp;quot;Are you feeling ill?&amp;quot;
+		},
+		{
+			&amp;quot;redirect&amp;quot;: &amp;quot;task://next-question&amp;quot;
+		}
+	]
+}&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Previously I likened Twilio Tasks to blocks in Voiceflow and that gave us the idea to try converting each Voiceflow block into a Twilio Task.&lt;/p&gt;
+&lt;p&gt;Within each Task you are able to define a set of actions and the thing most important to us is defining what text you want to be displayed to the user. You can also define which Task you want to redirect to from your current Task.&lt;/p&gt;
+&lt;p&gt;For a Yes or No question, you will have one Task holding the answer to a question if a user responds “Yes” and you will have another Task holding the answer to a question if a user responds “No”.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/project/d2428a05e47304a5e1165cc8ae0e1665/taskExample.png&quot;&gt;&lt;/p&gt;
+&lt;p&gt;You can only redirect to &lt;strong&gt;one specific Task&lt;/strong&gt; [5], but a Yes or No question would require redirecting to one or the other Task which you don’t know until the user gives a response.&lt;/p&gt;
+&lt;p&gt;This is where Twilio Services are useful to us. When a user responds and a task finishes, we can then redirect the task to a handling script which knows the current task and user input and, using that, pursues to the next task Twilio needs to route to in order to continue the conversation.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/project/fd2b2ad4b4904a585a3d916914e219ed/handler.png&quot;&gt;&lt;/p&gt;
+&lt;p&gt;By combining Twilio Autopilot and Twilio Services, we are able to support conversational branching where we can dynamically change which question a user gets routed to, based on their input.&lt;/p&gt;
+&lt;p&gt;[1] “Twilio Autopilot - An AI Platform to build artificially intelligent assistants, bots, IVRs, and Alexa apps.”, Twilio, 2021. [Online]. Available: &lt;a href=&quot;https://www.twilio.com/autopilot&quot;&gt;https://www.twilio.com/autopilot&lt;/a&gt;. [Accessed: 21 Mar 2021].
+&lt;br&gt;
+[2] “Twilio TaskRouter Task Resource”, Twilio.com. [Online]. Available: &lt;a href=&quot;https://www.twilio.com/docs/taskrouter/api/task&quot;&gt;https://www.twilio.com/docs/taskrouter/api/task&lt;/a&gt;. [Accessed: 21 Mar 2021].
+&lt;br&gt;
+[3] C. RABASA, “Introducing Twilio Functions — Public Beta Now Open”, Twilio Blog, 2017. [Online]. Available: &lt;a href=&quot;https://www.twilio.com/blog/2017/05/introducing-twilio-functions.html&quot;&gt;https://www.twilio.com/blog/2017/05/introducing-twilio-functions.html&lt;/a&gt;. [Accessed: 21 Mar 2021].
+&lt;br&gt;
+[4] Twilio.com. Functions. [online] Available at: &lt;a href=&quot;https://www.twilio.com/docs/runtime/functions&quot;&gt;https://www.twilio.com/docs/runtime/functions&lt;/a&gt; [Accessed 21 March 2021].
+&lt;br&gt;
+[5] Twilio.com. Redirect. [online] Available at: &lt;a href=&quot;https://www.twilio.com/docs/autopilot/actions/redirect&quot;&gt;https://www.twilio.com/docs/autopilot/actions/redirect&lt;/a&gt; [Accessed 21 March 2021].&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Integration Tests]]></title><description><![CDATA[We had two sets of integration tests, one for each of our  modules. Combining our tests yielded over 97% coverage of our codebase. In both…]]></description><link>https://sms-it.io/project/testing/3-integration-tests/</link><guid isPermaLink="false">https://sms-it.io/project/testing/3-integration-tests/</guid><pubDate>Sat, 20 Mar 2021 15:11:55 GMT</pubDate><content:encoded>&lt;p&gt;We had two sets of integration tests, one for each of our &lt;code class=&quot;language-text&quot;&gt;npm&lt;/code&gt; modules. Combining our tests yielded over &lt;strong&gt;97%&lt;/strong&gt; coverage of our codebase.&lt;/p&gt;
 &lt;p&gt;In both our packages we made sure to have rigorous integration tests. Since we make external &lt;code class=&quot;language-text&quot;&gt;API&lt;/code&gt; calls as well as have multiple different packages working together, it was clear we needed thorough integration testing to ensure all these units are working together properly.&lt;/p&gt;
 &lt;h1&gt;Voiceflow to UBF&lt;/h1&gt;
 &lt;p&gt;&lt;img src=&quot;/project/8353c5e1fdbaf38b261b5b6cbda40291/integrationvftoubf.png&quot;&gt;
@@ -4051,19 +4051,7 @@ The bots that clinicians will create are not in a linear fashion and include con
 
     &lt;span class=&quot;token keyword&quot;&gt;return&lt;/span&gt; errorIsDisplayed
 &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;In the example above you can see how we simulate by automating a file upload an buttons being clicked which is achieved via &lt;code class=&quot;language-text&quot;&gt;WebdriverIO&lt;/code&gt; and then we use &lt;code class=&quot;language-text&quot;&gt;Mocha&lt;/code&gt; to check whether the error message is displayed to the user or not.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Compatibility Testing]]></title><description><![CDATA[Working on different Operating Systems Our application will be used by clinicians who could be designing bots anywhere on any OS so it was…]]></description><link>https://sms-it.io/project/testing/5-compatibility-testing/</link><guid isPermaLink="false">https://sms-it.io/project/testing/5-compatibility-testing/</guid><pubDate>Sat, 20 Mar 2021 15:11:55 GMT</pubDate><content:encoded>&lt;h1&gt;Working on different Operating Systems&lt;/h1&gt;
-&lt;p&gt;Our application will be used by clinicians who could be designing bots anywhere on any OS so it was clear to ensure that our app would work on many different environments.&lt;/p&gt;
-&lt;p&gt;We focused on building support for the three major operating systems: Windows, macOS and Linux. Having used &lt;code class=&quot;language-text&quot;&gt;Electron&lt;/code&gt; - a cross platform software framework - we made builds for each platform and provide installers.&lt;/p&gt;
-&lt;p&gt;We then ensured that we are able to run our application within each of these operating systems. &lt;/p&gt;
-&lt;h1&gt;Versions&lt;/h1&gt;
-&lt;img src=&quot;/project/a436ca6c9fe9bbf6eab3a6ccfe4cabbf/os.png&quot; width=&quot;400&quot;/&gt;
-&lt;p&gt;With the hardware available to us, we were able to test on Windows 10, macOS Catalina and Arch Linux. However Electron also supports a wide range of other versions.&lt;/p&gt;
-&lt;h2&gt;Windows&lt;/h2&gt;
-&lt;p&gt;Windows 7 and later are supported.&lt;/p&gt;
-&lt;h2&gt;macOS&lt;/h2&gt;
-&lt;p&gt;macOS 10.10 (Yosemite) and later are supported.&lt;/p&gt;
-&lt;h2&gt;Linux&lt;/h2&gt;
-&lt;p&gt;Ubuntu 14.04 and later are supported.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[User Acceptance Tests]]></title><description><![CDATA[Why? Having UAT is essential because throughout the process of creating the system, we as the developers interact with the system the most…]]></description><link>https://sms-it.io/project/testing/7-user-acceptance/</link><guid isPermaLink="false">https://sms-it.io/project/testing/7-user-acceptance/</guid><pubDate>Sat, 20 Mar 2021 15:11:55 GMT</pubDate><content:encoded>&lt;h1&gt;Why?&lt;/h1&gt;
+&lt;p&gt;In the example above you can see how we simulate by automating a file upload an buttons being clicked which is achieved via &lt;code class=&quot;language-text&quot;&gt;WebdriverIO&lt;/code&gt; and then we use &lt;code class=&quot;language-text&quot;&gt;Mocha&lt;/code&gt; to check whether the error message is displayed to the user or not.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[User Acceptance Tests]]></title><description><![CDATA[Why? Having UAT is essential because throughout the process of creating the system, we as the developers interact with the system the most…]]></description><link>https://sms-it.io/project/testing/7-user-acceptance/</link><guid isPermaLink="false">https://sms-it.io/project/testing/7-user-acceptance/</guid><pubDate>Sat, 20 Mar 2021 15:11:55 GMT</pubDate><content:encoded>&lt;h1&gt;Why?&lt;/h1&gt;
 &lt;p&gt;Having UAT is essential because throughout the process of creating the system, we as the developers interact with the system the most and things that may seem obvious and intuitive to us may not be so obvious for the end user who will be using it on regular basis.&lt;/p&gt;
 &lt;h1&gt;Client Feedback&lt;/h1&gt;
 &lt;p&gt;&lt;span
@@ -4151,4 +4139,16 @@ The bots that clinicians will create are not in a linear fashion and include con
 &lt;h1&gt;Running Continuous Integration&lt;/h1&gt;
 &lt;p&gt;Using Github actions, we have it set up in a way where we run all unit and integration tests each time we push a new change or merge a pull request to the master branch. &lt;/p&gt;
 &lt;p&gt;&lt;img src=&quot;/project/625ffea4078748a160b9cdcf561fc73e/ciPage.png&quot;&gt;&lt;/p&gt;
-&lt;p&gt;Our CI tests also use &lt;code class=&quot;language-text&quot;&gt;Twilio&lt;/code&gt; test credentials which are hidden away using Github secrets. This allows CI to not only notify us of any bugs but also if any changes occur to the &lt;code class=&quot;language-text&quot;&gt;Twilio API&lt;/code&gt;.&lt;/p&gt;</content:encoded></item></channel></rss>
+&lt;p&gt;Our CI tests also use &lt;code class=&quot;language-text&quot;&gt;Twilio&lt;/code&gt; test credentials which are hidden away using Github secrets. This allows CI to not only notify us of any bugs but also if any changes occur to the &lt;code class=&quot;language-text&quot;&gt;Twilio API&lt;/code&gt;.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Compatibility Testing]]></title><description><![CDATA[Working on different Operating Systems Our application will be used by clinicians who could be designing bots anywhere on any OS so it was…]]></description><link>https://sms-it.io/project/testing/5-compatibility-testing/</link><guid isPermaLink="false">https://sms-it.io/project/testing/5-compatibility-testing/</guid><pubDate>Sat, 20 Mar 2021 15:11:55 GMT</pubDate><content:encoded>&lt;h1&gt;Working on different Operating Systems&lt;/h1&gt;
+&lt;p&gt;Our application will be used by clinicians who could be designing bots anywhere on any OS so it was clear to ensure that our app would work on many different environments.&lt;/p&gt;
+&lt;p&gt;We focused on building support for the three major operating systems: Windows, macOS and Linux. Having used &lt;code class=&quot;language-text&quot;&gt;Electron&lt;/code&gt; - a cross platform software framework - we made builds for each platform and provide installers.&lt;/p&gt;
+&lt;p&gt;We then ensured that we are able to run our application within each of these operating systems. &lt;/p&gt;
+&lt;h1&gt;Versions&lt;/h1&gt;
+&lt;img src=&quot;/project/a436ca6c9fe9bbf6eab3a6ccfe4cabbf/os.png&quot; width=&quot;400&quot;/&gt;
+&lt;p&gt;With the hardware available to us, we were able to test on Windows 10, macOS Catalina and Arch Linux. However Electron also supports a wide range of other versions.&lt;/p&gt;
+&lt;h2&gt;Windows&lt;/h2&gt;
+&lt;p&gt;Windows 7 and later are supported.&lt;/p&gt;
+&lt;h2&gt;macOS&lt;/h2&gt;
+&lt;p&gt;macOS 10.10 (Yosemite) and later are supported.&lt;/p&gt;
+&lt;h2&gt;Linux&lt;/h2&gt;
+&lt;p&gt;Ubuntu 14.04 and later are supported.&lt;/p&gt;</content:encoded></item></channel></rss>
