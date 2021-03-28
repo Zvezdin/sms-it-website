@@ -8,8 +8,13 @@
 <url> <loc>https://sms-it.io/project/project/evaluation/5-compatibility-and-maintainability/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://sms-it.io/project/project/evaluation/6-project-management/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://sms-it.io/project/project/evaluation/7-the-future/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>https://sms-it.io/project/project/for-devs/a-full-style-test/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>https://sms-it.io/project/project/for-devs/setup-building/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://sms-it.io/project/project/for-devs/1-developer-documentation/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://sms-it.io/project/project/for-devs/2-deployment-manual/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://sms-it.io/project/project/for-devs/3-setting-login-credentials/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://sms-it.io/project/project/for-devs/4-injecting-node-modules/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://sms-it.io/project/project/for-devs/5-logging/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://sms-it.io/project/project/for-devs/6-custom-errors/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://sms-it.io/project/project/for-devs/7-setting-environment-variables/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://sms-it.io/project/project/for-users/01-user-guide/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://sms-it.io/project/project/for-users/02-prerequisites/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://sms-it.io/project/project/for-users/03-setup-logging/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
@@ -53,6 +58,7 @@
 <url> <loc>https://sms-it.io/project/project/testing/5-compatibility-testing/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://sms-it.io/project/project/testing/6-continuous-integration/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://sms-it.io/project/project/testing/7-user-acceptance/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://sms-it.io/project/project/legal-statement/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://sms-it.io/project/project/overview/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://sms-it.io/project/project/tags/evaluation/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://sms-it.io/project/project/tags/for-devs/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
