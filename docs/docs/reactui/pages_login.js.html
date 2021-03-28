@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>JSDoc: Source: pages/login.js</title>
+
+    <script src="scripts/prettify/prettify.js"> </script>
+    <script src="scripts/prettify/lang-css.js"> </script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link type="text/css" rel="stylesheet" href="styles/prettify-tomorrow.css">
+    <link type="text/css" rel="stylesheet" href="styles/jsdoc-default.css">
+</head>
+
+<body>
+
+<div id="main">
+
+    <h1 class="page-title">Source: pages/login.js</h1>
+
+    
+
+
+
+    
+    <section>
+        <article>
+            <pre class="prettyprint source linenums"><code>import React from "react"
+
+import { notify } from "../helper_functions"
+
+import HelpButton from "../components/help-button"
+
+import "../styles/default.css"
+
+import store from "../Store"
+
+
+/**
+ * Responsible for rendering the login page on screen, where the user can log in using
+ * their Twilio Account SID and Auth Token. Consists of two input fields and a log in
+ * button.
+ * 
+ * @returns the login page.
+ */
+class Login extends React.Component {
+    helpURL = "https://sms-it.io/project/for-users/03-setup-logging/"
+
+    constructor(props) {
+        super(props)
+        this.state = {
+            processing: false,
+            twilioAccountSid: "AC0f5a1d9cb4dda1ce97498ba3bfcfd6ad",
+            twilioAuthToken: "fc0bd2771d31e01f3c70255259b8a229",
+            valid: true,
+        }
+    }
+
+
+    /**
+     * Updates the page state to get the user input in the credential fields.
+     */
+    handleInputChange(e) {
+        this.setState({ [e.target.name]: e.target.value })
+    }
+
+
+    render() {
+        return (
+            &lt;div className="container column" style={{justifyContent: "center"}}>
+
+                &lt;h1>Welcome to &lt;span className="sms-it">SMS-it&lt;/span>&lt;/h1>
+
+                &lt;h2>Login via Twilio&lt;/h2>&lt;br />
+
+                &lt;div className="container column" style={{height: "100px", margin: 0}}>
+
+                    &lt;input type="text" 
+                        name="twilioAccountSid" 
+                        placeholder="Twilio Account SID" 
+                        onChange={e => this.handleInputChange(e)} 
+                        style={
+                            this.state.processing ? {display: "none"} : {display: "flex"}
+                        } 
+                        className="login_field" 
+                    />
+
+                    &lt;input type="password" 
+                        name="twilioAuthToken" 
+                        placeholder="Twilio Auth Token" 
+                        onChange={e => this.handleInputChange(e)} 
+                        style={
+                            this.state.processing ? {display: "none"} : {display: "flex"}
+                        } 
+                        className="login_field" 
+                    />
+
+                    &lt;div 
+                        data-testid="spinner" 
+                        className={this.state.processing ? "small-loader" : ""} 
+                        style={this.state.processing ? {display: "flex"} : {display: "none"}} 
+                    />
+
+                &lt;/div>
+
+                &lt;br />&lt;br />
+
+                &lt;button onClick={async () => {
+
+                    this.setState({ processing: true })
+
+                    try {
+                        await store.tryConnectingToTwilio(this.state.twilioAccountSid, this.state.twilioAuthToken)
+                        this.props.history.push("/manage")
+                    } catch (e) {
+                        this.setState({ valid: false })
+                        this.setState({ processing: false })
+                        
+                        notify(
+                            "danger",
+                            "Error!",
+                            "Invalid credentials!",
+                            5000
+                        )
+                    }
+                }} 
+                style={{margin: "5px"}} 
+                className="blue-button flex-button">LOG IN&lt;/button>
+
+                &lt;br />&lt;br />&lt;br />
+
+                &lt;HelpButton url={this.helpURL} />
+            &lt;/div>
+        )
+    }
+
+}
+
+export default Login;</code></pre>
+        </article>
+    </section>
+
+
+
+
+</div>
+
+<nav>
+    <h2><a href="index.html">Home</a></h2><h3>Classes</h3><ul><li><a href="Confirmation.html">Confirmation</a></li><li><a href="Deploy.html">Deploy</a></li><li><a href="Edit.html">Edit</a></li><li><a href="ErrorAlert.html">ErrorAlert</a></li><li><a href="HelpButton.html">HelpButton</a></li><li><a href="Login.html">Login</a></li><li><a href="Manage.html">Manage</a></li><li><a href="SMSTestBox.html">SMSTestBox</a></li><li><a href="StageBar.html">StageBar</a></li><li><a href="Test.html">Test</a></li><li><a href="Upload.html">Upload</a></li></ul><h3>Global</h3><ul><li><a href="global.html#BotTable">BotTable</a></li><li><a href="global.html#cycleProcessingMessages">cycleProcessingMessages</a></li><li><a href="global.html#formatDate">formatDate</a></li><li><a href="global.html#GlobalFilter">GlobalFilter</a></li><li><a href="global.html#log">log</a></li><li><a href="global.html#notify">notify</a></li><li><a href="global.html#PhoneButton">PhoneButton</a></li><li><a href="global.html#UploadButton">UploadButton</a></li></ul>
+</nav>
+
+<br class="clear">
+
+<footer>
+    Documentation generated by <a href="https://github.com/jsdoc/jsdoc">JSDoc 3.6.6</a> on Thu Mar 25 2021 13:41:03 GMT+0000 (Greenwich Mean Time)
+</footer>
+
+<script> prettyPrint(); </script>
+<script src="scripts/linenumber.js"> </script>
+</body>
+</html>

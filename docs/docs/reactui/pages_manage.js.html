@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>JSDoc: Source: pages/manage.js</title>
+
+    <script src="scripts/prettify/prettify.js"> </script>
+    <script src="scripts/prettify/lang-css.js"> </script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link type="text/css" rel="stylesheet" href="styles/prettify-tomorrow.css">
+    <link type="text/css" rel="stylesheet" href="styles/jsdoc-default.css">
+</head>
+
+<body>
+
+<div id="main">
+
+    <h1 class="page-title">Source: pages/manage.js</h1>
+
+    
+
+
+
+    
+    <section>
+        <article>
+            <pre class="prettyprint source linenums"><code>import React from "react"
+import { observer } from "mobx-react-lite"
+
+import { notify } from "../helper_functions"
+
+import { INTENTION } from "../constants/manage"
+import { log } from '../nodeImports'
+
+import BotTable from "../components/bot-table"
+import Confirmation from "../components/confirmation"
+import ErrorAlert from "../components/error-alert"
+import HelpButton from "../components/help-button"
+
+import logout from "../images/logout.png"
+import plus from "../images/plus.png"
+import "../styles/default.css"
+
+import store from "../Store"
+
+
+/**
+ * Responsible for rendering the manage page on screen, where the user can view all of the bots tied 
+ * to their account (including undeployed and deployed chatbots). Consists of 'Manage Chatbots' heading, 
+ * and the table of bots with the option to upload a new chatbot.
+ */
+class Manage extends React.Component {
+    helpURL = "https://sms-it.io/project/for-users/04-manage/"
+
+    constructor(props) {
+        super(props);
+        this.state = {
+            showConfirmation: false,
+            intent: INTENTION.NONE,
+            showError: false
+        }
+    }
+
+    
+    /**
+     * Reference to a function that sets the showConfirmation flag to true and updates the intent to either 
+     * INTENTION.UNLINK or INTENTION.DELETE. This is passed to the bot-table component and is called when the 
+     * user selects to unlink or delete a bot - it allows the child bot-table component to change the state 
+     * of this parent page in order to show the confirmation prompt component on screen.
+     * 
+     * @param {INTENTION} intention - the action that needs confirmation (enum value: 1 UNLINK/2 DELETE).
+     */
+    showConfirmation = (intention) => {
+        this.setState({
+            showConfirmation: true,
+            intent: intention
+        })
+    }
+
+
+    /**
+     * Generates the appropriate text to display on the confirmation prompt based on the user intent to unlink 
+     * or delete the selected bot.
+     * 
+     * @returns the message to display in the body of the confirmation prompt.
+     */
+    getConfirmationMessage() {
+        return (
+            &lt;p className="confirm-text" style={{margin: 0, textOverflow: "ellipsis", overflow: "hidden"}}>
+                This action will &lt;span style={{textDecoration: "underline"}}>{this.state.intent}&lt;/span>&lt;br />
+                &lt;span 
+                    className="confirm-text" 
+                    style={
+                        this.state.intent === INTENTION.UNLINK
+                        ? {fontWeight: 500, color: "goldenrod"}
+                        : {fontWeight: 500, color: "firebrick"}
+                    }
+                >
+                    {store.candidateBot.name}
+                &lt;/span>&lt;br />
+                {
+                    this.state.intent === INTENTION.UNLINK
+                    ? &lt;>from {store.candidateBot.phoneNumber}&lt;/>
+                    : &lt;>permanently&lt;/>
+                }
+            &lt;/p>
+        )
+    }
+
+
+    /**
+     * Reference to a function that will call the appropriate method to either unlink or delete the selected bot 
+     * when the user accepts (clicks 'YES' on) the confirmation prompt. This is passed to the confirmation component.
+     */
+    acceptConfirmation = async () => {
+        await (this.state.intent === INTENTION.UNLINK
+        ? this.unlinkConfirmation()
+        : this.deleteConfirmation())
+    }
+
+
+    /**
+     * Unlinks the selected bot from its phone number and closes the confirmation prompt.
+     */
+    async unlinkConfirmation() {
+        try {
+            await store.unlinkCandidateBot()
+        } catch (e) {
+            log.error(e)
+            this.setState({ processing: false, showError: true, showConfirmation: false })
+            return
+        }
+
+        this.forceUpdate() //TODO: WORKAROUND for react-table not updating to new data. This is NOT a permanent solution. 
+
+        notify(
+            "default",
+            store.candidateBot.phoneNumber,
+            (store.candidateBot.name + " was unlinked from this number"),
+            5000
+        )
+
+        this.setState({ showConfirmation: false })
+    }
+
+
+    /**
+     * Deletes the selected bot and closes the confirmation prompt.
+     */
+    async deleteConfirmation() {
+
+        // Remove bot
+        try {
+            await store.removeCandidateBot()
+        } catch (e) {
+            log.error(e)
+            this.setState({ processing: false, showError: true, showConfirmation: false})
+            return
+        }
+
+        this.forceUpdate() //TODO: WORKAROUND for react-table not updating to new data. This is NOT a permanent solution. 
+
+        notify(
+            "default",
+            store.candidateBot.phoneNumber,
+            (store.candidateBot.name + " was deleted"),
+            5000
+        )
+
+        this.setState({ showConfirmation: false })
+    }
+
+
+    /**
+     * Reference to a function that will close the confirmation prompt when the user cancels their action. This is passed 
+     * to the confirmation component.
+     */
+    cancelConfirmation = () => {
+        this.setState({ showConfirmation: false })
+    }
+
+
+    render() {
+        return (
+            &lt;>
+                {
+                    this.state.showConfirmation 
+                    ? &lt;Confirmation 
+                        intent={this.state.intent} 
+                        message={this.getConfirmationMessage()} 
+                        accept={this.acceptConfirmation} 
+                        cancel={this.cancelConfirmation} /> 
+                    : null
+                }
+
+                {
+                    this.state.showError 
+                    ? &lt;ErrorAlert 
+                        name="Error removing bot" 
+                        message="Something went wrong with Twilio while trying to delete the bot from the phone number" 
+                        _callback={() => this.setState({ showError: false })} /> 
+                    : null
+                }
+                
+                &lt;div className="column center-items" style={{height: "15%"}}>
+                    &lt;h2>Manage Chatbots&lt;/h2>
+                &lt;/div>
+
+                &lt;div className="container column" style={{height: "80%", width: "auto", padding: "0 10%", margin: "1%", justifyContent: "flex-start"}}>
+
+                    &lt;BotTable handleConfirmation={this.showConfirmation} />
+
+                &lt;/div>
+
+                &lt;img draggable="false" data-testid="logout" src={logout} alt="Log Out" className="logout-button" onClick={() => {
+                    this.props.history.push("/")
+                    notify(
+                        "default",
+                        "You have logged out",
+                        "See you next time!",
+                        5000
+                    )
+                }} />
+
+                &lt;HelpButton url={this.helpURL} />
+            &lt;/>
+        )
+    }
+
+}
+
+export default observer((props) => &lt;Manage history={props.history}/>);</code></pre>
+        </article>
+    </section>
+
+
+
+
+</div>
+
+<nav>
+    <h2><a href="index.html">Home</a></h2><h3>Classes</h3><ul><li><a href="Confirmation.html">Confirmation</a></li><li><a href="Deploy.html">Deploy</a></li><li><a href="Edit.html">Edit</a></li><li><a href="ErrorAlert.html">ErrorAlert</a></li><li><a href="HelpButton.html">HelpButton</a></li><li><a href="Login.html">Login</a></li><li><a href="Manage.html">Manage</a></li><li><a href="SMSTestBox.html">SMSTestBox</a></li><li><a href="StageBar.html">StageBar</a></li><li><a href="Test.html">Test</a></li><li><a href="Upload.html">Upload</a></li></ul><h3>Global</h3><ul><li><a href="global.html#BotTable">BotTable</a></li><li><a href="global.html#cycleProcessingMessages">cycleProcessingMessages</a></li><li><a href="global.html#formatDate">formatDate</a></li><li><a href="global.html#GlobalFilter">GlobalFilter</a></li><li><a href="global.html#log">log</a></li><li><a href="global.html#notify">notify</a></li><li><a href="global.html#PhoneButton">PhoneButton</a></li><li><a href="global.html#UploadButton">UploadButton</a></li></ul>
+</nav>
+
+<br class="clear">
+
+<footer>
+    Documentation generated by <a href="https://github.com/jsdoc/jsdoc">JSDoc 3.6.6</a> on Thu Mar 25 2021 13:41:03 GMT+0000 (Greenwich Mean Time)
+</footer>
+
+<script> prettyPrint(); </script>
+<script src="scripts/linenumber.js"> </script>
+</body>
+</html>

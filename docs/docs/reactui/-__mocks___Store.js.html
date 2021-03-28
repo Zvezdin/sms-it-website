@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>JSDoc: Source: __mocks__/Store.js</title>
+
+    <script src="scripts/prettify/prettify.js"> </script>
+    <script src="scripts/prettify/lang-css.js"> </script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link type="text/css" rel="stylesheet" href="styles/prettify-tomorrow.css">
+    <link type="text/css" rel="stylesheet" href="styles/jsdoc-default.css">
+</head>
+
+<body>
+
+<div id="main">
+
+    <h1 class="page-title">Source: __mocks__/Store.js</h1>
+
+    
+
+
+
+    
+    <section>
+        <article>
+            <pre class="prettyprint source linenums"><code>import Bot from "../Bot"
+
+class MockBotStorage {
+
+    /**
+     * Stores a local cache of uploaded bots. Array of type Bot
+     * @type {Bot[]}
+     */
+    bots = [] // Stores a local cache of uploaded bots. 
+
+    /**
+     * Stores a local cache of Twilio phone numbers. 
+     * @type {string[]}
+     */
+    phoneNumbers = ['+441234567890']; // Stores a local cache of Twilio phone numbers. Array of type string. 
+    
+    /**
+     * Used by many functions as a default input data.
+     * Meant to be used when one UI page configures an operation and another page executes it. 
+     * Therefore can be freely edited. 
+     * @type {Bot}
+     */
+    candidateBot = null
+    
+    /**
+     * No functional meaning. Used by some UI pages to set a Bot to be viewed at another page. 
+     * Must not be edited. 
+     * @type {Bot}
+     */
+    managedBot = null
+    
+    /**
+     * Stores an authenticated twilio client. Used for all API operations. Do not touch it externally. 
+     */
+    twilioClient = null
+
+    constructor() {
+
+        let undeployedBot = new Bot();
+        undeployedBot.id = 'id0';
+        undeployedBot.name = 'Test-bot-0';
+        undeployedBot.timestamp = 0;
+        this.bots.push(undeployedBot);
+
+        for (var i = 1; i &lt; 10; i++) {
+            let bot = new Bot();
+            bot.id = 'id' + i;
+            bot.name = 'Test-bot-' + i;
+            if (i%2==0) { 
+                bot.phoneNumber = '+443210' + i;
+                this.phoneNumbers.push(bot.phoneNumber);
+            }
+            bot.timestamp = 86400000 * i;
+            this.bots.push(bot);
+        }
+
+        this.managedBot = this.bots[2];
+        this.candidateBot = this.bots[1];
+    }
+
+    /**
+     * Authenticates via Twilio and stores the authenticated client as this.twilioClient
+     * 
+     * @param  {string} twilioAccountSid
+     * @param  {string} twilioAuthToken
+     * @throws {Error} - if logging in fails
+     */
+    async tryConnectingToTwilio(twilioAccountSid, twilioAuthToken) {
+        if (twilioAccountSid !== "validAccount") {
+            throw new Error("Could not log into twilio");
+        }
+    }
+
+    //The following find* functions are getters and should be very efficient
+    //mobx should cache their results so that they aren't computed every time!
+
+    /**
+     * Searches the local bot state and returns the first bot with that phone number
+     * @param {string} number - Phone number
+     * @returns {Bot} - the result
+     * @throws If the bot is not found
+     */
+    findBotByNumber(number) {
+        var res = this.bots.find(b => b.phoneNumber === number)
+        if(res == null) throw 'Bot not found'
+        return res
+    }
+
+    /**
+     * Searches the local bot state and returns the first bot with that id
+     * @param {string} id - Bot ID
+     * @returns {Bot} - the result
+     * @throws If the bot is not found
+     */
+    findBotByID(id) {
+        var res = this.bots.find(b => b.id === id)
+        if(res == null) throw 'Bot not found'
+        return res
+    }
+
+    /**
+     * Searches the local bot state and returns whether a bot with that name exists
+     * @param {string} name - Bot name
+     * @returns {boolean} - the result
+     */
+     isNameUnique(name) {
+      var res = this.bots.find(b => b.name.toLowerCase() === name.toLowerCase())
+      if(res == null) return true
+      return false
+    }
+
+    /**
+     * Checks if a given phone number has a bot linked to it in the local state
+     * @param {string} number - Given phone number
+     * @returns {boolean} - true if number is occupied, otherwise false. 
+     * @throws If the number does not exit
+     */
+    isNumberOccupied(number) {
+        if(!this.phoneNumbers.find(n => n===number)) {
+            throw 'Number does not exist'
+        }
+        try {
+            this.findBotByNumber(number)
+            return true
+        } catch (e) {
+            return false
+        }
+    }
+
+    /**
+     * Sends a message to the uploaded candidateBot and returns the response
+     * This operation should be equivalent to sending an SMS message to that bot if it was linked to a phone number
+     * Hence it is useful to test the bot
+     * @param {string} msg 
+     * @returns {string[]} - the bot responses
+     * @throws {Error} If API operation fails
+     */
+    async simulateCandidateBot(msg) {
+        let response = ['Bot reply message'];
+        return response;
+    }
+}
+
+let storage = new MockBotStorage()
+
+export default storage
+</code></pre>
+        </article>
+    </section>
+
+
+
+
+</div>
+
+<nav>
+    <h2><a href="index.html">Home</a></h2><h3>Classes</h3><ul><li><a href="Confirmation.html">Confirmation</a></li><li><a href="Deploy.html">Deploy</a></li><li><a href="Edit.html">Edit</a></li><li><a href="ErrorAlert.html">ErrorAlert</a></li><li><a href="HelpButton.html">HelpButton</a></li><li><a href="Login.html">Login</a></li><li><a href="Manage.html">Manage</a></li><li><a href="SMSTestBox.html">SMSTestBox</a></li><li><a href="StageBar.html">StageBar</a></li><li><a href="Test.html">Test</a></li><li><a href="Upload.html">Upload</a></li></ul><h3>Global</h3><ul><li><a href="global.html#BotTable">BotTable</a></li><li><a href="global.html#cycleProcessingMessages">cycleProcessingMessages</a></li><li><a href="global.html#formatDate">formatDate</a></li><li><a href="global.html#GlobalFilter">GlobalFilter</a></li><li><a href="global.html#log">log</a></li><li><a href="global.html#notify">notify</a></li><li><a href="global.html#PhoneButton">PhoneButton</a></li><li><a href="global.html#UploadButton">UploadButton</a></li></ul>
+</nav>
+
+<br class="clear">
+
+<footer>
+    Documentation generated by <a href="https://github.com/jsdoc/jsdoc">JSDoc 3.6.6</a> on Thu Mar 25 2021 13:41:03 GMT+0000 (Greenwich Mean Time)
+</footer>
+
+<script> prettyPrint(); </script>
+<script src="scripts/linenumber.js"> </script>
+</body>
+</html>

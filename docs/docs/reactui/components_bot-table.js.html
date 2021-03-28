@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>JSDoc: Source: components/bot-table.js</title>
+
+    <script src="scripts/prettify/prettify.js"> </script>
+    <script src="scripts/prettify/lang-css.js"> </script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link type="text/css" rel="stylesheet" href="styles/prettify-tomorrow.css">
+    <link type="text/css" rel="stylesheet" href="styles/jsdoc-default.css">
+</head>
+
+<body>
+
+<div id="main">
+
+    <h1 class="page-title">Source: components/bot-table.js</h1>
+
+    
+
+
+
+    
+    <section>
+        <article>
+            <pre class="prettyprint source linenums"><code>import React, { useEffect } from "react"
+import { useTable, useGlobalFilter, usePagination, useSortBy } from 'react-table'
+import ReactTooltip from "react-tooltip"
+import { Link } from "react-router-dom"
+import { observer } from "mobx-react-lite"
+
+import { INTENTION } from "../constants/manage"
+
+import search from "../images/search.png"
+import plus from "../images/plus.png"
+import "../styles/default.css"
+
+import store from "../Store"
+
+
+/**
+ * Optional plugin hook.
+ * Filters the table of bots by matching input to any of the bot record fields.
+ * 
+ * @param {array&lt;row>} preGlobalFilteredRows - the array of rows used right before filtering.
+ * @param {string} globalFilter - if a string is passed, the function with that name will be used from the custom filterTypes table option.
+ * @param {function} setGlobalFilter - an instance-level function used to update the global filter value.
+ * 
+ * @returns a search bar with the number of bots as placeholder text.
+ */
+function GlobalFilter({ preGlobalFilteredRows, globalFilter, setGlobalFilter }) {
+    const count = preGlobalFilteredRows.length
+    const [value, setValue] = React.useState(globalFilter)
+    const onChange = value => {
+        setGlobalFilter(value || undefined)
+    }
+
+    return (
+        &lt;div className="container row" style={{justifyContent: "flex-start"}}>
+            &lt;input
+                data-testid="searchBar"
+                value={value || ""}
+                onChange={e => {
+                    setValue(e.target.value);
+                    onChange(e.target.value);
+                }}
+                placeholder={`Search ${count} chatbots`}
+                className="botSearchInput"
+            />
+            &lt;img draggable="false" src={search} alt="Search" style={{height: "24px", width: "24px", margin: "2px"}} />
+        &lt;/div>
+    )
+}
+
+
+/**
+ * Renders the button to take the user to the 'Upload New Chatbot' page.
+ * 
+ * @returns a button that redirects to the upload page.
+ */
+function UploadButton() {
+    return (
+        &lt;Link draggable="false" to="/upload">
+            &lt;div className="new-bot-button">
+                &lt;img draggable="false" src={plus} alt="Add Bot" style={{height: "24px", width: "24px", margin: "2px"}} />
+                &lt;span style={{fontSize: "1rem", margin: "0 5px"}}>UPLOAD NEW CHATBOT&lt;/span>
+            &lt;/div>
+        &lt;/Link>
+    )
+}
+
+
+/**
+ * Formats the date.
+ * 
+ * @param {number} milliseconds - the number of milliseconds since 1st Jan 1970.
+ * 
+ * @returns {string} the corresponding date in DD/MM/YYYY format.
+ */
+function formatDate(milliseconds) {
+    const d = new Date(Number(milliseconds))
+    var day = '' + d.getDate()
+    var month = '' + (d.getMonth() + 1)
+    var year = d.getFullYear()
+    if (month.length &lt; 2) { month = '0' + month }
+    if (day.length &lt; 2) { day = '0' + day }
+    return [day, month, year].join('/')
+}
+
+
+/**
+ * Builds a table of bot records from store.bots with columns for bot name, phone number, 
+ * date modified, and options including editing the bot phone number and deleting the bot.
+ * 
+ * The table has options for filtering, sorting, and pagination.
+ * 
+ * @param {Function} handleConfirmation - function to call when delete button is pressed.
+ * 
+ * @returns table of bots with search bar, column sorting, pagination.
+ */
+function BotTable(props) {
+    // Memo is updated every time store.bots changes - so it is always up-to-date
+    const data = React.useMemo(
+        () => store.bots, [store.bots]
+    )
+
+    const columns = React.useMemo(
+        () => [
+            {
+                Header: "ID",
+                accessor: "id",
+                disableGlobalFilter: true
+            },
+            {
+                Header: "Name",
+                accessor: "name"
+            },
+            {
+                Header: "Phone Number",
+                accessor: (value) => (
+                    value.phoneNumber === null
+                    ? 'UNDEPLOYED'
+                    : value.phoneNumber
+                ),
+                collapse: true,
+                Cell: ({ cell }) => (
+                    cell.value === 'UNDEPLOYED'
+                    ? (
+                        &lt;span 
+                            data-for="unlinked_tip" 
+                            data-tip="To give this chatbot a number, click the phone icon in the 'Options' column" 
+                            style={{color: "firebrick", fontWeight: 500}}>
+                                UNDEPLOYED
+                        &lt;/span>
+                    ) : (cell.value)
+                )
+            },
+            {
+                Header: "Date Modified",
+                accessor: (value) => formatDate(value.timestamp),
+                collapse: true,
+            },
+            {
+                Header: "Options",
+                collapse: true,
+                disableGlobalFilter: true,
+                Cell: ({ cell }) => (
+                    &lt;div className="container row" style={{justifyContent: "space-evenly"}}>
+                        {
+                            cell.row.values["Phone Number"] !== "UNDEPLOYED" // If bot is deployed show edit button, else show deploy button
+                            ? (
+                                &lt;Link draggable="false" to="/edit" id="icon-link">
+                                    &lt;button data-testid="edit" data-for="edit_tip" data-tip="Change Number" className="icon-button">
+                                        &lt;div id="edit" className="table-icon" onClick={() => {
+                                            ReactTooltip.hide()
+                                            store.managedBot = store.findBotByID(cell.row.values.id)
+                                        }} />
+                                    &lt;/button>
+                                &lt;/Link>
+                            ) : (
+                                &lt;Link draggable="false" to={{pathname: "/test", state: {deploy: true}}} id="icon-link">
+                                    &lt;button data-testid="deploy" data-for="deploy_tip" data-tip="Deploy to SMS" className="icon-button">
+                                        &lt;div id="deploy" className="table-icon" onClick={() => {
+                                            ReactTooltip.hide()
+                                            store.copyBotToCandidateBot(store.findBotByID(cell.row.values.id))
+                                        }} />
+                                    &lt;/button>
+                                &lt;/Link>
+                            )
+                        }
+                        {
+                            &lt;Link draggable="false" to={{pathname: "/test", state: {deploy: false}}} id="icon-link">
+                                &lt;button data-testid="test" data-for="test_tip" data-tip="Test SMS Chatbot" className="icon-button">
+                                    &lt;div id="test" className="table-icon" onClick={() => {
+                                        ReactTooltip.hide()
+                                        let bot = store.findBotByID(cell.row.values.id)
+                                        store.copyBotToCandidateBot(bot)
+                                    }} />
+                                &lt;/button>
+                            &lt;/Link>
+                        }
+                        {
+                            cell.row.values["Phone Number"] !== "UNDEPLOYED" // If bot is deployed show unlink button, else show delete button
+                            ? (
+                                &lt;button data-testid="unlink" data-for="unlink_tip" data-tip="Unlink from SMS" className="icon-button" style={{margin: "6px"}}>
+                                    &lt;div id="unlink" className="table-icon" onClick={() => {
+                                        ReactTooltip.hide()
+                                        let bot = store.findBotByID(cell.row.values.id)
+                                        // To debug table data changes, change something like the following and see if the table updates
+                                        // bot.name = "Test"
+                                        store.copyBotToCandidateBot(bot)
+                                        props.handleConfirmation(INTENTION.UNLINK)
+                                    }} />
+                                &lt;/button>
+                            ) : (
+                                &lt;button data-testid="delete" data-for="delete_tip" data-tip="Delete Chatbot" className="icon-button" style={{margin: "6px"}}>
+                                    &lt;div id="delete" className="table-icon" onClick={() => {
+                                        ReactTooltip.hide()
+                                        let bot = store.findBotByID(cell.row.values.id)
+                                        // To debug table data changes, change something like the following and see if the table updates
+                                        // bot.name = "Test"
+                                        store.copyBotToCandidateBot(bot)
+                                        props.handleConfirmation(INTENTION.DELETE)
+                                    }} />
+                                &lt;/button>
+                            )
+                        }
+                        
+                    &lt;/div>
+                )
+            }
+        ],
+        []
+    )
+
+    const {
+        getTableProps,
+        getTableBodyProps,
+        headerGroups,
+        prepareRow,
+        state,
+        page,
+        canPreviousPage,
+        canNextPage,
+        pageOptions,
+        pageCount,
+        gotoPage,
+        nextPage,
+        previousPage,
+        visibleColumns,
+        preGlobalFilteredRows,
+        setGlobalFilter,
+        state: { pageIndex }
+    } = useTable (
+        {
+            columns, 
+            data, 
+            initialState: { 
+                pageIndex: 0, 
+                pageSize: 8, 
+                hiddenColumns: ['id'], 
+                sortBy: [{ id: 'Date Modified', desc: true }]
+            }
+        }, 
+        useGlobalFilter, 
+        useSortBy,
+        usePagination
+    )
+
+    useEffect(() => {
+        ReactTooltip.rebuild()
+    })
+
+    return (
+        &lt;>
+            &lt;table {...getTableProps()} className="tableWrap">
+                &lt;thead>
+                    &lt;tr>
+                        &lt;th colSpan={visibleColumns.length}>
+                            &lt;div style={{display: "flex", flexFlow: "row nowrap"}}>
+                                &lt;GlobalFilter
+                                    preGlobalFilteredRows={preGlobalFilteredRows}
+                                    globalFilter={state.globalFilter}
+                                    setGlobalFilter={setGlobalFilter}
+                                />
+                                &lt;UploadButton />
+                            &lt;/div>
+                        &lt;/th>
+                    &lt;/tr>
+                    {headerGroups.map(headerGroup => (
+                        &lt;tr {...headerGroup.getHeaderGroupProps()}>
+                            {headerGroup.headers.map(column => (
+                                &lt;th {...column.getHeaderProps(
+                                    [column.getSortByToggleProps(),
+                                    {className: column.collapse ? "collapseHeader" : "nameHeader"}]
+                                )}>
+                                    &lt;span>
+                                        {column.isSorted
+                                            ? column.isSortedDesc
+                                                ? '▼ '
+                                                : '▲ '
+                                            : ''}
+                                    &lt;/span>
+                                    {column.render("Header")}
+                                &lt;/th>
+                            ))}
+                        &lt;/tr>
+                    ))}
+                &lt;/thead>
+                &lt;tbody {...getTableBodyProps()} data-testid="body">
+                    {page.map(row => {
+                        prepareRow(row);
+                        return (
+                            &lt;tr {...row.getRowProps()}>
+                                {row.cells.map(cell => {
+                                    return (
+                                        &lt;td {...cell.getCellProps({
+                                            className: cell.column.collapse ? "collapseHeader" : "nameHeader",
+                                            style: cell.column.Header === "Options" ? {padding: "1px"} : "",
+                                        })}>
+                                            {cell.render("Cell")}
+                                        &lt;/td>
+                                    )
+                                })}
+                            &lt;/tr>
+                        )
+                    })}
+                &lt;/tbody>
+            &lt;/table>
+
+            &lt;div style={{height: "36px", width: "auto", alignSelf: "flex-end"}}>
+                &lt;div 
+                    data-testid="pagination"
+                    className="pagination"
+                >
+
+                    &lt;button onClick={() => gotoPage(0)} disabled={!canPreviousPage}>
+                        {"&lt;&lt;"}
+                    &lt;/button>{' '}
+                    &lt;button onClick={() => previousPage()} disabled={!canPreviousPage}>
+                    {'&lt;'}
+                    &lt;/button>{' '}
+                    &lt;button onClick={() => nextPage()} disabled={!canNextPage}>
+                    {'>'}
+                    &lt;/button>{' '}
+                    &lt;button onClick={() => gotoPage(pageCount - 1)} disabled={!canNextPage}>
+                    {'>>'}
+                    &lt;/button>{' '}
+
+                    &lt;span>
+                        Page{' '}&lt;strong>{pageIndex + 1} of {pageOptions.length}&lt;/strong>{' '}
+                    &lt;/span>
+                    
+                &lt;/div>
+            &lt;/div>
+        &lt;/>
+    )
+
+}
+
+export default observer((props) => BotTable(props));</code></pre>
+        </article>
+    </section>
+
+
+
+
+</div>
+
+<nav>
+    <h2><a href="index.html">Home</a></h2><h3>Classes</h3><ul><li><a href="Confirmation.html">Confirmation</a></li><li><a href="Deploy.html">Deploy</a></li><li><a href="Edit.html">Edit</a></li><li><a href="ErrorAlert.html">ErrorAlert</a></li><li><a href="HelpButton.html">HelpButton</a></li><li><a href="Login.html">Login</a></li><li><a href="Manage.html">Manage</a></li><li><a href="SMSTestBox.html">SMSTestBox</a></li><li><a href="StageBar.html">StageBar</a></li><li><a href="Test.html">Test</a></li><li><a href="Upload.html">Upload</a></li></ul><h3>Global</h3><ul><li><a href="global.html#BotTable">BotTable</a></li><li><a href="global.html#cycleProcessingMessages">cycleProcessingMessages</a></li><li><a href="global.html#formatDate">formatDate</a></li><li><a href="global.html#GlobalFilter">GlobalFilter</a></li><li><a href="global.html#log">log</a></li><li><a href="global.html#notify">notify</a></li><li><a href="global.html#PhoneButton">PhoneButton</a></li><li><a href="global.html#UploadButton">UploadButton</a></li></ul>
+</nav>
+
+<br class="clear">
+
+<footer>
+    Documentation generated by <a href="https://github.com/jsdoc/jsdoc">JSDoc 3.6.6</a> on Thu Mar 25 2021 13:41:03 GMT+0000 (Greenwich Mean Time)
+</footer>
+
+<script> prettyPrint(); </script>
+<script src="scripts/linenumber.js"> </script>
+</body>
+</html>

@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>JSDoc: Source: pages/deploy.js</title>
+
+    <script src="scripts/prettify/prettify.js"> </script>
+    <script src="scripts/prettify/lang-css.js"> </script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link type="text/css" rel="stylesheet" href="styles/prettify-tomorrow.css">
+    <link type="text/css" rel="stylesheet" href="styles/jsdoc-default.css">
+</head>
+
+<body>
+
+<div id="main">
+
+    <h1 class="page-title">Source: pages/deploy.js</h1>
+
+    
+
+
+
+    
+    <section>
+        <article>
+            <pre class="prettyprint source linenums"><code>import React from "react"
+
+import { notify, cycleProcessingMessages } from "../helper_functions"
+
+import StageBar from "../components/stage-bar"
+import PhoneButton from "../components/phone-button"
+import ErrorAlert from "../components/error-alert"
+import HelpButton from "../components/help-button"
+
+import arrow from "../images/left-chevron.png"
+import "../styles/default.css"
+
+import store from "../Store"
+
+
+/**
+ * Responsible for rendering the deploy page on screen, where the user can select a phone number for
+ * an undeployed bot. Consists of 'Deploy &lt;bot name>' heading, stage bar with 'Phone Number' text in
+ * green, and a list of phone numbers implemented with the phone-button component.
+ * 
+ * @returns the deploy page for undeployed bots.
+ */
+class Deploy extends React.Component {
+    helpURL = "https://sms-it.io/project/for-users/07-deploy/"
+
+    processingMessages = [
+        "PROCESSING", "PROCESSING.", "PROCESSING..", "PROCESSING...",
+        "PLEASE WAIT", "PLEASE WAIT.", "PLEASE WAIT..", "PLEASE WAIT...",
+        "DEPLOYING TO NUMBER", "DEPLOYING TO NUMBER.", "DEPLOYING TO NUMBER..", "DEPLOYING TO NUMBER...",
+    ]
+
+    constructor(props) {
+        super(props);
+        this.state = {
+            processing: false,
+            msgIdx: 0,
+            showError: false
+        }
+    }
+
+
+    /**
+     * Invoked immediately after the current page is mounted (inserted into the DOM).
+     */
+    componentDidMount() {
+        cycleProcessingMessages(this)
+    }
+
+
+    /**
+     * Reference to a function that deploys the selected bot onto a given phone number.
+     * This is passed to the phone-button component and is called when the user selects an available number
+     * to deploy the bot to.
+     * 
+     * @param {number} number - the phone number the bot is to be assigned to.
+     */
+    deployAsNew = async (number) => {
+        this.setState({ processing: true })
+
+        store.candidateBot.phoneNumber = number
+
+        await store.linkCandidateBotAsNew()
+        notify(
+            "success",
+            "Success!",
+            (store.candidateBot.name + " successfully deployed on " + store.candidateBot.phoneNumber),
+            5000
+        )
+
+        this.setState({ processing: false })
+        this.props.history.push("/manage")
+    }
+
+
+    /**
+     * Reference to a function that sets the processing flag to false, and the showError flag to true.
+     * This is passed to the phone-button component and is called when an error occurs - it allows
+     * the child phone-button component to change the state of this parent page in order to show the error
+     * popup component on screen.
+     */
+    showError = () => {
+        this.setState({ processing: false, showError: true })
+    }
+
+    
+    render() {
+        let processingText = this.processingMessages[this.state.msgIdx % this.processingMessages.length]
+
+        return (
+            &lt;>
+                {
+                    this.state.showError 
+                    ? &lt;ErrorAlert 
+                        name="Error deploying chatbot" 
+                        message="Something went wrong with Twilio while trying to deploy the chatbot" 
+                        _callback={() => this.setState({ showError: false, processing: false })} /> 
+                    : null
+                }
+                
+                &lt;div className="column center-items" style={{height: "15%"}}>
+                    &lt;h2>Deploy {store.candidateBot.name}&lt;/h2>
+                &lt;/div>
+
+                &lt;div 
+                    data-testid="buttonList" 
+                    className="container column" 
+                    style={
+                        this.state.processing
+                        ? {display: "none"}
+                        : {display: "flex", height: "auto", justifyContent: "flex-start"}
+                    }
+                >
+
+                    &lt;StageBar current={1} />
+
+                    &lt;h3 style={{margin: "20px"}}>Select a number to deploy to&lt;/h3>
+
+                    {store.phoneNumbers.map((number, index) => 
+                        &lt;PhoneButton 
+                            key={number} 
+                            number={number} 
+                            handleAvailable={this.deployAsNew}
+                            showError={this.showError} />
+                    )}
+
+                    {
+                        store.phoneNumbers.length &lt; 1
+                        ? (
+                            &lt;p style={{fontSize: "larger", color: "firebrick"}}>
+                                There are no phone numbers on this Twilio account!
+                            &lt;/p>
+                        ) : null
+                    }
+
+                &lt;/div>
+
+                &lt;div 
+                    className="container" 
+                    style={
+                        this.state.processing 
+                        ? {display: "flex", height: "85%"} 
+                        : {display: "none"}
+                    }
+                >
+                    &lt;div 
+                        className={this.state.processing ? "big-loader" : ""} 
+                        style={
+                            this.state.processing 
+                            ? {display: "flex", margin: "60px"} 
+                            : {display: "none", margin: "60px"}
+                        } 
+                    />
+                    &lt;div className={this.state.processing ? "processing" : "hidden"}>
+                        {processingText}
+                    &lt;/div>
+                &lt;/div>
+
+                &lt;div className="icon-container" style={{left: 0}}>
+                    &lt;img draggable="false" src={arrow} alt="Back" className="arrow-icon" onClick={() => {
+                        this.props.history.push({pathname: "/test", state: {deploy: true}})
+                    }} />
+                &lt;/div>
+
+                &lt;HelpButton url={this.helpURL} />
+            &lt;/>
+        )
+    }
+
+}
+
+export default Deploy;</code></pre>
+        </article>
+    </section>
+
+
+
+
+</div>
+
+<nav>
+    <h2><a href="index.html">Home</a></h2><h3>Classes</h3><ul><li><a href="Confirmation.html">Confirmation</a></li><li><a href="Deploy.html">Deploy</a></li><li><a href="Edit.html">Edit</a></li><li><a href="ErrorAlert.html">ErrorAlert</a></li><li><a href="HelpButton.html">HelpButton</a></li><li><a href="Login.html">Login</a></li><li><a href="Manage.html">Manage</a></li><li><a href="SMSTestBox.html">SMSTestBox</a></li><li><a href="StageBar.html">StageBar</a></li><li><a href="Test.html">Test</a></li><li><a href="Upload.html">Upload</a></li></ul><h3>Global</h3><ul><li><a href="global.html#BotTable">BotTable</a></li><li><a href="global.html#cycleProcessingMessages">cycleProcessingMessages</a></li><li><a href="global.html#formatDate">formatDate</a></li><li><a href="global.html#GlobalFilter">GlobalFilter</a></li><li><a href="global.html#log">log</a></li><li><a href="global.html#notify">notify</a></li><li><a href="global.html#PhoneButton">PhoneButton</a></li><li><a href="global.html#UploadButton">UploadButton</a></li></ul>
+</nav>
+
+<br class="clear">
+
+<footer>
+    Documentation generated by <a href="https://github.com/jsdoc/jsdoc">JSDoc 3.6.6</a> on Thu Mar 25 2021 13:41:03 GMT+0000 (Greenwich Mean Time)
+</footer>
+
+<script> prettyPrint(); </script>
+<script src="scripts/linenumber.js"> </script>
+</body>
+</html>

@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>JSDoc: Source: components/confirmation.js</title>
+
+    <script src="scripts/prettify/prettify.js"> </script>
+    <script src="scripts/prettify/lang-css.js"> </script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link type="text/css" rel="stylesheet" href="styles/prettify-tomorrow.css">
+    <link type="text/css" rel="stylesheet" href="styles/jsdoc-default.css">
+</head>
+
+<body>
+
+<div id="main">
+
+    <h1 class="page-title">Source: components/confirmation.js</h1>
+
+    
+
+
+
+    
+    <section>
+        <article>
+            <pre class="prettyprint source linenums"><code>import React from "react"
+
+import { cycleProcessingMessages } from '../helper_functions'
+
+import { INTENTION } from "../constants/manage"
+
+import ErrorAlert from "./error-alert"
+
+import attention from "../images/attention.png"
+import "../styles/default.css"
+
+
+/**
+ * Displays a confirmation prompt over the current page.
+ * The page is darkened with a transparent overlay to put focus on the prompt.
+ * 
+ * @param {INTENTION} intent - the action that needs confirmation (enum value: 1 UNLINK/2 DELETE).
+ * @param {string} message - the message to display on the prompt.
+ * @param {function} accept - reference to the function to call when 'Yes' is clicked.
+ * @param {function} cancel - reference to the function to call when 'Cancel' is clicked.
+ * 
+ * @returns confirmation prompt to user.
+ */
+class Confirmation extends React.Component {
+    processingMessages = [
+        "PROCESSING", "PROCESSING.", "PROCESSING..", "PROCESSING...",
+        "PLEASE WAIT", "PLEASE WAIT.", "PLEASE WAIT..", "PLEASE WAIT...",
+    ]
+
+    constructor(props) {
+        super(props)
+        this.state = {
+			processing: false,
+            msgIdx: 0,
+            showError: false
+        }
+    }
+
+
+    /**
+     * Invoked immediately after the current component is mounted (inserted into the DOM).
+     */
+    componentDidMount() {
+        cycleProcessingMessages(this)
+    }
+
+
+    /**
+     * Produces the top label on the confirmation prompt using the intent argument.
+     * 
+     * @returns a banner that describes the action that needs confirmation.
+     */
+    getBanner() {
+        let heading;
+        if (this.props.intent === INTENTION.UNLINK) { heading = "UNLINKING CHATBOT" }
+        else if (this.props.intent === INTENTION.DELETE) { heading = "DELETING CHATBOT" }
+
+        return (
+            &lt;div data-testid="heading" className="confirm-banner">
+                &lt;img draggable="false" src={attention} alt="Warning!" height="28px" style={{margin: "10px 12px 10px 0px"}} />
+                {heading}
+            &lt;/div>
+        )
+    }
+
+
+    render() {
+        let processingText = this.processingMessages[this.state.msgIdx % this.processingMessages.length]
+
+        return (
+            &lt;div className="dark-overlay container">
+                {
+                    this.state.showError 
+                    ? &lt;ErrorAlert 
+                        name="Unable to delete chatbot" 
+                        message="Something messed up within Twilio"  
+                        _callback={() => this.setState({ showError: false })} />
+                    : null
+                }
+
+                &lt;div 
+                    className="confirm container column" 
+                    style={{justifyContent: "space-between"}} 
+                >
+
+                    {this.getBanner()}
+
+                    &lt;div className="container column">
+
+                        &lt;div 
+                            data-testid="content" 
+                            className="container column confirm-content" 
+                            style={
+                                this.state.processing 
+                                ? {display: "none"} 
+                                : {display: "flex"}
+                            }
+                        >
+
+                            &lt;span className="confirm-text" style={{fontWeight: "500", fontSize: "larger"}}>Are you sure?&lt;/span>
+
+                            {this.props.message}
+
+                            &lt;div className="container row" style={{margin: 0, height: "auto", width: "400px", marginTop: "12px"}}>
+                                &lt;button 
+                                    className="binary-option" 
+                                    style={{color: "#B22222", backgroundColor: "#F3CECE"}} 
+                                    onClick={() => this.props.cancel()}
+                                >CANCEL&lt;/button>
+
+                                &lt;button 
+                                    className="binary-option" 
+                                    style={{color: "#008000", backgroundColor: "#CEF2CE"}} 
+                                    onClick={async () => {
+                                        this.setState({ processing: true })
+
+                                        await this.props.accept()
+
+                                        this.setState({ processing: false })
+                                }}>YES&lt;/button>
+                            &lt;/div>
+
+                        &lt;/div>
+
+                        &lt;div 
+                            className={this.state.processing ? "processing" : "hidden"}
+                            style={{position: "relative", margin: "5px"}}
+                        >
+                            {processingText}
+                        &lt;/div>
+                        &lt;div 
+                            data-testid="spinner" 
+                            className={this.state.processing ? "medium-loader" : ""} 
+                            style={this.state.processing ? {display: "flex", marginBottom: "20px"} : {display: "none"}} 
+                        />
+
+                    &lt;/div>
+                    
+                &lt;/div>
+
+            &lt;/div>
+        )
+    }
+
+}
+
+export default Confirmation;</code></pre>
+        </article>
+    </section>
+
+
+
+
+</div>
+
+<nav>
+    <h2><a href="index.html">Home</a></h2><h3>Classes</h3><ul><li><a href="Confirmation.html">Confirmation</a></li><li><a href="Deploy.html">Deploy</a></li><li><a href="Edit.html">Edit</a></li><li><a href="ErrorAlert.html">ErrorAlert</a></li><li><a href="HelpButton.html">HelpButton</a></li><li><a href="Login.html">Login</a></li><li><a href="Manage.html">Manage</a></li><li><a href="SMSTestBox.html">SMSTestBox</a></li><li><a href="StageBar.html">StageBar</a></li><li><a href="Test.html">Test</a></li><li><a href="Upload.html">Upload</a></li></ul><h3>Global</h3><ul><li><a href="global.html#BotTable">BotTable</a></li><li><a href="global.html#cycleProcessingMessages">cycleProcessingMessages</a></li><li><a href="global.html#formatDate">formatDate</a></li><li><a href="global.html#GlobalFilter">GlobalFilter</a></li><li><a href="global.html#log">log</a></li><li><a href="global.html#notify">notify</a></li><li><a href="global.html#PhoneButton">PhoneButton</a></li><li><a href="global.html#UploadButton">UploadButton</a></li></ul>
+</nav>
+
+<br class="clear">
+
+<footer>
+    Documentation generated by <a href="https://github.com/jsdoc/jsdoc">JSDoc 3.6.6</a> on Thu Mar 25 2021 13:41:03 GMT+0000 (Greenwich Mean Time)
+</footer>
+
+<script> prettyPrint(); </script>
+<script src="scripts/linenumber.js"> </script>
+</body>
+</html>

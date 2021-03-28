@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>JSDoc: Source: Store.js</title>
+
+    <script src="scripts/prettify/prettify.js"> </script>
+    <script src="scripts/prettify/lang-css.js"> </script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link type="text/css" rel="stylesheet" href="styles/prettify-tomorrow.css">
+    <link type="text/css" rel="stylesheet" href="styles/jsdoc-default.css">
+</head>
+
+<body>
+
+<div id="main">
+
+    <h1 class="page-title">Source: Store.js</h1>
+
+    
+
+
+
+    
+    <section>
+        <article>
+            <pre class="prettyprint source linenums"><code>import { makeAutoObservable } from "mobx"
+import { log, api } from "./nodeImports"
+import Bot from "./Bot"
+
+class BotStorage {
+  /**
+   * Stores a local cache of uploaded bots. Array of type Bot
+   * @type {Bot[]}
+   */
+  bots = [] // Stores a local cache of uploaded bots. 
+
+  /**
+   * Stores a local cache of Twilio phone numbers. 
+   * @type {string[]}
+   */
+  phoneNumbers = [] // Stores a local cache of Twilio phone numbers. Array of type string. 
+  
+  /**
+   * Used by many functions as a default input data.
+   * Meant to be used when one UI page configures an operation and another page executes it. 
+   * Therefore can be freely edited. 
+   * @type {Bot}
+   */
+  candidateBot = null
+  
+  /**
+   * No functional meaning. Used by some UI pages to set a Bot to be viewed at another page. 
+   * Must not be edited. 
+   * @type {Bot}
+   */
+  managedBot = null
+  
+  /**
+   * Stores an authenticated twilio client. Used for all API operations. Do not touch it externally. 
+   */
+  twilioClient = null
+
+  constructor() {
+    makeAutoObservable(this)
+  }
+
+  /**
+   * Authenticates via Twilio and stores the authenticated client as this.twilioClient
+   * 
+   * @param  {string} twilioAccountSid
+   * @param  {string} twilioAuthToken
+   * @throws {Error} - if logging in fails
+   */
+  async tryConnectingToTwilio(twilioAccountSid, twilioAuthToken) {
+    console.log("Logging in with creds", twilioAccountSid, twilioAuthToken)
+    try {
+      this.twilioClient = await api.tryConnecting({username:twilioAccountSid, password:twilioAuthToken})
+    } catch (e){
+      log.error(e)
+      throw new Error("Could not log into twilio")
+    }
+    log.info("Received client", this.twilioClient)
+    await this.updateState()
+  }
+
+  /**
+   * Updates this.phoneNumbers and this.bots with the latest from Twilio
+   */
+  async updateState() {
+    try{
+      this.phoneNumbers = await api.getSMSAccountPhoneNumbers(this.twilioClient)
+    } catch (e){
+      log.error(e)
+      this.phoneNumbers = null
+    }
+    console.log("Received phone numbers", this.phoneNumbers)
+    try {
+      this.bots = await api.getDeployedBots(this.twilioClient)
+    } catch (e){
+      log.error(e)
+      this.bots = null
+    }
+
+    try {
+      this.bots = this.bots.concat(await api.getUnlinkedBots(this.twilioClient))
+    } catch (e) {
+      log.error(e)
+    }
+    console.log("Received bots", this.bots)
+  }
+
+  /**
+   * Calls _removeBot on the candidateBot
+   * @throws whatever _removeBot throws
+   */
+  removeCandidateBot() {
+    return this._removeBot(this.candidateBot.id)
+  }
+
+  /**
+   * Calls the API to remove a bot. 
+   * Updates state. 
+   * @param  {string} id - The bot ID
+   * @throws If the removing operation fails
+   * @throws If the bot does not exist
+   */
+  async _removeBot(id) {
+    var idx = this.bots.findIndex(b => b.id === id)
+    if(idx != null) {
+      try {
+        await api.removeBot(this.twilioClient, id)
+      } catch (e) {
+        log.error(e)
+        throw 'Error removing the bot'
+      }
+
+      log.info("Removed bot ", id)
+      await this.updateState()
+    } else {
+      throw 'This bot does not exist'
+    }
+  }
+
+  /**
+   * Calls _unlinkBot on the candidateBot
+   * @throws whatever _unlinkBot throws
+   */
+  unlinkCandidateBot() {
+    return this._unlinkBot(this.candidateBot.id)
+  }
+
+  /**
+   * Calls the API to unlink a bot.
+   * Updates state.
+   * @param {string} id - The bot ID
+   * @throws If the bot doesn't have a phone number tied to it
+   * @throws If the unlinking operation fails
+   */
+  async _unlinkBot(id) {
+    if (this.findBotByID(id).phoneNumber != null) {
+      try {
+        await api.unlinkFromNumber(this.twilioClient, id)
+      } catch(e) {
+        log.error(e)
+        throw 'Error unlinking the bot'
+      }
+
+      log.info("Unlinked bot ", id)
+      await this.updateState()
+    } else {
+      throw 'Bot is already unlinked'
+    }
+  }
+  
+  /**
+   * Calls _linkCandidateBot() if the candidateBot's phone number is not occupied
+   * @throws If phone number is occupied
+   */
+  async linkCandidateBotAsNew() {
+    if(this.isNumberOccupied(this.candidateBot.phoneNumber)) throw 'Phone number is occupied';
+    log.info("Uplading final candidate bot", this.candidateBot)
+    await this._linkCandidateBot()
+  }
+
+  /**
+   * Calls _linkCandidateBot() if the candidateBot's phone number is occupied. 
+   * Removes the currently deployed but under that number.
+   * @throws If phone number is not occupied
+   */
+  async linkCandidateBotAndOverwrite() {
+    if(!this.isNumberOccupied(this.candidateBot.phoneNumber)) throw 'Nothing to overwrite';
+    await this._removeBot(this.findBotByNumber(this.candidateBot.phoneNumber).id)
+    await this._linkCandidateBot()
+  }
+
+  /**
+   * Uploads the candidate bot to Twilio without linking it to any phone number. The fields diagram and name of this.candidateBot must be assigned
+   * Sets this.candidateBot.id with the new uploaded ID
+   * @throws {Error} If uploading fails
+   */
+  async uploadCandidateBotUnlinked() {
+    let id = await api.uploadNewBot(this.twilioClient, this.candidateBot)
+    if(id == null) throw new Error('Upload bot unsuccessful')
+    console.log("Uploaded new bot with id", id)
+    this.candidateBot.id = id
+    await this.updateState()
+  }
+
+  /**
+   * Calls the API to link the deployed bot identified by candidateBot.id to a provided phone number - candidateBot.phoneNumber 
+   * This works both when the given phoneNumber is already occupied or not. 
+   * @throws If linking fails
+   */
+  async _linkCandidateBot() {
+    //The reason why we aren't using this.changeBotNumber here is because that fn is valid for successfully uploaded bots (i.e. the bots we get by api.getDeployedBots.
+    //The currently uploaded bot is still not successfully uploaded as it is not connected to a number.  
+    if(!await api.changeBotPhoneNumber(this.twilioClient, this.candidateBot.id, this.candidateBot.phoneNumber)) throw 'Could not change number to newly uploaded bot!'
+    console.log("Updated that bot's number to ", this.candidateBot.phoneNumber)
+    await this.updateState()
+  }
+
+
+  /**
+   * Makes a copy of the input bot and stores it at store.candidateBot
+   * Used because candidateBot is for "draft" changes - changes which may or may not be finalised
+   * And as such, we should not edit the real bot objects in our state
+   * 
+   * @param {Bot} bot 
+   */
+  copyBotToCandidateBot(bot) {
+    let botCopy = new Bot();
+    Object.assign(botCopy, bot) //Perform shallow copy. NOTE: This will not work if the Bot() class has non-primitive fields!
+    this.candidateBot = botCopy
+  }
+
+  //The following find* functions are getters and should be very efficient
+  //mobx should cache their results so that they aren't computed every time!
+
+  /**
+   * Searches the local bot state and returns the first bot with that phone number
+   * @param {string} number - Phone number
+   * @returns {Bot} - the result
+   * @throws If the bot is not found
+   */
+  findBotByNumber(number) {
+    var res = this.bots.find(b => b.phoneNumber === number)
+    if(res == null) throw 'Bot not found'
+    return res
+  }
+
+  /**
+   * Searches the local bot state and returns the first bot with that id
+   * @param {string} id - Bot ID
+   * @returns {Bot} - the result
+   * @throws If the bot is not found
+   */
+  findBotByID(id) {
+    var res = this.bots.find(b => b.id === id)
+    if(res == null) throw 'Bot not found'
+    return res
+  }
+
+  /**
+   * Searches the local bot state and returns whether a bot with that name exists
+   * @param {string} name - Bot name
+   * @returns {boolean} - the result
+   */
+   isNameUnique(name) {
+    var res = this.bots.find(b => b.name.toLowerCase() === name.toLowerCase())
+    if(res == null) return true
+    return false
+  }
+
+  /**
+   * Checks if a given phone number has a bot linked to it in the local state
+   * @param {string} number - Given phone number
+   * @returns {boolean} - true if number is occupied, otherwise false. 
+   * @throws If the number does not exit
+   */
+  isNumberOccupied(number) {
+    if(!this.phoneNumbers.find(n => n===number)) {
+      throw 'Number does not exist'
+    }
+    try {
+      this.findBotByNumber(number)
+      return true
+    } catch (e) {
+      return false
+    }
+  }
+
+  /**
+   * Sends a message to the uploaded candidateBot and returns the response
+   * This operation should be equivalent to sending an SMS message to that bot if it was linked to a phone number
+   * Hence it is useful to test the bot
+   * @param {string} msg 
+   * @returns {string[]} - the bot responses
+   * @throws {Error} If API operation fails
+   */
+  async simulateCandidateBot(msg) {
+    let res = await api.simulateBot(this.twilioClient, this.candidateBot.id, msg)
+    if(res == null) throw new Error("Could not send message to the bot")
+    console.log("Received bot response", res)
+    return res
+  }
+}
+
+let storage = new BotStorage()
+
+export default storage
+</code></pre>
+        </article>
+    </section>
+
+
+
+
+</div>
+
+<nav>
+    <h2><a href="index.html">Home</a></h2><h3>Classes</h3><ul><li><a href="Confirmation.html">Confirmation</a></li><li><a href="Deploy.html">Deploy</a></li><li><a href="Edit.html">Edit</a></li><li><a href="ErrorAlert.html">ErrorAlert</a></li><li><a href="HelpButton.html">HelpButton</a></li><li><a href="Login.html">Login</a></li><li><a href="Manage.html">Manage</a></li><li><a href="SMSTestBox.html">SMSTestBox</a></li><li><a href="StageBar.html">StageBar</a></li><li><a href="Test.html">Test</a></li><li><a href="Upload.html">Upload</a></li></ul><h3>Global</h3><ul><li><a href="global.html#BotTable">BotTable</a></li><li><a href="global.html#cycleProcessingMessages">cycleProcessingMessages</a></li><li><a href="global.html#formatDate">formatDate</a></li><li><a href="global.html#GlobalFilter">GlobalFilter</a></li><li><a href="global.html#log">log</a></li><li><a href="global.html#notify">notify</a></li><li><a href="global.html#PhoneButton">PhoneButton</a></li><li><a href="global.html#UploadButton">UploadButton</a></li></ul>
+</nav>
+
+<br class="clear">
+
+<footer>
+    Documentation generated by <a href="https://github.com/jsdoc/jsdoc">JSDoc 3.6.6</a> on Thu Mar 25 2021 13:41:03 GMT+0000 (Greenwich Mean Time)
+</footer>
+
+<script> prettyPrint(); </script>
+<script src="scripts/linenumber.js"> </script>
+</body>
+</html>
