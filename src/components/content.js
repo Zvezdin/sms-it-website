@@ -78,7 +78,7 @@ const Content = () => (
 
     <SectionHeader
       title="How We Deliver"
-      description="We provide you with the infrastructure to convert any voice and chat bot into an SMS bot. "
+      description=""
     />
     <content
       className={styles.bullet}
@@ -135,19 +135,19 @@ const Content = () => (
       <Teammate
         name="Zvezdin"
         img={zvezdin}
-        description="Has a big mouth"
+        description="Management, Mentorship & Oversight"
       />
 
       <Teammate
         name="Thowhid"
         img={thowhid}
-        description="Does all the work, gets 33% of the credit"
+        description="SMS Services & Backend"
       />
 
       <Teammate
         name="Michael"
         img={mike}
-        description="Doesn't like web; Is our web dev"
+        description="Frontend Development"
       />
     </content>
   </div>

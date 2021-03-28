@@ -29,7 +29,7 @@ const Header = ({ siteTitle }) => (
     />
     <h1 style={{ textAlign: "center" }}>SMS It</h1>
     <p style={{ textAlign: "center", maxWidth: 440 }}>
-      Smart Bots For Everyone
+      Smart Chatbots For Everyone
     </p>
     <div style={{ margin: 60, width: `80%`, position: "relative" }}>
       <div style={{ clipPath: "inset(2% 5% round 2% 5%)" }}>
@@ -44,6 +44,7 @@ const Header = ({ siteTitle }) => (
       >
       </div>
     </div>
+    <h2 style={{paddingBottom: "4em"}}>We provide you with the infrastructure to convert any voice and chat bot into an SMS bot. </h2>
     <a href="/project" style={{marginBottom: "0em"}}>
       <Button>Open Main Website</Button>
     </a>
