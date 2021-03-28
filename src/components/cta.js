@@ -9,7 +9,7 @@ const CallToAction = () => (
       title="We're Active!"
       description="Check out our latest developments"
     />
-    <a href="https://blog.sms-it.io">
+    <a href="http://blog.sms-it.io">
       <Button >Read Blog</Button>
     </a>
     <div style={{padding: "1em"}}></div>
