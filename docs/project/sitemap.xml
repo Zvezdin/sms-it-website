@@ -40,6 +40,7 @@
 <url> <loc>https://sms-it.io/project/project/implementation/09-contribution/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://sms-it.io/project/project/implementation/10-limits/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://sms-it.io/project/project/implementation/11-what-if/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://sms-it.io/project/project/legal-statement/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://sms-it.io/project/project/requirements/1-getting-started/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://sms-it.io/project/project/requirements/2-moscow/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://sms-it.io/project/project/requirements/3-user-interviews/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
@@ -58,13 +59,13 @@
 <url> <loc>https://sms-it.io/project/project/testing/5-compatibility-testing/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://sms-it.io/project/project/testing/6-continuous-integration/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://sms-it.io/project/project/testing/7-user-acceptance/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>https://sms-it.io/project/project/legal-statement/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://sms-it.io/project/project/overview/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://sms-it.io/project/project/tags/evaluation/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://sms-it.io/project/project/tags/for-devs/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://sms-it.io/project/project/tags/for-users/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://sms-it.io/project/project/tags/hci/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://sms-it.io/project/project/tags/implementation/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://sms-it.io/project/project/tags/legal/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://sms-it.io/project/project/tags/requirements/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://sms-it.io/project/project/tags/research/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://sms-it.io/project/project/tags/testing/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
