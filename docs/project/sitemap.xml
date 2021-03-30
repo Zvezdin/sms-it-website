@@ -32,7 +32,7 @@
 <url> <loc>https://sms-it.io/project/project/implementation/00-prototype-roadmap/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://sms-it.io/project/project/implementation/02-system-architecture/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://sms-it.io/project/project/implementation/03-unified-bot-format/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>https://sms-it.io/project/project/implementation/04-ubf-sms-interface/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://sms-it.io/project/project/implementation/04-ubf-sms-api/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://sms-it.io/project/project/implementation/05-vf-to-ubf-module/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://sms-it.io/project/project/implementation/06-ubf-to-twilio-module/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://sms-it.io/project/project/implementation/07-frontend/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
