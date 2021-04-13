@@ -1,5 +1,6 @@
 import React from "react"
 import PropTypes from "prop-types"
+import { Link } from "gatsby"
 
 import { COLORS } from "../styles/constants"
 
@@ -27,12 +28,12 @@ const Footer = ({ siteTitle }) => (
         >
           Contact Us
         </a>
-        <a
+        <Link
           style={{ textDecoration: "none" }}
-          href="/project"
+          to="/project/index.html"
         >
           Main Website
-        </a>
+        </Link>
       </div>
       <div style={{ color: COLORS.gray }}>
         © {new Date().getFullYear()}

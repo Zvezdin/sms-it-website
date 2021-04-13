@@ -6,6 +6,7 @@ import headerImage from "../images/header.png"
 import MockupContent from "./image"
 import mockupFrame from "../images/mockup-frame.png"
 import smmsItIllustration from "../images/sms-it-illustration.png"
+import { Link } from "gatsby"
 
 const Header = ({ siteTitle }) => (
   <div
@@ -45,9 +46,9 @@ const Header = ({ siteTitle }) => (
       </div>
     </div>
     <h2 style={{paddingBottom: "4em"}}>We provide you with the infrastructure to convert any voice and chat bot into an SMS bot. </h2>
-    <a href="/project" style={{marginBottom: "0em"}}>
+    <Link to="/project/index.html" style={{marginBottom: "0em"}}>
       <Button>Open Main Website</Button>
-    </a>
+    </Link>
   </div>
 )
 
